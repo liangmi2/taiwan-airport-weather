@@ -4,55 +4,55 @@
         "obsTime": 1778693400,
         "rawOb": "METAR RCTP 131730Z 08005KT 9999 -RA FEW010 SCT040 BKN060 22/22 Q1005 NOSIG RMK A2970",
         "visib": "6",
-        "status": "updated"
+        "status": "old_data_kept"
     },
     {
         "icaoId": "RCSS",
         "obsTime": 1778691600,
         "rawOb": "METAR RCSS 131700Z 10004KT 9999 -RA FEW006 SCT037 BKN055 22/21 Q1006 RERA NOSIG RMK A2973 RA AMT 2.8MM",
         "visib": "6",
-        "status": "updated"
+        "status": "old_data_kept"
     },
     {
         "icaoId": "RCKH",
         "obsTime": 1778691600,
         "rawOb": "METAR RCKH 131700Z 25003KT 220V280 9999 FEW015 SCT035 27/22 Q1006 NOSIG RMK A2971",
         "visib": "6",
-        "status": "updated"
+        "status": "old_data_kept"
     },
     {
         "icaoId": "RCMQ",
         "obsTime": 1778691600,
         "rawOb": "METAR RCMQ 131700Z 18004KT 4800 BR FEW010 BKN040 24/23 Q1007 RMK A2975",
         "visib": "2.98",
-        "status": "updated"
+        "status": "old_data_kept"
     },
     {
         "icaoId": "RCBS",
         "obsTime": 0,
         "rawOb": "",
         "visib": "",
-        "status": "暫無最新報文，可能為非作業時段"
+        "status": "old_data_kept"
     },
     {
         "icaoId": "RCNN",
         "obsTime": 1778691600,
         "rawOb": "METAR RCNN 131700Z 00000KT 9999 FEW012 SCT060 24/22 Q1007 RMK A2974",
         "visib": "6",
-        "status": "updated"
+        "status": "old_data_kept"
     },
     {
         "icaoId": "RCYU",
         "obsTime": 0,
         "rawOb": "",
         "visib": "",
-        "status": "暫無最新報文，可能為非作業時段"
+        "status": "old_data_kept"
     },
     {
         "icaoId": "RCQC",
         "obsTime": 1778691600,
         "rawOb": "METAR RCQC 131700Z 03002KT 9999 FEW012 25/24 Q1006 RMK A2973",
         "visib": "6",
-        "status": "updated"
+        "status": "old_data_kept"
     }
 ]
