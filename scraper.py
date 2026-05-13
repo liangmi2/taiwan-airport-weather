@@ -8,6 +8,7 @@ import requests
 from datetime import datetime, timezone, timedelta
 
 
+# 首頁要顯示的 8 個機場
 AIRPORTS = [
     "RCTP",  # 桃園
     "RCSS",  # 松山
@@ -19,6 +20,28 @@ AIRPORTS = [
     "RCQC"   # 馬公
 ]
 
+# AOAWS Payload 裡臺北飛航情報區全部機場
+AOAWS_SEARCH_AIRPORTS = [
+    "RCSS",
+    "RCTP",
+    "RCMQ",
+    "RCKU",
+    "RCNN",
+    "RCKH",
+    "RCKW",
+    "RCYU",
+    "RCFN",
+    "RCGI",
+    "RCLY",
+    "RCMT",
+    "RCFG",
+    "RCQC",
+    "RCBS",
+    "RCWA",
+    "RCCM",
+    "RCLM"
+]
+
 AOAWS_API_URL = "https://aoaws.anws.gov.tw/Report/get_metar_speci"
 AOAWS_REFERER = "https://aoaws.anws.gov.tw/Report#gsc.tab=0"
 
@@ -28,10 +51,6 @@ def log(*args):
 
 
 def parse_metar_obs_time(raw_report):
-    """
-    從 METAR / SPECI 裡的 131700Z 解析成 Unix timestamp。
-    131700Z = 本月 13 日 17:00 UTC
-    """
     try:
         match = re.search(r"\b(\d{2})(\d{2})(\d{2})Z\b", raw_report)
 
@@ -53,7 +72,6 @@ def parse_metar_obs_time(raw_report):
 
         dt = datetime(year, month, day, hour, minute, tzinfo=timezone.utc)
 
-        # 避免月底跨月時解析到未來日期
         if dt - now > timedelta(days=1):
             month -= 1
 
@@ -70,10 +88,6 @@ def parse_metar_obs_time(raw_report):
 
 
 def parse_visibility_from_raw(raw_report):
-    """
-    從 METAR / SPECI 原文抓能見度，例如 9999 / 8000 / 4800。
-    local_weather.json 的 visib 保留英里格式給前端備援。
-    """
     match = re.search(r"\s(\d{4})\s", raw_report)
 
     if not match:
@@ -88,10 +102,6 @@ def parse_visibility_from_raw(raw_report):
 
 
 def normalize_raw_report(raw):
-    """
-    清理 METAR / SPECI 字串。
-    重點：SPECI 不要被錯改成 METAR SPECI。
-    """
     if not raw:
         return ""
 
@@ -105,7 +115,6 @@ def normalize_raw_report(raw):
     if raw.startswith("METAR ") or raw.startswith("SPECI "):
         return raw
 
-    # 有些來源可能只給：RCYU 131700Z ...
     if re.match(r"^[A-Z]{4}\s+\d{6}Z", raw):
         return "METAR " + raw
 
@@ -166,10 +175,6 @@ def load_old_weather():
 
 
 def collect_report_items(obj):
-    """
-    AOAWS 回傳結構可能是 list，也可能包在 dict 裡。
-    這個函式會遞迴找出含有 content/station 的資料。
-    """
     items = []
 
     if isinstance(obj, list):
@@ -188,37 +193,33 @@ def collect_report_items(obj):
 
 
 def fetch_from_aoaws_api():
-    """
-    直接打 AOAWS 官方 XHR API：
-    https://aoaws.anws.gov.tw/Report/get_metar_speci
-
-    Payload 格式：
-    search_airports[]=RCTP
-    search_airports[]=RCSS
-    ...
-    """
     log("正在抓取 AOAWS 官方 METAR/SPECI API...")
     log("URL:", AOAWS_API_URL)
 
     result = {}
 
     headers = {
-        "User-Agent": "taiwan-airport-weather/1.0",
+        "User-Agent": "Mozilla/5.0 taiwan-airport-weather/1.0",
         "Referer": AOAWS_REFERER,
         "Origin": "https://aoaws.anws.gov.tw",
-        "X-Requested-With": "XMLHttpRequest"
+        "X-Requested-With": "XMLHttpRequest",
+        "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
     }
 
-    # Form Data：重複的 search_airports[]
+    # 完整模擬你瀏覽器 Payload：
+    # search_airports[]=RCSS&...&time_item=recent_time&time_select=1
     data = []
 
-    for icao in AIRPORTS:
+    for icao in AOAWS_SEARCH_AIRPORTS:
         data.append(("search_airports[]", icao))
+
+    data.append(("time_item", "recent_time"))
+    data.append(("time_select", "1"))
 
     try:
         session = requests.Session()
 
-        # 先進 Report 頁面拿 cookie，比較像正常瀏覽器流程
+        # 先進 Report 頁拿 cookie
         session.get(AOAWS_REFERER, headers=headers, timeout=20)
 
         response = session.post(
@@ -256,7 +257,6 @@ def fetch_from_aoaws_api():
 
             weather_item = make_weather_item(icao, raw_report)
 
-            # 同一機場只保留最新
             if icao not in result:
                 result[icao] = weather_item
             else:
@@ -281,10 +281,6 @@ def fetch_from_aoaws_api():
 
 
 def fetch_from_aviationweather():
-    """
-    備援來源：AviationWeather API。
-    如果 AOAWS 有機場缺資料，再用它補。
-    """
     ids = ",".join(AIRPORTS)
 
     url = (
@@ -362,9 +358,6 @@ def fetch_from_aviationweather():
 
 
 def merge_weather(primary, backup):
-    """
-    AOAWS 優先，AviationWeather 補缺。
-    """
     merged = dict(primary)
 
     for icao, item in backup.items():
