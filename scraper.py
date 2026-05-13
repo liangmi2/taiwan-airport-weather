@@ -4,6 +4,10 @@ import json
 import time
 import re
 from datetime import datetime, timezone
+import urllib3
+
+# 關閉憑證警告，避免向政府網站請求時因憑證驗證問題報錯
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 AIRPORTS = [
     "RCTP",  # 桃園
@@ -15,41 +19,6 @@ AIRPORTS = [
     "RCYU",  # 花蓮
     "RCQC"   # 馬公
 ]
-
-# 關避憑證警告，避免向政府網站請求時因憑證驗證問題報錯
-import requests
-import urllib3
-
-# 關閉憑證警告
-urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-
-url = "https://aoaws.anws.gov.tw/Home/get_metar_data"
-headers = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-    "Referer": "https://aoaws.anws.gov.tw/",
-    "X-Requested-With": "XMLHttpRequest",
-    "Accept": "application/json, text/javascript, */*; q=0.01"
-}
-
-print("發送測試請求至 ANWS...")
-
-try:
-    # 這次我們不加 data={}，並補齊了完整的瀏覽器 Accept 標頭
-    res = requests.post(url, headers=headers, timeout=15, verify=False)
-    
-    print(f"連線狀態碼: {res.status_code}")
-    print("=" * 40)
-    
-    if res.status_code == 200:
-        print("連線成功！回傳內容前 300 字元：")
-        print(res.text[:300])
-    else:
-        print("伺服器拒絕請求！")
-        print(res.text[:300])
-        
-except Exception as e:
-    print(f"發生連線錯誤：{e}")
-
 
 def log(*args):
     print(*args, flush=True)
@@ -68,6 +37,7 @@ def parse_metar_time(raw_metar):
     try:
         match = re.search(r"\b(\d{2})(\d{2})(\d{2})Z\b", raw_metar)
         if not match:
+            # 如果報文裡找不到時間，直接回傳當下時間，避免回傳 0 導致前端顯示異常
             return int(time.time())
         
         day = int(match.group(1))
@@ -88,7 +58,7 @@ def parse_visibility_from_raw(raw_metar):
     
     meters = int(match.group(1))
     if meters == 9999:
-        return "6.2"
+        return "6.2" # 前端預期 9999 代表大於 10km，轉換為大約 6.2 英里
     return str(round(meters / 1609.34, 2))
 
 def load_old_weather():
@@ -113,20 +83,32 @@ def normalize_raw_metar(raw_metar):
 def fetch_all_anws_data():
     """備援機制：一次性抓取台灣官方 (ANWS) 所有機場的 JSON 資料"""
     url = "https://aoaws.anws.gov.tw/Home/get_metar_data"
+    
+    # 【強化偽裝】補齊標準瀏覽器 POST 請求所需的所有 Headers
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+        "Accept": "application/json, text/javascript, */*; q=0.01",
+        "Accept-Language": "zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7",
+        "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+        "X-Requested-With": "XMLHttpRequest",
+        "Origin": "https://aoaws.anws.gov.tw",
         "Referer": "https://aoaws.anws.gov.tw/",
-        "X-Requested-With": "XMLHttpRequest"  # 偽裝成前端 AJAX 請求
+        "Connection": "keep-alive"
     }
     
     try:
         log("啟動備援：向 ANWS 請求全台機場 JSON 資料...")
-        
-        # 加上 data={} 強制發送 Content-Length，並加上 verify=False 避免憑證阻擋
-        res = requests.post(url, headers=headers, data={}, timeout=15, verify=False)
+        # 即使沒有要傳資料，也要傳送一個空的字串當作 payload，強迫產生 Content-Length
+        res = requests.post(url, headers=headers, data="", timeout=15, verify=False)
         res.raise_for_status()
-        data = res.json()
         
+        # 加上容錯處理：確認回傳的真的是 JSON
+        try:
+            data = res.json()
+        except ValueError:
+            log("ANWS 回傳的不是有效的 JSON 格式！")
+            return {}
+            
         anws_dict = {}
         if "latest_airport_list" in data and "Taiwan" in data["latest_airport_list"]:
             for airport in data["latest_airport_list"]["Taiwan"]:
@@ -134,11 +116,12 @@ def fetch_all_anws_data():
                 if stid:
                     report = airport.get("REPORT", "").replace("\n", " ").replace("=", "").strip()
                     anws_dict[stid] = report
+        
+        log(f"備援資料抓取完畢，共取得 {len(anws_dict)} 筆機場資料。")
         return anws_dict
         
-    except Exception as e:
-        log(f"抓取 ANWS JSON 失敗: {e}")
-        # 如果失敗，印出伺服器回傳的狀態碼方便我們除錯
+    except requests.exceptions.RequestException as e:
+        log(f"抓取 ANWS 連線失敗: {e}")
         if hasattr(e, 'response') and e.response is not None:
             log(f"伺服器狀態碼: {e.response.status_code}")
         return {}
@@ -183,6 +166,7 @@ def fetch_aoaws_metar():
                 "status": "updated"
             }
             
+            # 保留最新的一筆資料
             if icao not in by_icao or int(new_item.get("obsTime", 0)) >= int(by_icao[icao].get("obsTime", 0)):
                 by_icao[icao] = new_item
                 
@@ -199,10 +183,12 @@ def fetch_aoaws_metar():
             log(f"成功抓取 {icao} (NOAA): {by_icao[icao]['rawOb']}")
             
         else:
-            # NOAA 沒抓到，觸發備援機制
+            log(f"NOAA 缺少 {icao} 資料，觸發備援...")
+            # 如果還沒抓過備援資料，就抓一次
             if anws_cache is None:
                 anws_cache = fetch_all_anws_data()
                 
+            # 從備援資料中尋找
             if anws_cache and icao in anws_cache and anws_cache[icao]:
                 anws_raw_metar = anws_cache[icao]
                 obs_time = parse_metar_time(anws_raw_metar)
@@ -217,12 +203,14 @@ def fetch_aoaws_metar():
                 })
                 log(f"成功抓取 {icao} (ANWS): {anws_raw_metar}")
                 
+            # 若備援也找不到，嘗試使用舊資料
             elif icao in old_weather and old_weather[icao].get("rawOb"):
                 log(f"{icao} NOAA 與 ANWS 皆無新資料，保留舊資料")
                 old_item = old_weather[icao]
                 old_item["status"] = "old_data_kept"
                 weather_data.append(old_item)
                 
+            # 完全沒有資料
             else:
                 log(f"{icao} 完全無資料，建立空資料")
                 weather_data.append({
@@ -241,6 +229,11 @@ def fetch_aoaws_metar():
         json.dump(weather_data, f, ensure_ascii=False, indent=4)
         
     log("資料已成功寫入 local_weather.json")
+    
+    # 印出最終結果供確認
+    log("========== 最後輸出內容 ==========")
+    for item in weather_data:
+        log(f"{item['icaoId']} => {item.get('rawOb', '無資料')}")
 
 if __name__ == "__main__":
     fetch_aoaws_metar()
