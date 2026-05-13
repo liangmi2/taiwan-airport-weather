@@ -17,8 +17,39 @@ AIRPORTS = [
 ]
 
 # 關避憑證警告，避免向政府網站請求時因憑證驗證問題報錯
+import requests
 import urllib3
+
+# 關閉憑證警告
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
+url = "https://aoaws.anws.gov.tw/Home/get_metar_data"
+headers = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    "Referer": "https://aoaws.anws.gov.tw/",
+    "X-Requested-With": "XMLHttpRequest",
+    "Accept": "application/json, text/javascript, */*; q=0.01"
+}
+
+print("發送測試請求至 ANWS...")
+
+try:
+    # 這次我們不加 data={}，並補齊了完整的瀏覽器 Accept 標頭
+    res = requests.post(url, headers=headers, timeout=15, verify=False)
+    
+    print(f"連線狀態碼: {res.status_code}")
+    print("=" * 40)
+    
+    if res.status_code == 200:
+        print("連線成功！回傳內容前 300 字元：")
+        print(res.text[:300])
+    else:
+        print("伺服器拒絕請求！")
+        print(res.text[:300])
+        
+except Exception as e:
+    print(f"發生連線錯誤：{e}")
+
 
 def log(*args):
     print(*args, flush=True)
