@@ -13,10 +13,13 @@ def fetch_aoaws_metar():
     url = "https://aoaws.anws.gov.tw/AWS/obs.php"
 
     chrome_options = Options()
+    chrome_options.page_load_strategy = "none"
+
     chrome_options.add_argument("--headless=new")
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--disable-dev-shm-usage")
     chrome_options.add_argument("--disable-gpu")
+    chrome_options.add_argument("--disable-extensions")
     chrome_options.add_argument("--window-size=1920,1080")
 
     print("目前工作目錄：", os.getcwd())
@@ -26,19 +29,35 @@ def fetch_aoaws_metar():
         service = Service(ChromeDriverManager().install())
         driver = webdriver.Chrome(service=service, options=chrome_options)
 
-        print("正在前往 AOAWS 網站並等待資料載入...")
-        driver.get(url)
+        driver.set_page_load_timeout(30)
 
-        time.sleep(10)
+        print("正在前往 AOAWS 網站並等待資料載入...")
+
+        try:
+            driver.get(url)
+        except Exception as e:
+            print("driver.get timeout，但繼續嘗試讀取目前頁面：", e)
+            try:
+                driver.execute_script("window.stop();")
+            except Exception:
+                pass
+
+        time.sleep(15)
 
         html_content = driver.page_source
+        text_content = driver.execute_script("return document.body ? document.body.innerText : '';")
+
+        print("page_source 長度：", len(html_content))
+        print("innerText 長度：", len(text_content))
+
+        search_content = text_content if text_content else html_content
 
         airports = ["RCTP", "RCSS", "RCKH", "RCMQ", "RCBS", "RCWA", "RCYU", "RCQC"]
         weather_data = []
 
         for icao in airports:
             pattern = rf"({icao}\s+\d{{6}}Z.*?)(?:=|<|\n)"
-            match = re.search(pattern, html_content)
+            match = re.search(pattern, search_content)
 
             if match:
                 raw_metar = match.group(1).replace("<", "").replace("=", "").strip()
@@ -60,7 +79,7 @@ def fetch_aoaws_metar():
                     "visib": visibility_miles
                 })
 
-                print(f"成功抓取 {icao} 最新報文")
+                print(f"成功抓取 {icao} 最新報文：{raw_metar}")
             else:
                 print(f"網頁中找不到 {icao} 的資料")
 
@@ -73,10 +92,7 @@ def fetch_aoaws_metar():
             print("資料已成功整理並存入 local_weather.json！")
         else:
             print("抓取失敗：網頁中未解析到任何機場資料。")
-
-    except Exception as e:
-        print(f"執行發生錯誤: {e}")
-        raise
+            raise RuntimeError("未解析到任何機場資料")
 
     finally:
         if driver is not None:
