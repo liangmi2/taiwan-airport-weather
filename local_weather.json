@@ -1,0 +1,44 @@
+[
+    {
+        "icaoId": "RCTP",
+        "obsTime": 1778675051,
+        "rawOb": "RCTP 131216Z 06008KT 5000 RA FEW005 BKN030 BKN050 21/21",
+        "visib": "3.11"
+    },
+    {
+        "icaoId": "RCSS",
+        "obsTime": 1778675051,
+        "rawOb": "RCSS 131200Z 09005KT 9000 -RA FEW005 SCT025 BKN050 22/21",
+        "visib": "5.59"
+    },
+    {
+        "icaoId": "RCKH",
+        "obsTime": 1778675051,
+        "rawOb": "RCKH 131200Z 30004KT 260V350 9999 FEW018 SCT048 28/21 Q1006",
+        "visib": "6.2"
+    },
+    {
+        "icaoId": "RCMQ",
+        "obsTime": 1778675051,
+        "rawOb": "RCMQ 131200Z 36001KT 8000 FEW010 SCT050 BKN080 24/22 Q1007 NOSIG RMK A2976",
+        "visib": "4.97"
+    },
+    {
+        "icaoId": "RCBS",
+        "obsTime": 1778675051,
+        "rawOb": "RCBS 131209Z 05010KT 4000 -RA BR FEW005 BKN007 BKN014 22/22",
+        "visib": "2.49"
+    },
+    {
+        "icaoId": "RCYU",
+        "obsTime": 1778675051,
+        "rawOb": "RCYU 131200Z 01006KT 4800 -RA BR SCT008 BKN016 BKN040 24/23 Q1009 BECMG TL1400 1600 RA BR BKN010 RMK A2980 RA AMT 1.6MM",
+        "visib": "2.98"
+    },
+    {
+        "icaoId": "RCQC",
+        "obsTime": 1778675051,
+        "rawOb": "RCQC 131200Z 03002KT 9999 FEW012 SCT100 26/24 Q1007 NOSIG RMK A2974",
+        "visib": "6.2"
+    }
+]
