@@ -2,23 +2,26 @@ name: 自動更新機場氣象
 
 on:
   schedule:
-    - cron: '*/20 * * * *' # 每 20 分鐘執行一次
-  workflow_dispatch:      # 允許手動點擊按鈕測試
+    - cron: "*/20 * * * *"
+  workflow_dispatch:
 
 permissions:
-  contents: write         # 強制開啟寫入權限
+  contents: write
 
 jobs:
-  build:
+  update-weather:
     runs-on: ubuntu-latest
+
     steps:
       - name: 檢查程式碼
         uses: actions/checkout@v4
+        with:
+          persist-credentials: true
 
       - name: 安裝 Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.9'
+          python-version: "3.11"
 
       - name: 安裝 Chrome 瀏覽器
         run: |
@@ -26,15 +29,37 @@ jobs:
           sudo apt-get install -y google-chrome-stable
 
       - name: 安裝 Python 套件
-        run: pip install selenium webdriver-manager requests
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests selenium webdriver-manager
 
       - name: 執行爬蟲抓取資料
         run: python scraper.py
 
-      - name: 推送新資料回 GitHub
+      - name: 檢查產生的 local_weather.json
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          echo "目前目錄："
+          pwd
+
+          echo "檔案列表："
+          ls -la
+
+          echo "===== local_weather.json ====="
+          cat local_weather.json || true
+
+          echo "===== git status ====="
+          git status --short
+
+      - name: 將最新資料推送到 GitHub
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add local_weather.json
-          # 只有檔案真的有變動時才提交，避免錯誤
-          git diff --quiet && git diff --staged --quiet || (git commit -m "自動更新氣象: $(date)" && git push origin main)
+
+          if git diff --staged --quiet; then
+            echo "沒有變更，不需要 commit"
+          else
+            git commit -m "自動更新機場氣象資料"
+            git push origin main
+          fi
