@@ -1,18 +1,48 @@
 const airports = {
-  RCTP: "桃園國際機場 (TPE)",
-  RCSS: "台北松山機場 (TSA)",
-  RCKH: "高雄小港機場 (KHH)",
-  RCMQ: "台中清泉崗機場 (RMQ)",
-  RCBS: "金門尚義機場 (KNH)",
-  RCNN: "台南機場 (TNN)",
-  RCYU: "花蓮機場 (HUN)",
-  RCQC: "馬公機場 (MZG)"
+  RCTP: {
+    name: "桃園國際機場",
+    iata: "TPE",
+    type: "major"
+  },
+  RCSS: {
+    name: "台北松山機場",
+    iata: "TSA",
+    type: "major"
+  },
+  RCKH: {
+    name: "高雄小港機場",
+    iata: "KHH",
+    type: "major"
+  },
+  RCMQ: {
+    name: "台中清泉崗機場",
+    iata: "RMQ",
+    type: "mixed"
+  },
+  RCBS: {
+    name: "金門尚義機場",
+    iata: "KNH",
+    type: "limited"
+  },
+  RCNN: {
+    name: "台南機場",
+    iata: "TNN",
+    type: "limited"
+  },
+  RCYU: {
+    name: "花蓮機場",
+    iata: "HUN",
+    type: "limited"
+  },
+  RCQC: {
+    name: "馬公機場",
+    iata: "MZG",
+    type: "major"
+  }
 };
 
-// 官方資料連結
 const officialUrl = "https://aoaws.anws.gov.tw/";
 
-// HTML 防呆，避免 METAR 裡有特殊字元影響畫面
 function escapeHtml(value) {
   return String(value ?? "")
     .replaceAll("&", "&amp;")
@@ -22,7 +52,6 @@ function escapeHtml(value) {
     .replaceAll("'", "&#039;");
 }
 
-// 風向角度轉中文
 function getWindDirection(degrees) {
   if (!degrees) return "--";
 
@@ -51,144 +80,12 @@ function getWindDirection(degrees) {
   return dirs[Math.round((deg % 360) / 45)];
 }
 
-// 蒲福風級，輸入 knots
-function getBeaufortScale(knots) {
-  if (knots < 1) return 0;
-  if (knots <= 3) return 1;
-  if (knots <= 6) return 2;
-  if (knots <= 10) return 3;
-  if (knots <= 16) return 4;
-  if (knots <= 21) return 5;
-  if (knots <= 27) return 6;
-  if (knots <= 33) return 7;
-  if (knots <= 40) return 8;
-  if (knots <= 47) return 9;
-  if (knots <= 55) return 10;
-  if (knots <= 63) return 11;
-  return 12;
+function knotsToKmh(knots) {
+  return Math.round(knots * 1.852);
 }
 
-// 判斷天氣圖示與文字
-function getWeatherInfo(rawMetar) {
-  const metar = String(rawMetar || "").toUpperCase();
-
-  if (!metar) {
-    return {
-      icon: "❓",
-      text: "未知"
-    };
-  }
-
-  if (metar.includes("TS")) {
-    return {
-      icon: "⛈️",
-      text: "雷雨"
-    };
-  }
-
-  if (metar.includes("+RA")) {
-    return {
-      icon: "🌧️",
-      text: "大雨"
-    };
-  }
-
-  if (
-    metar.includes("-RA") ||
-    metar.includes(" RA ") ||
-    metar.includes("DZ") ||
-    metar.includes("SHRA") ||
-    metar.includes("VCSH")
-  ) {
-    return {
-      icon: "🌧️",
-      text: "下雨"
-    };
-  }
-
-  if (
-    metar.includes("FG") ||
-    metar.includes("BR") ||
-    metar.includes("HZ") ||
-    metar.includes("FU")
-  ) {
-    return {
-      icon: "🌫️",
-      text: "霧霾"
-    };
-  }
-
-  if (metar.includes("OVC") || metar.includes("BKN")) {
-    return {
-      icon: "☁️",
-      text: "陰天"
-    };
-  }
-
-  if (metar.includes("SCT") || metar.includes("FEW")) {
-    return {
-      icon: "⛅",
-      text: "多雲"
-    };
-  }
-
-  if (metar.includes("CAVOK") || metar.includes("SKC") || metar.includes("CLR")) {
-    return {
-      icon: "☀️",
-      text: "晴朗"
-    };
-  }
-
-  return {
-    icon: "🌤️",
-    text: "良好"
-  };
-}
-
-// 解析能見度
-function parseVisibility(weather) {
-  const rawMetar = String(weather?.rawOb || "").toUpperCase();
-
-  // 台灣 METAR 常見 9999 / 8000 / 7000，這裡優先讀原始報文的公尺值
-  const meterMatch = rawMetar.match(/\b(\d{4})\b/);
-
-  if (meterMatch) {
-    const meters = parseInt(meterMatch[1], 10);
-
-    if (!Number.isNaN(meters)) {
-      if (meters === 9999) {
-        return "10000 公尺以上";
-      }
-
-      return `${meters} 公尺`;
-    }
-  }
-
-  // 備援：AviationWeather API 的 visib 通常是 statute miles
-  const visib = weather?.visib;
-
-  if (visib !== undefined && visib !== null && visib !== "") {
-    const visibText = String(visib).replace("+", "");
-    const miles = parseFloat(visibText);
-
-    if (!Number.isNaN(miles)) {
-      const meters = Math.round(miles * 1609.34);
-
-      if (String(visib).includes("+")) {
-        return `${meters} 公尺以上`;
-      }
-
-      return `${meters} 公尺`;
-    }
-  }
-
-  return "--";
-}
-
-// 解析風向風速
 function parseWind(rawMetar) {
   const metar = String(rawMetar || "").toUpperCase();
-
   const windMatch = metar.match(/\b(\d{3}|VRB)(\d{2,3})(?:G(\d{2,3}))?KT\b/);
 
   if (!windMatch) {
@@ -208,30 +105,27 @@ function parseWind(rawMetar) {
   }
 
   const dirName = getWindDirection(direction);
-  const beaufort = getBeaufortScale(speedKt);
+  const speedKmh = knotsToKmh(speedKt);
 
-  let windText = `${dirName} ${beaufort} 級風`;
+  let text = `${dirName} ${speedKmh} km/h`;
 
   if (gustKt !== null && !Number.isNaN(gustKt)) {
-    const gustBeaufort = getBeaufortScale(gustKt);
-    windText += `，陣風 ${gustBeaufort} 級`;
+    text += `，陣風 ${knotsToKmh(gustKt)} km/h`;
   }
 
-  return windText;
+  return text;
 }
 
-// 解析溫度
 function parseTemperature(rawMetar) {
   const metar = String(rawMetar || "").toUpperCase();
-
   const tempMatch = metar.match(/\b(M?\d{2})\/(M?\d{2}|\/\/)?\b/);
 
   if (!tempMatch) {
     return "--";
   }
 
-  const temp = tempMatch[1].replace("M", "-");
-  const tempValue = parseInt(temp, 10);
+  const tempText = tempMatch[1].replace("M", "-");
+  const tempValue = parseInt(tempText, 10);
 
   if (Number.isNaN(tempValue)) {
     return "--";
@@ -240,7 +134,136 @@ function parseTemperature(rawMetar) {
   return `${tempValue}°C`;
 }
 
-// 解析觀測時間
+function parseVisibilityMeters(weather) {
+  const rawMetar = String(weather?.rawOb || "").toUpperCase();
+
+  const meterMatch = rawMetar.match(/\b(\d{4})\b/);
+
+  if (meterMatch) {
+    const meters = parseInt(meterMatch[1], 10);
+
+    if (!Number.isNaN(meters)) {
+      if (meters === 9999) {
+        return 10000;
+      }
+
+      return meters;
+    }
+  }
+
+  const visib = weather?.visib;
+
+  if (visib !== undefined && visib !== null && visib !== "") {
+    const milesText = String(visib).replace("+", "");
+    const miles = parseFloat(milesText);
+
+    if (!Number.isNaN(miles)) {
+      return Math.round(miles * 1609.34);
+    }
+  }
+
+  return null;
+}
+
+function formatVisibility(weather) {
+  const meters = parseVisibilityMeters(weather);
+
+  if (meters === null) {
+    return "--";
+  }
+
+  if (meters >= 9999) {
+    return "10000 公尺以上";
+  }
+
+  return `${meters} 公尺`;
+}
+
+function getWeatherInfo(rawMetar) {
+  const metar = String(rawMetar || "").toUpperCase();
+
+  if (!metar) {
+    return {
+      icon: "?",
+      text: "暫無最新報文",
+      empty: true
+    };
+  }
+
+  if (metar.includes("TS")) {
+    return {
+      icon: "⛈️",
+      text: "雷雨",
+      empty: false
+    };
+  }
+
+  if (metar.includes("+RA")) {
+    return {
+      icon: "🌧️",
+      text: "大雨",
+      empty: false
+    };
+  }
+
+  if (
+    metar.includes("-RA") ||
+    metar.includes(" RA ") ||
+    metar.includes("DZ") ||
+    metar.includes("SHRA") ||
+    metar.includes("VCSH")
+  ) {
+    return {
+      icon: "🌧️",
+      text: "下雨",
+      empty: false
+    };
+  }
+
+  if (
+    metar.includes("FG") ||
+    metar.includes("BR") ||
+    metar.includes("HZ") ||
+    metar.includes("FU")
+  ) {
+    return {
+      icon: "🌫️",
+      text: "霧霾",
+      empty: false
+    };
+  }
+
+  if (metar.includes("OVC") || metar.includes("BKN")) {
+    return {
+      icon: "☁️",
+      text: "陰天",
+      empty: false
+    };
+  }
+
+  if (metar.includes("SCT") || metar.includes("FEW")) {
+    return {
+      icon: "⛅",
+      text: "多雲",
+      empty: false
+    };
+  }
+
+  if (metar.includes("CAVOK") || metar.includes("SKC") || metar.includes("CLR")) {
+    return {
+      icon: "☀️",
+      text: "晴朗",
+      empty: false
+    };
+  }
+
+  return {
+    icon: "🌤️",
+    text: "良好",
+    empty: false
+  };
+}
+
 function formatObsTime(obsTime) {
   if (!obsTime) {
     return "";
@@ -267,7 +290,58 @@ function formatObsTime(obsTime) {
   });
 }
 
-// 建立 weather map，避免同機場多筆資料時取最新
+function isStaleWeather(weather) {
+  if (!weather || !weather.obsTime) {
+    return true;
+  }
+
+  const now = Date.now();
+  const obsTimeMs = Number(weather.obsTime) * 1000;
+
+  if (Number.isNaN(obsTimeMs)) {
+    return true;
+  }
+
+  const diffHours = (now - obsTimeMs) / 1000 / 60 / 60;
+
+  return diffHours > 6;
+}
+
+function getStationStatus(icao, weather) {
+  const airport = airports[icao];
+  const isLimited = airport?.type === "limited";
+
+  if (weather && weather.rawOb) {
+    if (isLimited && isStaleWeather(weather)) {
+      return {
+        text: "非作業時段",
+        className: "status-warn",
+        note: "此機場可能因夜間非作業時段，暫無最新報文。"
+      };
+    }
+
+    return {
+      text: "資料正常",
+      className: "status-ok",
+      note: ""
+    };
+  }
+
+  if (isLimited) {
+    return {
+      text: "暫無資料",
+      className: "status-error",
+      note: "此機場可能因夜間非作業時段，暫無最新報文。"
+    };
+  }
+
+  return {
+    text: "暫無資料",
+    className: "status-error",
+    note: "目前無法取得此機場的最新氣象資料。"
+  };
+}
+
 function buildWeatherMap(data) {
   const weatherMap = {};
 
@@ -298,7 +372,39 @@ function buildWeatherMap(data) {
   return weatherMap;
 }
 
-// 讀取 local_weather.json
+function getLatestObsTime(data) {
+  if (!Array.isArray(data) || data.length === 0) {
+    return "";
+  }
+
+  const latest = data.reduce((max, item) => {
+    const t = Number(item?.obsTime || 0);
+    return t > max ? t : max;
+  }, 0);
+
+  if (!latest) {
+    return "";
+  }
+
+  return formatObsTime(latest);
+}
+
+function updateLastUpdateText(data) {
+  const el = document.getElementById("last-update");
+
+  if (!el) {
+    return;
+  }
+
+  const latest = getLatestObsTime(data);
+
+  if (latest) {
+    el.innerHTML = `⏱️ 最後更新：<strong>${escapeHtml(latest)}</strong> <span>（每 5 分鐘自動更新）</span>`;
+  } else {
+    el.innerHTML = "⏱️ 尚未取得更新時間";
+  }
+}
+
 async function fetchWeather() {
   const loadingDiv = document.getElementById("loading");
   const container = document.getElementById("weather-cards");
@@ -310,8 +416,8 @@ async function fetchWeather() {
 
   if (loadingDiv) {
     loadingDiv.style.display = "block";
-    loadingDiv.style.color = "#7f8c8d";
-    loadingDiv.innerText = "正在讀取氣象資料...";
+    loadingDiv.style.color = "#708392";
+    loadingDiv.innerText = "正在讀取機場氣象資料...";
   }
 
   const localUrl = `./local_weather.json?t=${Date.now()}`;
@@ -331,28 +437,104 @@ async function fetchWeather() {
       throw new Error("local_weather.json 格式不是陣列");
     }
 
-    if (data.length === 0 && loadingDiv) {
-      loadingDiv.innerText = "⚠️ local_weather.json 目前是空的。";
-    }
+    updateLastUpdateText(data);
+    displayWeather(data);
 
-    displayWeather(data, data.length === 0);
+    if (loadingDiv) {
+      loadingDiv.style.display = "none";
+    }
   } catch (err) {
     console.error(err);
 
     if (loadingDiv) {
       loadingDiv.style.display = "block";
-      loadingDiv.style.color = "#c0392b";
-      loadingDiv.innerText = "⚠️ 無法讀取本地氣象資料，請確認 local_weather.json 是否存在。";
+      loadingDiv.style.color = "#d93025";
+      loadingDiv.innerText = "⚠️ 無法讀取 local_weather.json，請確認資料檔是否存在。";
     }
 
-    displayWeather([], true);
+    updateLastUpdateText([]);
+    displayWeather([]);
   }
 }
 
-// 顯示卡片
-function displayWeather(data, keepLoadingDivVisible = false) {
+function createCard(icao, weather) {
+  const airport = airports[icao];
+  const airportName = `${airport.name} (${airport.iata})`;
+
+  const hasWeather = Boolean(weather && weather.rawOb);
+  const rawMetar = hasWeather ? weather.rawOb : "";
+
+  const weatherInfo = getWeatherInfo(rawMetar);
+  const tempText = hasWeather ? parseTemperature(rawMetar) : "--";
+  const windText = hasWeather ? parseWind(rawMetar) : "--";
+  const visibilityText = hasWeather ? formatVisibility(weather) : "--";
+  const obsTimeText = hasWeather ? formatObsTime(weather.obsTime) : "";
+
+  const status = getStationStatus(icao, weather);
+
+  const card = document.createElement("article");
+  card.className = "card";
+
+  const iconClass = weatherInfo.empty ? "weather-icon empty" : "weather-icon";
+
+  card.innerHTML = `
+    <div class="card-header">
+      <h2 class="card-title">${escapeHtml(airportName)}</h2>
+      <span class="status-badge ${escapeHtml(status.className)}">${escapeHtml(status.text)}</span>
+    </div>
+
+    <div class="weather-main">
+      <div class="${iconClass}">${escapeHtml(weatherInfo.icon)}</div>
+      <div class="weather-summary">
+        <div class="temperature">${escapeHtml(tempText)}</div>
+        <div class="condition">${escapeHtml(weatherInfo.text)}</div>
+      </div>
+    </div>
+
+    <div class="info-box">
+      <div class="info-item">
+        <div class="info-label">🚩 風向風速</div>
+        <div class="info-value">${escapeHtml(windText)}</div>
+      </div>
+
+      <div class="info-item">
+        <div class="info-label">👁️ 能見度</div>
+        <div class="info-value visibility-value">${escapeHtml(visibilityText)}</div>
+      </div>
+    </div>
+
+    <div class="card-bottom">
+      ${
+        hasWeather
+          ? `
+            <div class="metar-box">${escapeHtml(rawMetar)}</div>
+            ${
+              obsTimeText
+                ? `<div class="update-time">🕒 更新時間：${escapeHtml(obsTimeText)}${status.text === "非作業時段" ? "（可能為非作業時段）" : ""}</div>`
+                : ""
+            }
+          `
+          : `
+            <div class="empty-note">
+              ${escapeHtml(status.note)}
+              <br />
+              上次資料：--
+            </div>
+          `
+      }
+
+      <a class="radar-button" href="${officialUrl}" target="_blank" rel="noopener noreferrer">
+        🔍 官方雷達與資料
+        <span class="external-icon">↗</span>
+      </a>
+    </div>
+  `;
+
+  return card;
+}
+
+function displayWeather(data) {
   const container = document.getElementById("weather-cards");
-  const loadingDiv = document.getElementById("loading");
 
   if (!container) {
     return;
@@ -360,80 +542,17 @@ function displayWeather(data, keepLoadingDivVisible = false) {
 
   container.innerHTML = "";
 
-  if (loadingDiv && !keepLoadingDivVisible) {
-    loadingDiv.style.display = "none";
-  }
-
   const weatherMap = buildWeatherMap(data);
 
   Object.keys(airports).forEach(icao => {
-    const airportName = airports[icao];
     const weather = weatherMap[icao];
-
-    let rawMetar = "目前沒有抓到這個機場的資料";
-    let visibilityText = "--";
-    let windText = "--";
-    let tempText = "--";
-    let obsTimeText = "";
-    let weatherInfo = {
-      icon: "❓",
-      text: "未知"
-    };
-
-    if (weather && weather.rawOb) {
-      rawMetar = weather.rawOb;
-      visibilityText = parseVisibility(weather);
-      windText = parseWind(rawMetar);
-      tempText = parseTemperature(rawMetar);
-      obsTimeText = formatObsTime(weather.obsTime);
-      weatherInfo = getWeatherInfo(rawMetar);
-    }
-
-    const card = document.createElement("div");
-    card.className = "card";
-
-    card.innerHTML = `
-      <h2>${escapeHtml(airportName)}</h2>
-
-      <div class="weather-main">
-        <div class="weather-icon">${weatherInfo.icon}</div>
-        <div class="weather-summary">
-          <div class="temperature">${escapeHtml(tempText)}</div>
-          <div class="condition">${escapeHtml(weatherInfo.text)}</div>
-        </div>
-      </div>
-
-      <div class="info-box">
-        <div class="info-row">
-          <span class="label">🌬️ 風向風速</span>
-          <span class="value">${escapeHtml(windText)}</span>
-        </div>
-
-        <div class="info-row">
-          <span class="label">👁️ 能見度</span>
-          <span class="value visibility">${escapeHtml(visibilityText)}</span>
-        </div>
-      </div>
-
-      <div class="metar-box">
-        ${escapeHtml(rawMetar)}
-      </div>
-
-      ${obsTimeText ? `<div class="update-time">更新時間：${escapeHtml(obsTimeText)}</div>` : ""}
-
-      <a class="radar-button" href="${officialUrl}" target="_blank" rel="noopener noreferrer">
-        🔍 官方雷達與資料
-      </a>
-    `;
-
+    const card = createCard(icao, weather);
     container.appendChild(card);
   });
 }
 
-// 頁面載入後執行
 document.addEventListener("DOMContentLoaded", () => {
   fetchWeather();
 
-  // 每 5 分鐘自動刷新一次
   setInterval(fetchWeather, 5 * 60 * 1000);
 });
