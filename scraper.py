@@ -1,91 +1,140 @@
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from webdriver_manager.chrome import ChromeDriverManager
+import requests
+import json
 import time
 import re
-import json
+import os
+from datetime import datetime
+
+
+AIRPORTS = ["RCTP", "RCSS", "RCKH", "RCMQ", "RCBS", "RCNN", "RCYU", "RCQC"]
+
+
+def parse_obs_time(value):
+    if not value:
+        return int(time.time())
+
+    try:
+        dt = datetime.fromisoformat(value.replace("Z", "+00:00"))
+        return int(dt.timestamp())
+    except Exception:
+        return int(time.time())
+
+
+def parse_visibility_from_raw(raw_metar):
+    match = re.search(r"\s(\d{4})\s", raw_metar)
+
+    if not match:
+        return ""
+
+    meters = int(match.group(1))
+
+    if meters == 9999:
+        return "6.2"
+
+    return str(round(meters / 1609.34, 2))
+
+
+def load_old_weather():
+    if not os.path.exists("local_weather.json"):
+        return {}
+
+    try:
+        with open("local_weather.json", "r", encoding="utf-8") as f:
+            old_data = json.load(f)
+
+        return {
+            item.get("icaoId"): item
+            for item in old_data
+            if item.get("icaoId")
+        }
+
+    except Exception as e:
+        print("讀取舊 local_weather.json 失敗：", e)
+        return {}
+
 
 def fetch_aoaws_metar():
-    url = "https://aoaws.anws.gov.tw/AWS/obs.php"
-    
-    chrome_options = Options()
-    chrome_options.add_argument("--headless=new")
-    chrome_options.add_argument("--no-sandbox")
-    chrome_options.add_argument("--disable-dev-shm-usage")
-    chrome_options.add_argument("--disable-gpu")
-    chrome_options.add_argument("--window-size=1920,1080")
-    # 禁用圖片加載以提升速度
-    chrome_options.add_argument("--blink-settings=imagesEnabled=false")
-    
-    driver = None
-    try:
-        print("🤖 啟動雲端模擬瀏覽器...")
-        service = Service(ChromeDriverManager().install())
-        driver = webdriver.Chrome(service=service, options=chrome_options)
-        
-        print(f"🌐 前往 AOAWS 網站: {url}")
-        driver.get(url)
-        
-        # 關鍵：等待畫面上出現 "RCTP" (桃園機場) 的文字，最長等 30 秒
-        print("⏳ 等待氣象數據渲染...")
-        try:
-            WebDriverWait(driver, 30).until(
-                EC.presence_of_element_located((By.XPATH, "//*[contains(text(), 'RCTP')]"))
-            )
-            print("✅ 數據加載成功！")
-        except:
-            print("⚠️ 等待超時，嘗試直接讀取內容...")
+    ids = ",".join(AIRPORTS)
 
-        # 額外緩衝 3 秒確保 JavaScript 跑完
-        time.sleep(3)
-        
-        # 取得完整網頁內容
-        search_content = driver.page_source
-        print(f"📄 抓取內容長度: {len(search_content)}")
-        
-        airports = ["RCTP", "RCSS", "RCKH", "RCMQ", "RCBS", "RCWA", "RCYU", "RCQC"]
-        weather_data = []
+    url = (
+        "https://aviationweather.gov/api/data/metar"
+        f"?ids={ids}&format=json&taf=false&hours=24"
+    )
 
-        for icao in airports:
-            # 正則表達式抓取報文
-            pattern = rf"({icao}\s+\d{{6}}Z.*?)(?:=|<|\n)"
-            match = re.search(pattern, search_content)
-            
-            if match:
-                raw_metar = match.group(1).replace("<", "").replace("=", "").strip()
-                
-                # 能見度解析
-                visib_match = re.search(r"\s(\d{4})\s", raw_metar)
-                visibility_miles = ""
-                if visib_match:
-                    meters = int(visib_match.group(1))
-                    visibility_miles = "6.2" if meters == 9999 else str(round(meters / 1609.34, 2))
+    headers = {
+        "User-Agent": "taiwan-airport-weather/1.0"
+    }
 
-                weather_data.append({
-                    "icaoId": icao,
-                    "obsTime": int(time.time()),
-                    "rawOb": raw_metar,
-                    "visib": visibility_miles
-                })
-                print(f"✔️ {icao} 已擷取")
+    print("正在抓取 METAR API...")
+    print("URL:", url)
 
-        if weather_data:
-            with open('local_weather.json', 'w', encoding='utf-8') as f:
-                json.dump(weather_data, f, ensure_ascii=False, indent=4)
-            print(f"\n🎉 成功抓取 {len(weather_data)} 筆資料並存入 JSON")
+    old_weather = load_old_weather()
+
+    response = requests.get(url, headers=headers, timeout=30)
+    response.raise_for_status()
+
+    data = response.json()
+
+    print("API 回傳筆數：", len(data))
+
+    new_weather = {}
+
+    for item in data:
+        icao = item.get("icaoId")
+
+        if icao not in AIRPORTS:
+            continue
+
+        raw_metar = item.get("rawOb", "").strip()
+
+        if not raw_metar:
+            continue
+
+        obs_time = parse_obs_time(
+            item.get("obsTime")
+            or item.get("reportTime")
+            or item.get("receiptTime")
+        )
+
+        visib = item.get("visib")
+
+        if visib is None or visib == "":
+            visibility_miles = parse_visibility_from_raw(raw_metar)
         else:
-            raise RuntimeError("❌ 網頁內容解析失敗，未抓到任何資料")
-            
-    except Exception as e:
-        print(f"❗ 執行錯誤: {e}")
-        exit(1) # 讓 GitHub Actions 知道失敗了
-    finally:
-        if driver:
-            driver.quit()
+            visibility_miles = str(visib).replace("+", "")
+
+        new_weather[icao] = {
+            "icaoId": icao,
+            "obsTime": obs_time,
+            "rawOb": raw_metar,
+            "visib": visibility_miles
+        }
+
+        print(f"成功抓取 {icao}: {raw_metar}")
+
+    weather_data = []
+
+    for icao in AIRPORTS:
+        if icao in new_weather:
+            weather_data.append(new_weather[icao])
+        elif icao in old_weather:
+            print(f"{icao} 這次 API 沒回傳，保留舊資料")
+            weather_data.append(old_weather[icao])
+        else:
+            print(f"{icao} 沒有新資料，也沒有舊資料，建立空資料")
+            weather_data.append({
+                "icaoId": icao,
+                "obsTime": int(time.time()),
+                "rawOb": "",
+                "visib": ""
+            })
+
+    with open("local_weather.json", "w", encoding="utf-8") as f:
+        json.dump(weather_data, f, ensure_ascii=False, indent=4)
+
+    print("資料已成功寫入 local_weather.json")
+    print("最後輸出筆數：", len(weather_data))
+
 
 if __name__ == "__main__":
     fetch_aoaws_metar()
