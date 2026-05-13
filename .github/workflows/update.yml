@@ -8,13 +8,23 @@ on:
 permissions:
   contents: write
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+concurrency:
+  group: update-weather
+  cancel-in-progress: true
+
 jobs:
-  build:
+  update-weather:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
 
     steps:
       - name: 檢查程式碼
         uses: actions/checkout@v4
+        with:
+          persist-credentials: true
 
       - name: 安裝 Python
         uses: actions/setup-python@v5
@@ -27,20 +37,31 @@ jobs:
           pip install requests
 
       - name: 執行爬蟲抓取資料
-        run: python scraper.py
+        env:
+          PYTHONUNBUFFERED: "1"
+        run: |
+          echo "===== 開始執行 scraper.py ====="
+          python -u scraper.py
+          echo "===== scraper.py 執行完成 ====="
 
       - name: 檢查產生的檔案
         run: |
+          echo "===== 目前目錄 ====="
+          pwd
+
+          echo "===== 檔案列表 ====="
           ls -la
+
           echo "===== local_weather.json ====="
-          cat local_weather.json
+          cat local_weather.json || true
+
           echo "===== git status ====="
           git status --short
 
       - name: 將最新資料推送到 GitHub
         run: |
           git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add local_weather.json
 
