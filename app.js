@@ -399,7 +399,11 @@ function updateLastUpdateText(data) {
   const latest = getLatestObsTime(data);
 
   if (latest) {
-    el.innerHTML = `⏱️ 最後更新：<strong>${escapeHtml(latest)}</strong> <span>（每 5 分鐘自動更新）</span>`;
+    el.innerHTML = `
+      ⏱️ 最後更新：
+      <strong>${escapeHtml(latest)}</strong>
+      <span>（畫面每 5 分鐘刷新，資料約每 20 分鐘更新）</span>
+    `;
   } else {
     el.innerHTML = "⏱️ 尚未取得更新時間";
   }
@@ -554,5 +558,6 @@ function displayWeather(data) {
 document.addEventListener("DOMContentLoaded", () => {
   fetchWeather();
 
+  // 前端畫面每 5 分鐘重新讀取一次 local_weather.json
   setInterval(fetchWeather, 5 * 60 * 1000);
 });
