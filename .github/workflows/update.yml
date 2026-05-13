@@ -2,22 +2,25 @@ name: 自動更新機場氣象
 
 on:
   schedule:
-    - cron: '*/20 * * * *' # 每 20 分鐘執行一次
-  workflow_dispatch:      # 允許手動點擊按鈕執行
+    - cron: '*/20 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: 檢查程式碼
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: 安裝 Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.9'
 
-      - name: 安裝 Chrome 瀏覽器與驅動
+      - name: 安裝 Chrome 瀏覽器
         run: |
           sudo apt-get update
           sudo apt-get install -y google-chrome-stable
@@ -25,10 +28,10 @@ jobs:
       - name: 安裝必要套件
         run: pip install selenium webdriver-manager requests
 
-      - name: 執行 Python 爬蟲抓取資料
+      - name: 執行爬蟲抓取資料
         run: python scraper.py
 
-      - name: 將新資料推回倉庫
+      - name: 將最新資料推送到 GitHub
         run: |
           git config --global user.name "WeatherBot"
           git config --global user.email "bot@github.com"
