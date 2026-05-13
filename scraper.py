@@ -16,6 +16,10 @@ AIRPORTS = [
     "RCQC"   # 馬公
 ]
 
+# 關避憑證警告，避免向政府網站請求時因憑證驗證問題報錯
+import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
 def log(*args):
     print(*args, flush=True)
 
@@ -80,12 +84,15 @@ def fetch_all_anws_data():
     url = "https://aoaws.anws.gov.tw/Home/get_metar_data"
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-        "Referer": "https://aoaws.anws.gov.tw/"
+        "Referer": "https://aoaws.anws.gov.tw/",
+        "X-Requested-With": "XMLHttpRequest"  # 偽裝成前端 AJAX 請求
     }
     
     try:
         log("啟動備援：向 ANWS 請求全台機場 JSON 資料...")
-        res = requests.post(url, headers=headers, timeout=15)
+        
+        # 加上 data={} 強制發送 Content-Length，並加上 verify=False 避免憑證阻擋
+        res = requests.post(url, headers=headers, data={}, timeout=15, verify=False)
         res.raise_for_status()
         data = res.json()
         
@@ -97,8 +104,12 @@ def fetch_all_anws_data():
                     report = airport.get("REPORT", "").replace("\n", " ").replace("=", "").strip()
                     anws_dict[stid] = report
         return anws_dict
+        
     except Exception as e:
         log(f"抓取 ANWS JSON 失敗: {e}")
+        # 如果失敗，印出伺服器回傳的狀態碼方便我們除錯
+        if hasattr(e, 'response') and e.response is not None:
+            log(f"伺服器狀態碼: {e.response.status_code}")
         return {}
 
 def fetch_aoaws_metar():
