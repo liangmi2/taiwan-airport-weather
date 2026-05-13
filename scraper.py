@@ -1,102 +1,115 @@
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
-from webdriver_manager.chrome import ChromeDriverManager
+import requests
+import json
 import time
 import re
-import json
-import os
+from datetime import datetime, timezone
+
+
+AIRPORTS = ["RCTP", "RCSS", "RCKH", "RCMQ", "RCBS", "RCWA", "RCYU", "RCQC"]
+
+
+def parse_obs_time(value):
+    if not value:
+        return int(time.time())
+
+    try:
+        # AviationWeather 通常是 2026-05-13T04:00:00Z 這類格式
+        dt = datetime.fromisoformat(value.replace("Z", "+00:00"))
+        return int(dt.timestamp())
+    except Exception:
+        return int(time.time())
+
+
+def parse_visibility_from_raw(raw_metar):
+    """
+    備援：如果 API 沒給 visib，就從 METAR 原始報文抓 9999 / 4000 這種公尺能見度。
+    前端原本吃英里，所以這裡轉成英里字串。
+    """
+    match = re.search(r"\s(\d{4})\s", raw_metar)
+    if not match:
+        return ""
+
+    meters = int(match.group(1))
+
+    if meters == 9999:
+        return "6.2"
+
+    return str(round(meters / 1609.34, 2))
 
 
 def fetch_aoaws_metar():
-    driver = None
-    url = "https://aoaws.anws.gov.tw/AWS/obs.php"
+    ids = ",".join(AIRPORTS)
 
-    chrome_options = Options()
-    chrome_options.page_load_strategy = "none"
+    url = (
+        "https://aviationweather.gov/api/data/metar"
+        f"?ids={ids}&format=json&taf=false&hours=3"
+    )
 
-    chrome_options.add_argument("--headless=new")
-    chrome_options.add_argument("--no-sandbox")
-    chrome_options.add_argument("--disable-dev-shm-usage")
-    chrome_options.add_argument("--disable-gpu")
-    chrome_options.add_argument("--disable-extensions")
-    chrome_options.add_argument("--window-size=1920,1080")
+    headers = {
+        "User-Agent": "taiwan-airport-weather/1.0 contact: github-actions"
+    }
 
-    print("目前工作目錄：", os.getcwd())
-    print("正在雲端背景啟動模擬瀏覽器...")
+    print("正在抓取 METAR API...")
+    print("URL:", url)
 
-    try:
-        service = Service(ChromeDriverManager().install())
-        driver = webdriver.Chrome(service=service, options=chrome_options)
+    response = requests.get(url, headers=headers, timeout=30)
+    response.raise_for_status()
 
-        driver.set_page_load_timeout(30)
+    data = response.json()
 
-        print("正在前往 AOAWS 網站並等待資料載入...")
+    print("API 回傳筆數：", len(data))
 
-        try:
-            driver.get(url)
-        except Exception as e:
-            print("driver.get timeout，但繼續嘗試讀取目前頁面：", e)
-            try:
-                driver.execute_script("window.stop();")
-            except Exception:
-                pass
+    by_icao = {}
 
-        time.sleep(15)
+    for item in data:
+        icao = item.get("icaoId")
+        if icao not in AIRPORTS:
+            continue
 
-        html_content = driver.page_source
-        text_content = driver.execute_script("return document.body ? document.body.innerText : '';")
+        raw_metar = item.get("rawOb", "").strip()
 
-        print("page_source 長度：", len(html_content))
-        print("innerText 長度：", len(text_content))
+        if not raw_metar:
+            continue
 
-        search_content = text_content if text_content else html_content
+        obs_time = parse_obs_time(
+            item.get("obsTime")
+            or item.get("reportTime")
+            or item.get("receiptTime")
+        )
 
-        airports = ["RCTP", "RCSS", "RCKH", "RCMQ", "RCBS", "RCWA", "RCYU", "RCQC"]
-        weather_data = []
+        visib = item.get("visib")
 
-        for icao in airports:
-            pattern = rf"({icao}\s+\d{{6}}Z.*?)(?:=|<|\n)"
-            match = re.search(pattern, search_content)
-
-            if match:
-                raw_metar = match.group(1).replace("<", "").replace("=", "").strip()
-
-                visib_match = re.search(r"\s(\d{4})\s", raw_metar)
-                visibility_miles = ""
-
-                if visib_match:
-                    meters = int(visib_match.group(1))
-                    if meters == 9999:
-                        visibility_miles = "6.2"
-                    else:
-                        visibility_miles = str(round(meters / 1609.34, 2))
-
-                weather_data.append({
-                    "icaoId": icao,
-                    "obsTime": int(time.time()),
-                    "rawOb": raw_metar,
-                    "visib": visibility_miles
-                })
-
-                print(f"成功抓取 {icao} 最新報文：{raw_metar}")
-            else:
-                print(f"網頁中找不到 {icao} 的資料")
-
-        print("抓到幾筆資料：", len(weather_data))
-
-        if weather_data:
-            with open("local_weather.json", "w", encoding="utf-8") as f:
-                json.dump(weather_data, f, ensure_ascii=False, indent=4)
-
-            print("資料已成功整理並存入 local_weather.json！")
+        if visib is None or visib == "":
+            visibility_miles = parse_visibility_from_raw(raw_metar)
         else:
-            print("抓取失敗：網頁中未解析到任何機場資料。")
-            raise RuntimeError("未解析到任何機場資料")
+            visibility_miles = str(visib).replace("+", "")
 
-    finally:
-        if driver is not None:
-            driver.quit()
+        by_icao[icao] = {
+            "icaoId": icao,
+            "obsTime": obs_time,
+            "rawOb": raw_metar,
+            "visib": visibility_miles
+        }
+
+        print(f"成功抓取 {icao}: {raw_metar}")
+
+    weather_data = []
+
+    for icao in AIRPORTS:
+        if icao in by_icao:
+            weather_data.append(by_icao[icao])
+        else:
+            print(f"找不到 {icao} 的 METAR")
+
+    print("整理後筆數：", len(weather_data))
+
+    if not weather_data:
+        raise RuntimeError("未取得任何 METAR 資料")
+
+    with open("local_weather.json", "w", encoding="utf-8") as f:
+        json.dump(weather_data, f, ensure_ascii=False, indent=4)
+
+    print("資料已成功寫入 local_weather.json")
 
 
 if __name__ == "__main__":
