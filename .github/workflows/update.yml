@@ -2,10 +2,7 @@ name: 自動更新機場氣象
 
 on:
   schedule:
-    # 每 20 分鐘自動執行一次
     - cron: "*/20 * * * *"
-
-  # 允許手動執行
   workflow_dispatch:
 
 permissions:
@@ -14,7 +11,7 @@ permissions:
 jobs:
   update-weather:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 5
 
     steps:
       - name: 檢查程式碼
@@ -27,30 +24,27 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: 安裝 Chrome 瀏覽器
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y google-chrome-stable
-
       - name: 安裝 Python 套件
         run: |
           python -m pip install --upgrade pip
-          pip install requests selenium webdriver-manager
+          pip install requests
 
       - name: 執行爬蟲抓取資料
-        run: python scraper.py
+        env:
+          PYTHONUNBUFFERED: "1"
+        run: |
+          echo "===== 開始執行 scraper.py ====="
+          python -u scraper.py
+          echo "===== scraper.py 執行完成 ====="
 
       - name: 檢查產生的 local_weather.json
         run: |
           echo "===== 目前目錄 ====="
           pwd
-
           echo "===== 檔案列表 ====="
           ls -la
-
           echo "===== local_weather.json ====="
           cat local_weather.json || true
-
           echo "===== git status ====="
           git status --short
 
