@@ -4,7 +4,7 @@ const airports = {
     'RCKH': '高雄小港機場 (KHH)',
     'RCMQ': '台中清泉崗機場 (RMQ)',
     'RCBS': '金門尚義機場 (KNH)',
-    'RCWA': '台南機場 (TNN)',
+    'RCNN': '台南機場 (TNN)',
     'RCYU': '花蓮機場 (HUN)',
     'RCQC': '馬公機場 (MZG)'
 };
