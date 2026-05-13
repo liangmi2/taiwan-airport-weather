@@ -2,7 +2,10 @@ name: 自動更新機場氣象
 
 on:
   schedule:
+    # 每 20 分鐘自動執行一次
     - cron: "*/20 * * * *"
+
+  # 允許手動執行
   workflow_dispatch:
 
 permissions:
@@ -11,6 +14,7 @@ permissions:
 jobs:
   update-weather:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     steps:
       - name: 檢查程式碼
@@ -38,10 +42,10 @@ jobs:
 
       - name: 檢查產生的 local_weather.json
         run: |
-          echo "目前目錄："
+          echo "===== 目前目錄 ====="
           pwd
 
-          echo "檔案列表："
+          echo "===== 檔案列表 ====="
           ls -la
 
           echo "===== local_weather.json ====="
