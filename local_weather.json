@@ -1,30 +1,30 @@
 [
     {
         "icaoId": "RCTP",
-        "obsTime": 1778717860,
-        "rawOb": "METAR RCTP 131830Z 02006KT 350V050 3000 RA FEW008 BKN025 BKN050 22/22 Q1007 NOSIG RMK A2975",
-        "visib": "1.86",
+        "obsTime": 1778722620,
+        "rawOb": "SPECI RCTP 140137Z 23006KT 5000 -RA SCT012 BKN020 BKN040 24/23 Q1009 NOSIG RMK A2982",
+        "visib": "3.11",
         "status": "updated"
     },
     {
         "icaoId": "RCSS",
-        "obsTime": 1778717860,
-        "rawOb": "SPECI RCSS 131841Z VRB02KT 4500 -RA FEW005 SCT015 BKN037 22/22 Q1007 NOSIG RMK A2975",
-        "visib": "2.8",
+        "obsTime": 1778722200,
+        "rawOb": "METAR RCSS 140130Z VRB02KT 9000 -RA FEW012 SCT040 BKN100 24/22 Q1009 NOSIG RMK A2982",
+        "visib": "5.59",
         "status": "updated"
     },
     {
         "icaoId": "RCKH",
-        "obsTime": 1778717860,
-        "rawOb": "METAR RCKH 131900Z 27004KT 9999 SCT025 SCT040 26/23 Q1006 NOSIG RMK A2971",
+        "obsTime": 1778722200,
+        "rawOb": "METAR RCKH 140130Z 24007KT 210V290 9999 FEW012 BKN029 BKN060 30/23 Q1009 NOSIG RMK A2980",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCMQ",
-        "obsTime": 1778717860,
-        "rawOb": "METAR RCMQ 131900Z 16004KT 4800 BR FEW010 BKN040 24/23 Q1007 RMK A2975",
-        "visib": "2.98",
+        "obsTime": 1778722800,
+        "rawOb": "SPECI RCMQ 140140Z 29007KT 1600 -RA BR SCT006 FEW012TCU BKN016 BKN030 25/23 Q1011 NOSIG RMK A2985 APCH CLD SCT006 TCU SW",
+        "visib": "0.99",
         "status": "updated"
     },
     {
@@ -32,12 +32,12 @@
         "obsTime": 0,
         "rawOb": "",
         "visib": "",
-        "status": "暫無最新報文，可能為非作業時段"
+        "status": "old_data_kept"
     },
     {
         "icaoId": "RCNN",
-        "obsTime": 1778717860,
-        "rawOb": "METAR RCNN 131900Z 25002KT 9999 FEW012 SCT060 24/22 Q1007 RMK A2974",
+        "obsTime": 1778722200,
+        "rawOb": "METAR RCNN 140130Z 21002KT 9999 VCSH FEW010 SCT040 BKN060 29/21 Q1010 NOSIG RMK A2982 VCSH NW",
         "visib": "6",
         "status": "updated"
     },
@@ -46,12 +46,12 @@
         "obsTime": 0,
         "rawOb": "",
         "visib": "",
-        "status": "暫無最新報文，可能為非作業時段"
+        "status": "old_data_kept"
     },
     {
         "icaoId": "RCQC",
-        "obsTime": 1778717860,
-        "rawOb": "METAR RCQC 131900Z 00000KT 9999 FEW012 25/24 Q1006 RMK A2972",
+        "obsTime": 1778722200,
+        "rawOb": "METAR RCQC 140130Z 01006KT 9999 -RA FEW010 BKN020 BKN040 27/25 Q1009 NOSIG RMK A2980",
         "visib": "6",
         "status": "updated"
     }
