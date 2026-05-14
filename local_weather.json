@@ -1,29 +1,29 @@
 [
     {
         "icaoId": "RCTP",
-        "obsTime": 1778742240,
-        "rawOb": "SPECI RCTP 140704Z 35006KT 9999 FEW012 BKN070 BKN090 25/22 Q1007 NOSIG RMK R05 A2976",
+        "obsTime": 1778751000,
+        "rawOb": "METAR RCTP 140930Z 02004KT 350V050 9999 FEW008 BKN018 BKN025 24/22 Q1008 NOSIG RMK A2978",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCSS",
-        "obsTime": 1778742000,
-        "rawOb": "METAR RCSS 140700Z VRB02KT 9999 FEW008 SCT025 BKN100 26/24 Q1006 NOSIG RMK A2973",
+        "obsTime": 1778751000,
+        "rawOb": "METAR RCSS 140930Z 13005KT 9999 FEW008 SCT025 BKN080 25/23 Q1008 NOSIG RMK A2977",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCKH",
-        "obsTime": 1778742000,
-        "rawOb": "METAR RCKH 140700Z 27009KT 9999 FEW015 SCT025 BKN150 30/23 Q1006 NOSIG RMK 24009KT/R09 A2972",
+        "obsTime": 1778751000,
+        "rawOb": "METAR RCKH 140930Z VRB06KT 9999 VCSH FEW013 BKN020 BKN100 29/23 Q1007 NOSIG RMK A2975",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCMQ",
-        "obsTime": 1778742000,
-        "rawOb": "METAR RCMQ 140700Z 15004KT 7000 -RA FEW008 BKN020 BKN040 23/22 Q1008 NOSIG RMK A2978 RA AMT 1.5MM",
+        "obsTime": 1778751600,
+        "rawOb": "SPECI RCMQ 140940Z 19005KT 7000 VCSH FEW008 BKN025 BKN060 24/23 Q1009 NOSIG RMK A2980 VCSH S",
         "visib": "4.35",
         "status": "updated"
     },
@@ -36,8 +36,8 @@
     },
     {
         "icaoId": "RCNN",
-        "obsTime": 1778742000,
-        "rawOb": "METAR RCNN 140700Z 30007KT 9999 VCSH FEW010 SCT025 BKN050 29/24 Q1007 NOSIG RMK A2976 VCSH NW",
+        "obsTime": 1778751000,
+        "rawOb": "METAR RCNN 140930Z 04010KT 9999 -RA SCT008 BKN016 BKN030 25/22 Q1008 NOSIG RMK A2979",
         "visib": "6",
         "status": "updated"
     },
@@ -50,9 +50,9 @@
     },
     {
         "icaoId": "RCQC",
-        "obsTime": 1778743260,
-        "rawOb": "SPECI RCQC 140721Z 03009KT 1200 R02/P2000 RA BR BKN004 FEW010CB BKN012 23/23 Q1008 RERA BECMG TL0800 0800 RA FG BKN002 RMK A2977 CB N MOV E",
-        "visib": "0.75",
+        "obsTime": 1778751720,
+        "rawOb": "SPECI RCQC 140942Z 16002KT 6000 -RA SCT006 BKN010 BKN025 23/23 Q1007 BECMG BKN015 RMK A2976",
+        "visib": "3.73",
         "status": "updated"
     }
 ]
