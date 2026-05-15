@@ -1,29 +1,29 @@
 [
     {
         "icaoId": "RCTP",
-        "obsTime": 1778869800,
-        "rawOb": "METAR RCTP 151830Z 06015KT 9999 FEW015 SCT050 24/19 Q1010 NOSIG RMK A2985",
+        "obsTime": 1778875200,
+        "rawOb": "METAR RCTP 152000Z 07014KT 040V100 9999 FEW015 BKN060 24/18 Q1011 NOSIG RMK A2986",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCSS",
-        "obsTime": 1778868000,
-        "rawOb": "METAR RCSS 151800Z 09012KT 9999 FEW020 BKN040 24/20 Q1012 NOSIG RMK A2989",
+        "obsTime": 1778875200,
+        "rawOb": "METAR RCSS 152000Z 10014KT 9999 FEW020 BKN035 24/19 Q1012 NOSIG RMK A2989",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCKH",
-        "obsTime": 1778868000,
-        "rawOb": "METAR RCKH 151800Z 07003KT 360V100 9999 FEW010 BKN120 27/22 Q1008 NOSIG RMK A2979",
+        "obsTime": 1778875200,
+        "rawOb": "METAR RCKH 152000Z 02003KT 9999 FEW010 SCT130 27/22 Q1009 NOSIG RMK A2980",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCMQ",
-        "obsTime": 1778868000,
-        "rawOb": "METAR RCMQ 151800Z 18004KT 9999 FEW012 BKN100 25/23 Q1010 RMK A2983",
+        "obsTime": 1778875200,
+        "rawOb": "METAR RCMQ 152000Z 14004KT 9999 FEW012 BKN100 24/23 Q1010 RMK A2985",
         "visib": "6",
         "status": "updated"
     },
@@ -36,9 +36,9 @@
     },
     {
         "icaoId": "RCNN",
-        "obsTime": 1778868000,
-        "rawOb": "METAR RCNN 151800Z 32003KT 9999 FEW012 SCT060 26/23 Q1009 RMK A2982",
-        "visib": "6",
+        "obsTime": 1778875200,
+        "rawOb": "METAR RCNN 152000Z 00000KT 9000 FEW012 SCT060 25/23 Q1010 RMK A2983",
+        "visib": "5.59",
         "status": "updated"
     },
     {
@@ -50,8 +50,8 @@
     },
     {
         "icaoId": "RCQC",
-        "obsTime": 1778868000,
-        "rawOb": "METAR RCQC 151800Z 36007KT 9999 FEW012 SCT100 25/23 Q1009 RMK A2982",
+        "obsTime": 1778875200,
+        "rawOb": "METAR RCQC 152000Z 35009KT 9999 FEW012 SCT100 25/24 Q1009 RMK A2982",
         "visib": "6",
         "status": "updated"
     }
