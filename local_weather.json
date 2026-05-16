@@ -1,29 +1,29 @@
 [
     {
         "icaoId": "RCTP",
-        "obsTime": 1778948460,
-        "rawOb": "SPECI RCTP 161621Z 07014KT 050V110 9999 FEW015 25/18 Q1012 WS R05L NOSIG RMK A2990",
+        "obsTime": 1778951040,
+        "rawOb": "SPECI RCTP 161704Z 07014KT 9999 FEW015 24/18 Q1012 WS R05L NOSIG RMK A2989",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCSS",
-        "obsTime": 1778947200,
-        "rawOb": "METAR RCSS 161600Z 09011KT 9999 FEW016 24/19 Q1014 NOSIG RMK A2995",
+        "obsTime": 1778950800,
+        "rawOb": "METAR RCSS 161700Z 08012KT 9999 FEW020 24/19 Q1013 NOSIG RMK A2994",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCKH",
-        "obsTime": 1778947200,
-        "rawOb": "METAR RCKH 161600Z VRB02KT 9999 FEW016 SCT030 26/23 Q1012 NOSIG RMK A2990",
+        "obsTime": 1778950800,
+        "rawOb": "METAR RCKH 161700Z 09004KT 9999 VCSH FEW016 SCT030 25/23 Q1011 NOSIG RMK A2988",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCMQ",
-        "obsTime": 1778947200,
-        "rawOb": "METAR RCMQ 161600Z 21005KT 9999 FEW012 BKN200 25/22 Q1012 RMK A2991",
+        "obsTime": 1778950800,
+        "rawOb": "METAR RCMQ 161700Z 18004KT 9999 FEW012 SCT200 25/22 Q1012 RMK A2991",
         "visib": "6",
         "status": "updated"
     },
@@ -36,8 +36,8 @@
     },
     {
         "icaoId": "RCNN",
-        "obsTime": 1778947200,
-        "rawOb": "METAR RCNN 161600Z 00000KT 9999 FEW012 SCT060 24/21 Q1012 RMK A2991",
+        "obsTime": 1778950800,
+        "rawOb": "METAR RCNN 161700Z 11004KT 9999 FEW012 SCT060 25/21 Q1012 RMK A2990",
         "visib": "6",
         "status": "updated"
     },
@@ -50,8 +50,8 @@
     },
     {
         "icaoId": "RCQC",
-        "obsTime": 1778947200,
-        "rawOb": "METAR RCQC 161600Z 35008KT 9999 FEW012 BKN200 26/23 Q1012 RMK A2988",
+        "obsTime": 1778950800,
+        "rawOb": "METAR RCQC 161700Z 35009KT 9999 FEW012 BKN200 26/23 Q1011 RMK A2987",
         "visib": "6",
         "status": "updated"
     }
