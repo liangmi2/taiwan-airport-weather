@@ -1,29 +1,29 @@
 [
     {
         "icaoId": "RCTP",
-        "obsTime": 1779454800,
-        "rawOb": "METAR RCTP 221300Z 23012KT 9999 FEW015 BKN180 28/23 Q1009 NOSIG RMK A2982",
+        "obsTime": 1779463800,
+        "rawOb": "METAR RCTP 221530Z 20009KT 9999 FEW015 SCT200 27/23 Q1009 NOSIG RMK A2981",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCSS",
-        "obsTime": 1779454800,
-        "rawOb": "METAR RCSS 221300Z 28006KT 9999 FEW018 SCT035 BKN100 30/23 Q1009 NOSIG RMK A2982",
+        "obsTime": 1779463800,
+        "rawOb": "METAR RCSS 221530Z 30005KT 9999 FEW018 SCT035 29/24 Q1009 NOSIG RMK A2981",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCKH",
-        "obsTime": 1779454800,
-        "rawOb": "METAR RCKH 221300Z 28008KT 9999 FEW018 BKN220 28/25 Q1011 NOSIG RMK A2986",
+        "obsTime": 1779463800,
+        "rawOb": "METAR RCKH 221530Z 29004KT 260V320 9999 FEW015 SCT120 28/24 Q1010 NOSIG RMK A2984",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCMQ",
-        "obsTime": 1779454800,
-        "rawOb": "METAR RCMQ 221300Z 20004KT 9999 FEW012 SCT060 BKN100 27/25 Q1012 NOSIG RMK A2989",
+        "obsTime": 1779462000,
+        "rawOb": "METAR RCMQ 221500Z 18007KT 9999 FEW012 BKN200 27/25 Q1012 NOSIG RMK A2988",
         "visib": "6",
         "status": "updated"
     },
@@ -36,8 +36,8 @@
     },
     {
         "icaoId": "RCNN",
-        "obsTime": 1779454800,
-        "rawOb": "METAR RCNN 221300Z 28003KT 9999 FEW012 SCT060 29/26 Q1012 RMK A2988",
+        "obsTime": 1779462000,
+        "rawOb": "METAR RCNN 221500Z 00000KT 9999 FEW012 BKN060 28/25 Q1012 RMK A2988",
         "visib": "6",
         "status": "updated"
     },
@@ -50,8 +50,8 @@
     },
     {
         "icaoId": "RCQC",
-        "obsTime": 1779454800,
-        "rawOb": "METAR RCQC 221300Z COR 24005KT 9999 FEW012 SCT040 BKN150 27/26 Q1011 NOSIG RMK A2985",
+        "obsTime": 1779462000,
+        "rawOb": "METAR RCQC 221500Z 22005KT 9999 FEW012 SCT040 BKN150 26/26 Q1010 RMK A2985",
         "visib": "6",
         "status": "updated"
     }
