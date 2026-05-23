@@ -1,29 +1,29 @@
 [
     {
         "icaoId": "RCTP",
-        "obsTime": 1779559200,
-        "rawOb": "METAR RCTP 231800Z 21007KT 9999 FEW015 BKN200 27/23 Q1008 NOSIG RMK A2978",
+        "obsTime": 1779564600,
+        "rawOb": "METAR RCTP 231930Z 23005KT 9999 FEW015 BKN200 27/24 Q1008 NOSIG RMK A2979",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCSS",
-        "obsTime": 1779559200,
-        "rawOb": "METAR RCSS 231800Z VRB01KT 9999 FEW025 BKN200 28/24 Q1008 NOSIG RMK A2978",
+        "obsTime": 1779562800,
+        "rawOb": "METAR RCSS 231900Z 22005KT 9999 FEW025 SCT120 BKN200 28/24 Q1008 NOSIG RMK A2978",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCKH",
-        "obsTime": 1779559200,
-        "rawOb": "METAR RCKH 231800Z 28003KT 9999 FEW015 SCT220 28/25 Q1009 NOSIG RMK A2982",
+        "obsTime": 1779562800,
+        "rawOb": "METAR RCKH 231900Z 08005KT 9999 FEW015 SCT220 27/24 Q1009 NOSIG RMK A2981",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCMQ",
-        "obsTime": 1779559200,
-        "rawOb": "METAR RCMQ 231800Z 18009KT 9999 FEW012 SCT200 26/24 Q1010 RMK A2984",
+        "obsTime": 1779562800,
+        "rawOb": "METAR RCMQ 231900Z 18009KT 9999 FEW012 SCT200 26/24 Q1010 RMK A2984",
         "visib": "6",
         "status": "updated"
     },
@@ -36,9 +36,9 @@
     },
     {
         "icaoId": "RCNN",
-        "obsTime": 1779559200,
-        "rawOb": "METAR RCNN 231800Z 14001KT 9999 FEW012 BKN100 26/24 Q1010 RMK A2984",
-        "visib": "6",
+        "obsTime": 1779562800,
+        "rawOb": "METAR RCNN 231900Z 00000KT 8000 FEW012 BKN100 26/24 Q1010 RMK A2983",
+        "visib": "4.97",
         "status": "updated"
     },
     {
@@ -50,9 +50,9 @@
     },
     {
         "icaoId": "RCQC",
-        "obsTime": 1779559860,
-        "rawOb": "SPECI RCQC 231811Z 21002KT 4000 BR FEW012 BKN050 27/27 Q1009 RMK A2981",
-        "visib": "2.49",
+        "obsTime": 1779563820,
+        "rawOb": "SPECI RCQC 231917Z 21002KT 2400 BR FEW010 BKN050 27/27 Q1009 RMK A2982",
+        "visib": "1.49",
         "status": "updated"
     }
 ]
