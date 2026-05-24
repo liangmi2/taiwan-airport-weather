@@ -1,29 +1,29 @@
 [
     {
         "icaoId": "RCTP",
-        "obsTime": 1779654600,
-        "rawOb": "METAR RCTP 242030Z 22010KT 9999 FEW015 25/23 Q1007 NOSIG RMK A2974",
+        "obsTime": 1779658200,
+        "rawOb": "METAR RCTP 242130Z 22009KT 9999 FEW015 BKN220 26/23 Q1007 NOSIG RMK A2976",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCSS",
-        "obsTime": 1779652800,
-        "rawOb": "METAR RCSS 242000Z 21003KT 180V240 9999 FEW025 27/24 Q1007 NOSIG RMK A2974",
+        "obsTime": 1779656400,
+        "rawOb": "METAR RCSS 242100Z 26003KT 9999 FEW025 SCT200 26/23 Q1007 NOSIG RMK A2974",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCKH",
-        "obsTime": 1779652800,
-        "rawOb": "METAR RCKH 242000Z VRB01KT 9999 FEW015 SCT200 28/25 Q1009 NOSIG RMK A2981",
+        "obsTime": 1779656400,
+        "rawOb": "METAR RCKH 242100Z 21003KT 180V250 9999 FEW015 SCT200 28/25 Q1009 NOSIG RMK A2981",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCMQ",
-        "obsTime": 1779654600,
-        "rawOb": "METAR RCMQ 242030Z 19009KT 9999 FEW012 26/24 Q1010 RMK A2983",
+        "obsTime": 1779658200,
+        "rawOb": "METAR RCMQ 242130Z 19011KT 9999 SCT012 27/24 Q1010 NOSIG RMK A2984",
         "visib": "6",
         "status": "updated"
     },
@@ -36,9 +36,9 @@
     },
     {
         "icaoId": "RCNN",
-        "obsTime": 1779654600,
-        "rawOb": "METAR RCNN 242030Z 12002KT 8000 FEW012 26/24 Q1010 RMK A2983",
-        "visib": "4.97",
+        "obsTime": 1779658200,
+        "rawOb": "METAR RCNN 242130Z 12003KT 9999 FEW014 SCT200 26/24 Q1010 NOSIG RMK A2984",
+        "visib": "6",
         "status": "updated"
     },
     {
@@ -50,9 +50,9 @@
     },
     {
         "icaoId": "RCQC",
-        "obsTime": 1779654600,
-        "rawOb": "METAR RCQC 242030Z 21003KT 8000 FEW012 27/27 Q1009 RMK A2980",
-        "visib": "4.97",
+        "obsTime": 1779658200,
+        "rawOb": "METAR RCQC 242130Z 20003KT 6000 FEW012 27/27 Q1009 NOSIG RMK A2981",
+        "visib": "3.73",
         "status": "updated"
     }
 ]
