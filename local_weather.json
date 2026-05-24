@@ -1,29 +1,29 @@
 [
     {
         "icaoId": "RCTP",
-        "obsTime": 1779651000,
-        "rawOb": "METAR RCTP 241930Z 21009KT 9999 FEW015 26/23 Q1007 NOSIG RMK A2974",
+        "obsTime": 1779654600,
+        "rawOb": "METAR RCTP 242030Z 22010KT 9999 FEW015 25/23 Q1007 NOSIG RMK A2974",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCSS",
-        "obsTime": 1779649200,
-        "rawOb": "METAR RCSS 241900Z VRB02KT 9999 FEW025 27/24 Q1007 NOSIG RMK A2975",
+        "obsTime": 1779652800,
+        "rawOb": "METAR RCSS 242000Z 21003KT 180V240 9999 FEW025 27/24 Q1007 NOSIG RMK A2974",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCKH",
-        "obsTime": 1779649200,
-        "rawOb": "METAR RCKH 241900Z 07003KT 9999 FEW015 SCT200 28/24 Q1009 NOSIG RMK A2980",
+        "obsTime": 1779652800,
+        "rawOb": "METAR RCKH 242000Z VRB01KT 9999 FEW015 SCT200 28/25 Q1009 NOSIG RMK A2981",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCMQ",
-        "obsTime": 1779649200,
-        "rawOb": "METAR RCMQ 241900Z 21009KT 9999 FEW012 27/24 Q1009 RMK A2982",
+        "obsTime": 1779654600,
+        "rawOb": "METAR RCMQ 242030Z 19009KT 9999 FEW012 26/24 Q1010 RMK A2983",
         "visib": "6",
         "status": "updated"
     },
@@ -36,8 +36,8 @@
     },
     {
         "icaoId": "RCNN",
-        "obsTime": 1779649200,
-        "rawOb": "METAR RCNN 241900Z 13002KT 8000 FEW012 26/24 Q1010 RMK A2982",
+        "obsTime": 1779654600,
+        "rawOb": "METAR RCNN 242030Z 12002KT 8000 FEW012 26/24 Q1010 RMK A2983",
         "visib": "4.97",
         "status": "updated"
     },
@@ -50,9 +50,9 @@
     },
     {
         "icaoId": "RCQC",
-        "obsTime": 1779649200,
-        "rawOb": "METAR RCQC 241900Z 22005KT 9000 FEW012 27/27 Q1008 RMK A2979",
-        "visib": "5.59",
+        "obsTime": 1779654600,
+        "rawOb": "METAR RCQC 242030Z 21003KT 8000 FEW012 27/27 Q1009 RMK A2980",
+        "visib": "4.97",
         "status": "updated"
     }
 ]
