@@ -1,29 +1,29 @@
 [
     {
         "icaoId": "RCTP",
-        "obsTime": 1779728400,
-        "rawOb": "METAR RCTP 251700Z 22012KT 9999 FEW020 27/23 Q1005 NOSIG RMK A2968",
+        "obsTime": 1779733800,
+        "rawOb": "METAR RCTP 251830Z 23017KT 9999 FEW020 28/24 Q1005 NOSIG RMK A2968",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCSS",
-        "obsTime": 1779728400,
-        "rawOb": "METAR RCSS 251700Z 29004KT 9999 FEW025 BKN130 29/24 Q1004 NOSIG RMK A2967",
+        "obsTime": 1779732000,
+        "rawOb": "METAR RCSS 251800Z 30005KT 9999 FEW028 29/24 Q1005 NOSIG RMK A2968",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCKH",
-        "obsTime": 1779728400,
-        "rawOb": "METAR RCKH 251700Z 29003KT 9999 FEW015 SCT030 28/25 Q1007 NOSIG RMK A2975",
+        "obsTime": 1779732000,
+        "rawOb": "METAR RCKH 251800Z VRB02KT 9999 SCT012 BKN020 28/25 Q1007 NOSIG RMK A2975",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCMQ",
-        "obsTime": 1779728400,
-        "rawOb": "METAR RCMQ 251700Z 18009KT 9999 FEW012 27/24 Q1008 RMK A2977",
+        "obsTime": 1779732000,
+        "rawOb": "METAR RCMQ 251800Z 18009KT 9999 FEW012 26/24 Q1008 RMK A2978",
         "visib": "6",
         "status": "updated"
     },
@@ -36,8 +36,8 @@
     },
     {
         "icaoId": "RCNN",
-        "obsTime": 1779728400,
-        "rawOb": "METAR RCNN 251700Z 00000KT 9999 FEW012 26/24 Q1008 RMK A2977",
+        "obsTime": 1779732000,
+        "rawOb": "METAR RCNN 251800Z 00000KT 9999 FEW012 27/24 Q1008 RMK A2977",
         "visib": "6",
         "status": "updated"
     },
@@ -50,8 +50,8 @@
     },
     {
         "icaoId": "RCQC",
-        "obsTime": 1779728400,
-        "rawOb": "METAR RCQC 251700Z 21006KT 9999 FEW012 27/27 Q1007 RMK A2974",
+        "obsTime": 1779732000,
+        "rawOb": "METAR RCQC 251800Z 21006KT 9999 FEW012 27/27 Q1007 RMK A2974",
         "visib": "6",
         "status": "updated"
     }
