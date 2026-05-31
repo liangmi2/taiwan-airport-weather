@@ -1,29 +1,29 @@
 [
     {
         "icaoId": "RCTP",
-        "obsTime": 1780250400,
-        "rawOb": "METAR RCTP 311800Z 04008KT 9999 FEW015 BKN022 24/20 Q1008 NOSIG RMK A2978",
+        "obsTime": 1780255800,
+        "rawOb": "METAR RCTP 311930Z 07006KT 9999 FEW015 SCT022 23/20 Q1008 NOSIG RMK A2978",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCSS",
-        "obsTime": 1780250400,
-        "rawOb": "METAR RCSS 311800Z VRB02KT 9999 FEW020 SCT045 23/21 Q1008 NOSIG RMK A2978",
+        "obsTime": 1780254000,
+        "rawOb": "METAR RCSS 311900Z VRB01KT 9999 FEW020 SCT045 24/20 Q1008 NOSIG RMK A2977",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCKH",
-        "obsTime": 1780250400,
-        "rawOb": "METAR RCKH 311800Z 21004KT 9999 FEW014 SCT230 28/22 Q1007 NOSIG RMK A2974",
+        "obsTime": 1780254000,
+        "rawOb": "METAR RCKH 311900Z 20004KT 150V240 9999 FEW014 SCT230 28/22 Q1007 NOSIG RMK A2974",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCMQ",
-        "obsTime": 1780250400,
-        "rawOb": "METAR RCMQ 311800Z 02006KT 9999 FEW012 22/20 Q1008 RMK A2978",
+        "obsTime": 1780254000,
+        "rawOb": "METAR RCMQ 311900Z 01006KT 9999 FEW012 SCT060 22/20 Q1008 RMK A2978",
         "visib": "6",
         "status": "updated"
     },
@@ -36,8 +36,8 @@
     },
     {
         "icaoId": "RCNN",
-        "obsTime": 1780250400,
-        "rawOb": "METAR RCNN 311800Z 36004KT 9999 FEW012 26/21 Q1007 RMK A2976",
+        "obsTime": 1780254000,
+        "rawOb": "METAR RCNN 311900Z 36004KT 9999 FEW012 25/21 Q1008 RMK A2976",
         "visib": "6",
         "status": "updated"
     },
@@ -50,8 +50,8 @@
     },
     {
         "icaoId": "RCQC",
-        "obsTime": 1780250400,
-        "rawOb": "METAR RCQC 311800Z 01013KT 9999 FEW012 25/22 Q1007 RMK A2976",
+        "obsTime": 1780254000,
+        "rawOb": "METAR RCQC 311900Z 02011KT 9999 FEW012 25/23 Q1008 RMK A2977",
         "visib": "6",
         "status": "updated"
     }
