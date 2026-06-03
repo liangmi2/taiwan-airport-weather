@@ -1,29 +1,29 @@
 [
     {
         "icaoId": "RCTP",
-        "obsTime": 1780444800,
-        "rawOb": "METAR RCTP 030000Z 23012KT 9999 FEW015 31/24 Q1006 NOSIG RMK A2972",
+        "obsTime": 1780462800,
+        "rawOb": "METAR RCTP 030500Z 26014KT 9999 FEW020 35/24 Q1004 NOSIG RMK A2966",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCSS",
-        "obsTime": 1780444800,
-        "rawOb": "METAR RCSS 030000Z 30005KT 250V330 9999 FEW030 32/23 Q1006 NOSIG RMK A2972",
+        "obsTime": 1780462800,
+        "rawOb": "METAR RCSS 030500Z 28008KT 260V320 9999 FEW025 36/25 Q1004 NOSIG RMK 30010KT/R10 A2965",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCKH",
-        "obsTime": 1780444800,
-        "rawOb": "METAR RCKH 030000Z VRB02KT 9999 FEW020 30/22 Q1007 NOSIG RMK A2975",
+        "obsTime": 1780462800,
+        "rawOb": "METAR RCKH 030500Z 22008KT 190V260 9999 FEW020 33/19 Q1005 NOSIG RMK 21007KT/R09 A2970",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCMQ",
-        "obsTime": 1780444800,
-        "rawOb": "METAR RCMQ 030000Z 19010KT 9999 FEW012 30/24 Q1008 NOSIG RMK A2978",
+        "obsTime": 1780462800,
+        "rawOb": "METAR RCMQ 030500Z 26010KT 9999 FEW012 SCT200 34/26 Q1006 NOSIG RMK A2972",
         "visib": "6",
         "status": "updated"
     },
@@ -36,8 +36,8 @@
     },
     {
         "icaoId": "RCNN",
-        "obsTime": 1780444800,
-        "rawOb": "METAR RCNN 030000Z 18004KT 9999 FEW012 30/22 Q1008 NOSIG RMK A2977",
+        "obsTime": 1780462800,
+        "rawOb": "METAR RCNN 030500Z 25009KT 9999 FEW012 34/21 Q1006 NOSIG RMK A2972",
         "visib": "6",
         "status": "updated"
     },
@@ -50,8 +50,8 @@
     },
     {
         "icaoId": "RCQC",
-        "obsTime": 1780444800,
-        "rawOb": "METAR RCQC 030000Z 21006KT 9999 FEW008 SCT016 29/27 Q1007 NOSIG RMK A2973",
+        "obsTime": 1780462800,
+        "rawOb": "METAR RCQC 030500Z 20009KT 9999 FEW010 SCT020 31/27 Q1005 NOSIG RMK A2970",
         "visib": "6",
         "status": "updated"
     }
