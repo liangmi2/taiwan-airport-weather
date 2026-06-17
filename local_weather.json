@@ -1,29 +1,29 @@
 [
     {
         "icaoId": "RCTP",
-        "obsTime": 1781710200,
-        "rawOb": "METAR RCTP 171530Z 16004KT 9999 FEW012 SCT018 BKN025 27/25 Q1012 NOSIG RMK A2989",
+        "obsTime": 1781719200,
+        "rawOb": "METAR RCTP 171800Z 16005KT 130V200 9999 FEW015 BKN120 27/25 Q1011 NOSIG RMK A2986",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCSS",
-        "obsTime": 1781710200,
-        "rawOb": "METAR RCSS 171530Z VRB02KT 9999 FEW018 BKN150 26/24 Q1012 NOSIG RMK A2989",
+        "obsTime": 1781719200,
+        "rawOb": "METAR RCSS 171800Z VRB01KT 9999 FEW020 BKN150 25/25 Q1011 NOSIG RMK A2988",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCKH",
-        "obsTime": 1781710200,
-        "rawOb": "METAR RCKH 171530Z 07003KT 9999 FEW012 SCT042 BKN180 28/25 Q1012 NOSIG RMK A2991",
+        "obsTime": 1781719200,
+        "rawOb": "METAR RCKH 171800Z 09004KT 9999 FEW012 SCT042 BKN170 27/25 Q1011 NOSIG RMK A2988",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCMQ",
-        "obsTime": 1781708400,
-        "rawOb": "METAR RCMQ 171500Z 19007KT 9999 FEW010 BKN120 28/25 Q1014 RMK A2994",
+        "obsTime": 1781719200,
+        "rawOb": "METAR RCMQ 171800Z 19006KT 9999 FEW012 BKN120 27/25 Q1013 RMK A2992",
         "visib": "6",
         "status": "updated"
     },
@@ -36,8 +36,8 @@
     },
     {
         "icaoId": "RCNN",
-        "obsTime": 1781708400,
-        "rawOb": "METAR RCNN 171500Z 13003KT 9999 FEW012 SCT040 BKN080 26/24 Q1013 RMK A2994",
+        "obsTime": 1781719200,
+        "rawOb": "METAR RCNN 171800Z 13002KT 9999 FEW012 BKN100 26/24 Q1012 RMK A2991",
         "visib": "6",
         "status": "updated"
     },
@@ -50,8 +50,8 @@
     },
     {
         "icaoId": "RCQC",
-        "obsTime": 1781708400,
-        "rawOb": "METAR RCQC 171500Z 17005KT 9999 FEW010 SCT100 27/27 Q1012 RMK A2991",
+        "obsTime": 1781719200,
+        "rawOb": "METAR RCQC 171800Z 18004KT 9999 FEW010 SCT100 27/27 Q1012 RMK A2988",
         "visib": "6",
         "status": "updated"
     }
