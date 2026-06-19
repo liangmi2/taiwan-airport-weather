@@ -1,29 +1,29 @@
 [
     {
         "icaoId": "RCTP",
-        "obsTime": 1781823600,
-        "rawOb": "METAR RCTP 182300Z 17005KT 140V200 9999 FEW020 30/25 Q1010 NOSIG RMK A2983",
+        "obsTime": 1781834400,
+        "rawOb": "METAR RCTP 190200Z 25012KT 9999 FEW020 SCT200 33/23 Q1010 NOSIG RMK A2984",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCSS",
-        "obsTime": 1781823600,
-        "rawOb": "METAR RCSS 182300Z VRB02KT 9999 FEW012 SCT200 29/25 Q1010 NOSIG RMK A2984",
+        "obsTime": 1781834400,
+        "rawOb": "METAR RCSS 190200Z 31005KT 280V040 9999 FEW020 SCT035 34/26 Q1010 NOSIG RMK A2984",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCKH",
-        "obsTime": 1781823600,
-        "rawOb": "METAR RCKH 182300Z 07005KT 9999 FEW015 27/23 Q1011 NOSIG RMK A2988",
+        "obsTime": 1781834400,
+        "rawOb": "METAR RCKH 190200Z 19008KT 140V220 9999 FEW015 SCT030 32/23 Q1012 NOSIG RMK A2989",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCMQ",
-        "obsTime": 1781823600,
-        "rawOb": "METAR RCMQ 182300Z 19008KT 9999 FEW010 28/23 Q1012 NOSIG RMK A2989",
+        "obsTime": 1781834400,
+        "rawOb": "METAR RCMQ 190200Z 24011KT 9999 FEW010 SCT200 33/24 Q1013 NOSIG RMK A2991",
         "visib": "6",
         "status": "updated"
     },
@@ -36,8 +36,8 @@
     },
     {
         "icaoId": "RCNN",
-        "obsTime": 1781823600,
-        "rawOb": "METAR RCNN 182300Z 14005KT 9999 FEW012 27/22 Q1012 RMK A2988",
+        "obsTime": 1781834400,
+        "rawOb": "METAR RCNN 190200Z 19007KT 9999 FEW012 SCT200 33/22 Q1012 NOSIG RMK A2991",
         "visib": "6",
         "status": "updated"
     },
@@ -50,8 +50,8 @@
     },
     {
         "icaoId": "RCQC",
-        "obsTime": 1781823600,
-        "rawOb": "METAR RCQC 182300Z 18007KT 9999 FEW012 29/27 Q1010 NOSIG RMK A2985",
+        "obsTime": 1781834400,
+        "rawOb": "METAR RCQC 190200Z 18010KT 9999 FEW012 31/28 Q1011 NOSIG RMK A2989",
         "visib": "6",
         "status": "updated"
     }
