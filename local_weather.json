@@ -1,29 +1,29 @@
 [
     {
         "icaoId": "RCTP",
-        "obsTime": 1781980200,
-        "rawOb": "METAR RCTP 201830Z 22008KT 9999 FEW012 26/24 Q1010 NOSIG RMK A2984",
+        "obsTime": 1781985600,
+        "rawOb": "METAR RCTP 202000Z 22009KT 9999 FEW012 26/24 Q1010 NOSIG RMK A2984",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCSS",
-        "obsTime": 1781978400,
-        "rawOb": "METAR RCSS 201800Z 33002KT 9999 FEW025 27/24 Q1010 NOSIG RMK A2983",
+        "obsTime": 1781985600,
+        "rawOb": "METAR RCSS 202000Z VRB02KT 9999 FEW020 26/24 Q1010 NOSIG RMK A2984",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCKH",
-        "obsTime": 1781978400,
-        "rawOb": "METAR RCKH 201800Z 30003KT 9999 FEW020 28/24 Q1010 NOSIG RMK A2984",
+        "obsTime": 1781985600,
+        "rawOb": "METAR RCKH 202000Z 35003KT 320V020 9999 FEW018 28/24 Q1010 NOSIG RMK A2984",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCMQ",
-        "obsTime": 1781978400,
-        "rawOb": "METAR RCMQ 201800Z 25005KT 9999 FEW010 26/24 Q1012 RMK A2990",
+        "obsTime": 1781985600,
+        "rawOb": "METAR RCMQ 202000Z 20001KT 9999 FEW010 25/24 Q1012 RMK A2989",
         "visib": "6",
         "status": "updated"
     },
@@ -36,8 +36,8 @@
     },
     {
         "icaoId": "RCNN",
-        "obsTime": 1781978400,
-        "rawOb": "METAR RCNN 201800Z 00000KT 9999 FEW012 26/23 Q1011 RMK A2987",
+        "obsTime": 1781985600,
+        "rawOb": "METAR RCNN 202000Z 34004KT 9999 FEW012 26/24 Q1011 + RMK A2987",
         "visib": "6",
         "status": "updated"
     },
@@ -50,9 +50,9 @@
     },
     {
         "icaoId": "RCQC",
-        "obsTime": 1781978400,
-        "rawOb": "METAR RCQC 201800Z 25003KT 8000 FEW012 26/26 Q1011 RMK A2986",
-        "visib": "4.97",
+        "obsTime": 1781985600,
+        "rawOb": "METAR RCQC 202000Z 25004KT 6000 FEW012 26/26 Q1010 RMK A2984",
+        "visib": "3.73",
         "status": "updated"
     }
 ]
