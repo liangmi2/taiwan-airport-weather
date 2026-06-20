@@ -1,29 +1,29 @@
 [
     {
         "icaoId": "RCTP",
-        "obsTime": 1781962200,
-        "rawOb": "METAR RCTP 201330Z 24005KT 9999 FEW020 SCT200 28/23 Q1010 NOSIG RMK A2985",
+        "obsTime": 1781969400,
+        "rawOb": "METAR RCTP 201530Z 26008KT 9999 FEW020 28/25 Q1011 NOSIG RMK A2986",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCSS",
-        "obsTime": 1781962200,
-        "rawOb": "METAR RCSS 201330Z 09004KT 9999 FEW025 SCT200 28/25 Q1010 NOSIG RMK A2985",
+        "obsTime": 1781969400,
+        "rawOb": "METAR RCSS 201530Z 09003KT 9999 FEW025 28/25 Q1010 NOSIG RMK A2985",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCKH",
-        "obsTime": 1781962200,
-        "rawOb": "METAR RCKH 201330Z 31005KT 260V340 9999 FEW020 SCT220 29/24 Q1011 NOSIG RMK A2988",
+        "obsTime": 1781969400,
+        "rawOb": "METAR RCKH 201530Z 29004KT 9999 FEW018 28/24 Q1011 NOSIG RMK A2987",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCMQ",
-        "obsTime": 1781962200,
-        "rawOb": "METAR RCMQ 201330Z 18007KT 9999 FEW010 27/25 Q1013 NOSIG RMK A2991",
+        "obsTime": 1781967600,
+        "rawOb": "METAR RCMQ 201500Z 22005KT 9999 FEW010 27/24 Q1013 RMK A2991",
         "visib": "6",
         "status": "updated"
     },
@@ -36,8 +36,8 @@
     },
     {
         "icaoId": "RCNN",
-        "obsTime": 1781962200,
-        "rawOb": "METAR RCNN 201330Z 31002KT 9999 FEW012 27/24 Q1012 RMK A2990",
+        "obsTime": 1781967600,
+        "rawOb": "METAR RCNN 201500Z 29002KT 9999 FEW012 26/24 Q1012 RMK A2990",
         "visib": "6",
         "status": "updated"
     },
@@ -50,8 +50,8 @@
     },
     {
         "icaoId": "RCQC",
-        "obsTime": 1781962200,
-        "rawOb": "METAR RCQC 201330Z 24005KT 9999 FEW012 BKN200 27/25 Q1011 NOSIG RMK A2988",
+        "obsTime": 1781967600,
+        "rawOb": "METAR RCQC 201500Z 23005KT 9999 FEW012 BKN200 27/26 Q1011 RMK A2987",
         "visib": "6",
         "status": "updated"
     }
