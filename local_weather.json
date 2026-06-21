@@ -1,29 +1,29 @@
 [
     {
         "icaoId": "RCTP",
-        "obsTime": 1782064800,
-        "rawOb": "METAR RCTP 211800Z 28001KT 9999 FEW020 27/26 Q1007 NOSIG RMK A2976",
+        "obsTime": 1782072000,
+        "rawOb": "METAR RCTP 212000Z 24008KT 9999 FEW015 27/25 Q1007 NOSIG RMK A2975",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCSS",
-        "obsTime": 1782064800,
-        "rawOb": "METAR RCSS 211800Z 32003KT 290V350 9999 FEW022 28/24 Q1007 NOSIG RMK A2975",
+        "obsTime": 1782068400,
+        "rawOb": "METAR RCSS 211900Z 29006KT 9999 FEW020 SCT200 28/26 Q1007 NOSIG RMK A2975",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCKH",
-        "obsTime": 1782064800,
-        "rawOb": "METAR RCKH 211800Z 27003KT 9999 FEW015 27/24 Q1008 NOSIG RMK A2977",
+        "obsTime": 1782072000,
+        "rawOb": "METAR RCKH 212000Z 29005KT 9999 FEW015 27/24 Q1008 NOSIG RMK A2977",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCMQ",
-        "obsTime": 1782064800,
-        "rawOb": "METAR RCMQ 211800Z 21005KT 9999 FEW012 26/24 Q1009 RMK A2981",
+        "obsTime": 1782068400,
+        "rawOb": "METAR RCMQ 211900Z 21005KT 9999 FEW012 SCT030 27/25 Q1009 RMK A2982",
         "visib": "6",
         "status": "updated"
     },
@@ -36,8 +36,8 @@
     },
     {
         "icaoId": "RCNN",
-        "obsTime": 1782064800,
-        "rawOb": "METAR RCNN 211800Z 00000KT 9999 FEW012 25/24 Q1009 RMK A2980",
+        "obsTime": 1782068400,
+        "rawOb": "METAR RCNN 211900Z 00000KT 9999 FEW012 25/24 Q1009 RMK A2979",
         "visib": "6",
         "status": "updated"
     },
@@ -50,9 +50,9 @@
     },
     {
         "icaoId": "RCQC",
-        "obsTime": 1782064800,
-        "rawOb": "METAR RCQC 211800Z 22005KT 5000 BR FEW010 SCT020 26/26 Q1008 RMK A2977",
-        "visib": "3.11",
+        "obsTime": 1782070500,
+        "rawOb": "SPECI RCQC 211935Z 22002KT 4000 BR SCT006 BKN012 26/26 Q1007 RMK A2976",
+        "visib": "2.49",
         "status": "updated"
     }
 ]
