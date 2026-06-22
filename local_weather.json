@@ -1,29 +1,29 @@
 [
     {
         "icaoId": "RCTP",
-        "obsTime": 1782149400,
-        "rawOb": "METAR RCTP 221730Z 24006KT 9999 FEW015 BKN020 27/25 Q1003 NOSIG RMK A2963",
+        "obsTime": 1782160200,
+        "rawOb": "METAR RCTP 222030Z 24010KT 9999 FEW015 BKN030 28/24 Q1003 NOSIG RMK A2963",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCSS",
-        "obsTime": 1782147600,
-        "rawOb": "METAR RCSS 221700Z 09006KT 9999 FEW020 27/25 Q1003 NOSIG RMK A2963",
+        "obsTime": 1782158400,
+        "rawOb": "METAR RCSS 222000Z 28004KT 9999 FEW020 28/26 Q1003 NOSIG RMK A2964",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCKH",
-        "obsTime": 1782147600,
-        "rawOb": "METAR RCKH 221700Z 25004KT 220V280 9999 FEW015 28/24 Q1004 NOSIG RMK A2966",
+        "obsTime": 1782158400,
+        "rawOb": "METAR RCKH 222000Z VRB02KT 9999 SCT015 SCT022 BKN040 28/25 Q1004 NOSIG RMK A2966",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCMQ",
-        "obsTime": 1782147600,
-        "rawOb": "METAR RCMQ 221700Z 18005KT 9999 FEW012 26/25 Q1005 RMK A2970",
+        "obsTime": 1782160200,
+        "rawOb": "METAR RCMQ 222030Z 17007KT 9999 FEW012 26/25 Q1005 RMK A2970",
         "visib": "6",
         "status": "updated"
     },
@@ -36,8 +36,8 @@
     },
     {
         "icaoId": "RCNN",
-        "obsTime": 1782147600,
-        "rawOb": "METAR RCNN 221700Z 25003KT 9999 FEW012 26/23 Q1005 RMK A2969",
+        "obsTime": 1782160200,
+        "rawOb": "METAR RCNN 222030Z 10003KT 9999 FEW012 SCT040 26/24 Q1005 RMK A2968",
         "visib": "6",
         "status": "updated"
     },
@@ -50,8 +50,8 @@
     },
     {
         "icaoId": "RCQC",
-        "obsTime": 1782147600,
-        "rawOb": "METAR RCQC 221700Z 17006KT 9999 FEW012 27/26 Q1004 RMK A2965",
+        "obsTime": 1782160200,
+        "rawOb": "METAR RCQC 222030Z 16006KT 9999 FEW010 BKN025 27/27 Q1004 RMK A2965",
         "visib": "6",
         "status": "updated"
     }
