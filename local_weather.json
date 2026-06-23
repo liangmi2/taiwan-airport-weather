@@ -1,29 +1,29 @@
 [
     {
         "icaoId": "RCTP",
-        "obsTime": 1782219600,
-        "rawOb": "METAR RCTP 231300Z 36003KT 320V020 9999 FEW020 SCT200 29/26 Q1004 NOSIG RMK A2967",
+        "obsTime": 1782230400,
+        "rawOb": "METAR RCTP 231600Z VRB02KT 9999 FEW020 SCT200 28/26 Q1005 NOSIG RMK A2968",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCSS",
-        "obsTime": 1782219600,
-        "rawOb": "METAR RCSS 231300Z 09007KT 9999 FEW025 29/25 Q1004 NOSIG RMK A2966",
+        "obsTime": 1782230400,
+        "rawOb": "METAR RCSS 231600Z 32002KT 9999 FEW025 28/24 Q1004 NOSIG RMK A2966",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCKH",
-        "obsTime": 1782219600,
-        "rawOb": "METAR RCKH 231300Z 30008KT 9999 SCT010 29/25 Q1004 NOSIG RMK A2966",
+        "obsTime": 1782230400,
+        "rawOb": "METAR RCKH 231600Z 28005KT 250V320 9999 SCT016 SCT030 29/25 Q1004 NOSIG RMK A2966",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCMQ",
-        "obsTime": 1782219600,
-        "rawOb": "METAR RCMQ 231300Z 20005KT 9999 FEW012 SCT200 28/25 Q1006 NOSIG RMK A2971",
+        "obsTime": 1782230400,
+        "rawOb": "METAR RCMQ 231600Z 00000KT 9999 FEW012 BKN050 27/25 Q1006 RMK A2971",
         "visib": "6",
         "status": "updated"
     },
@@ -36,8 +36,8 @@
     },
     {
         "icaoId": "RCNN",
-        "obsTime": 1782219600,
-        "rawOb": "METAR RCNN 231300Z 25001KT 9999 FEW012 SCT020 26/25 Q1005 RMK A2969",
+        "obsTime": 1782230400,
+        "rawOb": "METAR RCNN 231600Z 00000KT 9999 FEW012 SCT025 26/24 Q1005 RMK A2968",
         "visib": "6",
         "status": "updated"
     },
@@ -50,8 +50,8 @@
     },
     {
         "icaoId": "RCQC",
-        "obsTime": 1782219600,
-        "rawOb": "METAR RCQC 231300Z 17004KT 9999 FEW012 BKN200 28/27 Q1004 NOSIG RMK A2966",
+        "obsTime": 1782230400,
+        "rawOb": "METAR RCQC 231600Z 18006KT 9999 FEW012 28/27 Q1004 RMK A2965",
         "visib": "6",
         "status": "updated"
     }
