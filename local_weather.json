@@ -1,29 +1,29 @@
 [
     {
         "icaoId": "RCTP",
-        "obsTime": 1782230400,
-        "rawOb": "METAR RCTP 231600Z VRB02KT 9999 FEW020 SCT200 28/26 Q1005 NOSIG RMK A2968",
+        "obsTime": 1782237600,
+        "rawOb": "METAR RCTP 231800Z VRB02KT 9999 FEW010 BKN015 27/26 Q1003 NOSIG RMK A2964",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCSS",
-        "obsTime": 1782230400,
-        "rawOb": "METAR RCSS 231600Z 32002KT 9999 FEW025 28/24 Q1004 NOSIG RMK A2966",
+        "obsTime": 1782237600,
+        "rawOb": "METAR RCSS 231800Z VRB02KT 9999 FEW018 SCT055 27/25 Q1003 NOSIG RMK A2963",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCKH",
-        "obsTime": 1782230400,
-        "rawOb": "METAR RCKH 231600Z 28005KT 250V320 9999 SCT016 SCT030 29/25 Q1004 NOSIG RMK A2966",
+        "obsTime": 1782237600,
+        "rawOb": "METAR RCKH 231800Z 29005KT 9999 SCT018 BKN040 29/25 Q1003 NOSIG RMK A2964",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCMQ",
-        "obsTime": 1782230400,
-        "rawOb": "METAR RCMQ 231600Z 00000KT 9999 FEW012 BKN050 27/25 Q1006 RMK A2971",
+        "obsTime": 1782237600,
+        "rawOb": "METAR RCMQ 231800Z 20001KT 9999 FEW012 BKN025 BKN050 28/26 Q1005 RMK A2968",
         "visib": "6",
         "status": "updated"
     },
@@ -36,8 +36,8 @@
     },
     {
         "icaoId": "RCNN",
-        "obsTime": 1782230400,
-        "rawOb": "METAR RCNN 231600Z 00000KT 9999 FEW012 SCT025 26/24 Q1005 RMK A2968",
+        "obsTime": 1782237600,
+        "rawOb": "METAR RCNN 231800Z 22002KT 9999 FEW012 BKN030 27/25 Q1004 RMK A2967",
         "visib": "6",
         "status": "updated"
     },
@@ -50,8 +50,8 @@
     },
     {
         "icaoId": "RCQC",
-        "obsTime": 1782230400,
-        "rawOb": "METAR RCQC 231600Z 18006KT 9999 FEW012 28/27 Q1004 RMK A2965",
+        "obsTime": 1782237600,
+        "rawOb": "METAR RCQC 231800Z 15005KT 9999 FEW008 SCT016 BKN030 28/27 Q1003 RMK A2963",
         "visib": "6",
         "status": "updated"
     }
