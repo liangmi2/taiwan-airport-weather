@@ -1,29 +1,29 @@
 [
     {
         "icaoId": "RCTP",
-        "obsTime": 1782752400,
-        "rawOb": "METAR RCTP 291700Z 24003KT 210V270 9999 FEW015 BKN100 28/25 Q1011 NOSIG RMK A2986",
+        "obsTime": 1782759600,
+        "rawOb": "METAR RCTP 291900Z VRB02KT 9999 FEW015 28/25 Q1010 NOSIG RMK A2983",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCSS",
-        "obsTime": 1782752400,
-        "rawOb": "METAR RCSS 291700Z VRB02KT 9999 FEW020 27/26 Q1011 NOSIG RMK A2986",
+        "obsTime": 1782759600,
+        "rawOb": "METAR RCSS 291900Z VRB01KT 9999 FEW020 BKN220 27/26 Q1010 NOSIG RMK A2984",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCKH",
-        "obsTime": 1782752400,
-        "rawOb": "METAR RCKH 291700Z 09005KT 9999 FEW014 SCT130 27/24 Q1010 NOSIG RMK A2983",
+        "obsTime": 1782759600,
+        "rawOb": "METAR RCKH 291900Z 07003KT 9999 FEW014 SCT150 26/24 Q1009 NOSIG RMK A2981",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCMQ",
-        "obsTime": 1782752400,
-        "rawOb": "METAR RCMQ 291700Z 00000KT 9999 FEW010 SCT100 26/25 Q1011 RMK A2988",
+        "obsTime": 1782759600,
+        "rawOb": "METAR RCMQ 291900Z 00000KT 9999 FEW010 SCT100 25/25 Q1011 RMK A2986",
         "visib": "6",
         "status": "updated"
     },
@@ -36,8 +36,8 @@
     },
     {
         "icaoId": "RCNN",
-        "obsTime": 1782752400,
-        "rawOb": "METAR RCNN 291700Z 09005KT 9999 FEW012 SCT080 27/25 Q1011 RMK A2986",
+        "obsTime": 1782759600,
+        "rawOb": "METAR RCNN 291900Z 00000KT 9999 FEW012 26/24 Q1010 RMK A2984",
         "visib": "6",
         "status": "updated"
     },
@@ -50,9 +50,9 @@
     },
     {
         "icaoId": "RCQC",
-        "obsTime": 1782752400,
-        "rawOb": "METAR RCQC 291700Z 10003KT 9000 FEW012 BKN080 28/27 Q1009 RMK A2980",
-        "visib": "5.59",
+        "obsTime": 1782759600,
+        "rawOb": "METAR RCQC 291900Z 13003KT 9999 FEW012 BKN080 28/27 Q1008 RMK A2978",
+        "visib": "6",
         "status": "updated"
     }
 ]
