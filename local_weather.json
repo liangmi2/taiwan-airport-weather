@@ -1,29 +1,29 @@
 [
     {
         "icaoId": "RCTP",
-        "obsTime": 1782842400,
-        "rawOb": "METAR RCTP 301800Z 22003KT 9999 FEW020 SCT080 27/25 Q1010 NOSIG RMK A2983",
+        "obsTime": 1782849600,
+        "rawOb": "METAR RCTP 302000Z 18003KT 9999 FEW020 27/25 Q1009 NOSIG RMK A2981",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCSS",
-        "obsTime": 1782842400,
-        "rawOb": "METAR RCSS 301800Z VRB02KT 9999 FEW020 SCT070 BKN150 28/26 Q1009 NOSIG RMK A2982",
+        "obsTime": 1782849600,
+        "rawOb": "METAR RCSS 302000Z VRB02KT 9999 FEW020 SCT070 BKN150 27/26 Q1009 NOSIG RMK A2981",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCKH",
-        "obsTime": 1782842400,
-        "rawOb": "METAR RCKH 301800Z 05003KT 9999 FEW014 29/24 Q1009 NOSIG RMK A2980",
+        "obsTime": 1782849600,
+        "rawOb": "METAR RCKH 302000Z 07005KT 9999 FEW014 28/25 Q1009 NOSIG RMK A2980",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCMQ",
-        "obsTime": 1782842400,
-        "rawOb": "METAR RCMQ 301800Z 00000KT 9999 FEW010 26/24 Q1011 RMK A2987",
+        "obsTime": 1782849600,
+        "rawOb": "METAR RCMQ 302000Z 00000KT 9999 FEW010 SCT040 26/24 Q1010 RMK A2985",
         "visib": "6",
         "status": "updated"
     },
@@ -36,8 +36,8 @@
     },
     {
         "icaoId": "RCNN",
-        "obsTime": 1782842400,
-        "rawOb": "METAR RCNN 301800Z 36003KT 9999 FEW012 BKN030 28/25 Q1010 RMK A2984",
+        "obsTime": 1782849600,
+        "rawOb": "METAR RCNN 302000Z 02003KT 9999 FEW012 27/25 Q1009 RMK A2982",
         "visib": "6",
         "status": "updated"
     },
@@ -50,8 +50,8 @@
     },
     {
         "icaoId": "RCQC",
-        "obsTime": 1782842400,
-        "rawOb": "METAR RCQC 301800Z 00000KT 9999 FEW010 SCT040 BKN200 28/27 Q1010 RMK A2982",
+        "obsTime": 1782849600,
+        "rawOb": "METAR RCQC 302000Z 00000KT 9999 FEW010 SCT040 27/27 Q1009 NOSIG RMK A2980",
         "visib": "6",
         "status": "updated"
     }
