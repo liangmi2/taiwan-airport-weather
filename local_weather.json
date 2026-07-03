@@ -1,29 +1,29 @@
 [
     {
         "icaoId": "RCTP",
-        "obsTime": 1783110600,
-        "rawOb": "METAR RCTP 032030Z 17006KT 9999 SCT016 BKN040 28/24 Q1012 NOSIG RMK A2991",
+        "obsTime": 1783116000,
+        "rawOb": "METAR RCTP 032200Z 16004KT 130V220 9999 FEW016 SCT040 28/25 Q1013 NOSIG RMK A2992",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCSS",
-        "obsTime": 1783108800,
-        "rawOb": "METAR RCSS 032000Z 30003KT 9999 FEW020 BKN180 28/26 Q1012 NOSIG RMK A2991",
+        "obsTime": 1783116000,
+        "rawOb": "METAR RCSS 032200Z 21004KT 9999 FEW020 28/25 Q1013 NOSIG RMK A2992",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCKH",
-        "obsTime": 1783108800,
-        "rawOb": "METAR RCKH 032000Z 07006KT CAVOK 28/23 Q1012 NOSIG RMK A2991",
+        "obsTime": 1783116000,
+        "rawOb": "METAR RCKH 032200Z 07004KT 9999 FEW012 28/22 Q1012 NOSIG RMK A2991",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCMQ",
-        "obsTime": 1783110600,
-        "rawOb": "METAR RCMQ 032030Z 15004KT 9999 FEW012 BKN040 BKN200 27/26 Q1014 RMK A2995",
+        "obsTime": 1783116000,
+        "rawOb": "METAR RCMQ 032200Z 00000KT 9999 FEW012 SCT025 BKN200 27/26 Q1014 NOSIG RMK A2996",
         "visib": "6",
         "status": "updated"
     },
@@ -36,8 +36,8 @@
     },
     {
         "icaoId": "RCNN",
-        "obsTime": 1783110600,
-        "rawOb": "METAR RCNN 032030Z 12004KT 9999 FEW012 SCT050 27/24 Q1013 RMK A2993",
+        "obsTime": 1783116000,
+        "rawOb": "METAR RCNN 032200Z 12002KT 9999 FEW012 27/24 Q1013 NOSIG RMK A2993",
         "visib": "6",
         "status": "updated"
     },
@@ -50,8 +50,8 @@
     },
     {
         "icaoId": "RCQC",
-        "obsTime": 1783110600,
-        "rawOb": "METAR RCQC 032030Z 15004KT 9999 FEW012 29/28 Q1012 RMK A2990",
+        "obsTime": 1783116000,
+        "rawOb": "METAR RCQC 032200Z 16005KT 9999 FEW012 29/28 Q1012 NOSIG RMK A2990",
         "visib": "6",
         "status": "updated"
     }
