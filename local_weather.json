@@ -1,29 +1,29 @@
 [
     {
         "icaoId": "RCTP",
-        "obsTime": 1783107000,
-        "rawOb": "METAR RCTP 031930Z 18005KT 150V220 9999 FEW016 SCT030 28/24 Q1012 NOSIG RMK A2991",
+        "obsTime": 1783110600,
+        "rawOb": "METAR RCTP 032030Z 17006KT 9999 SCT016 BKN040 28/24 Q1012 NOSIG RMK A2991",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCSS",
-        "obsTime": 1783105200,
-        "rawOb": "METAR RCSS 031900Z 29003KT 9999 FEW020 27/26 Q1012 NOSIG RMK A2990",
+        "obsTime": 1783108800,
+        "rawOb": "METAR RCSS 032000Z 30003KT 9999 FEW020 BKN180 28/26 Q1012 NOSIG RMK A2991",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCKH",
-        "obsTime": 1783105200,
-        "rawOb": "METAR RCKH 031900Z 15006KT 110V180 9999 FEW040 30/22 Q1012 NOSIG RMK A2991",
+        "obsTime": 1783108800,
+        "rawOb": "METAR RCKH 032000Z 07006KT CAVOK 28/23 Q1012 NOSIG RMK A2991",
         "visib": "6",
         "status": "updated"
     },
     {
         "icaoId": "RCMQ",
-        "obsTime": 1783105200,
-        "rawOb": "METAR RCMQ 031900Z 20003KT 9999 FEW012 BKN060 27/26 Q1014 RMK A2994",
+        "obsTime": 1783110600,
+        "rawOb": "METAR RCMQ 032030Z 15004KT 9999 FEW012 BKN040 BKN200 27/26 Q1014 RMK A2995",
         "visib": "6",
         "status": "updated"
     },
@@ -36,8 +36,8 @@
     },
     {
         "icaoId": "RCNN",
-        "obsTime": 1783105200,
-        "rawOb": "METAR RCNN 031900Z 18007KT 9999 FEW012 SCT050 29/24 Q1013 RMK A2993",
+        "obsTime": 1783110600,
+        "rawOb": "METAR RCNN 032030Z 12004KT 9999 FEW012 SCT050 27/24 Q1013 RMK A2993",
         "visib": "6",
         "status": "updated"
     },
@@ -50,8 +50,8 @@
     },
     {
         "icaoId": "RCQC",
-        "obsTime": 1783105200,
-        "rawOb": "METAR RCQC 031900Z 17005KT 9999 FEW010 SCT020 29/28 Q1012 RMK A2990",
+        "obsTime": 1783110600,
+        "rawOb": "METAR RCQC 032030Z 15004KT 9999 FEW012 29/28 Q1012 RMK A2990",
         "visib": "6",
         "status": "updated"
     }
