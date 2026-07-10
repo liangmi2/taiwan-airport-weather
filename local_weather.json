@@ -1,57 +1,57 @@
 [
     {
         "icaoId": "RCTP",
-        "obsTime": 1783663200,
-        "rawOb": "METAR RCTP 100600Z 03019KT 9999 -SHRA SCT012 BKN015 BKN120 31/28 Q1000 NOSIG RMK QFF 1000.6HPA A2955 RA AMT 0.4MM(B)",
-        "visib": "6.2",
+        "obsTime": 1783677600,
+        "rawOb": "METAR RCTP 101000Z 03020G30KT 9000 -SHRA SCT012 BKN016 BKN150 29/27 Q0999 NOSIG RMK QFF 999.3HPA A2951(O)",
+        "visib": "5.59",
         "status": "updated"
     },
     {
         "icaoId": "RCSS",
-        "obsTime": 1783663200,
-        "rawOb": "METAR RCSS 100600Z 06008KT 310V110 7000 -SHRA FEW010 SCT022 BKN040 30/27 Q1000 NOSIG RMK QFF 1000.3HPA A2954 RA AMT 0.2MM(T)",
+        "obsTime": 1783677600,
+        "rawOb": "METAR RCSS 101000Z 07008G19KT 020V140 7000 -SHRA FEW010 SCT022 BKN040 29/26 Q0999 NOSIG RMK QFF 999.0HPA A2950 RA AMT 0.6MM(B)",
         "visib": "4.35",
         "status": "updated"
     },
     {
         "icaoId": "RCKH",
-        "obsTime": 1783663200,
-        "rawOb": "METAR RCKH 100600Z 30014KT 260V350 9999 FEW018 SCT038 BKN170 33/26 Q0997 NOSIG RMK 31018KT/R09 QFF 996.9HPA A2944(I)",
+        "obsTime": 1783677600,
+        "rawOb": "METAR RCKH 101000Z 19009KT 140V230 9999 -RA FEW007 SCT014 BKN020 30/23 Q0995 WS R09 NOSIG RMK QFF 995.6HPA A2940(T)",
         "visib": "6.2",
         "status": "updated"
     },
     {
         "icaoId": "RCMQ",
-        "obsTime": 1783664100,
-        "rawOb": "SPECI RCMQ 100615Z 01024G39KT 8000 -RA FEW012 SCT030 BKN080 32/25 Q0999 NOSIG RMK A2950",
+        "obsTime": 1783677600,
+        "rawOb": "METAR RCMQ 101000Z 01022G32KT 8000 -RA FEW004 SCT025 BKN100 27/25 Q0998 NOSIG RMK A2947 RA AMT T",
         "visib": "4.97",
         "status": "updated"
     },
     {
         "icaoId": "RCBS",
-        "obsTime": 1783663200,
-        "rawOb": "METAR RCBS 100600Z 09012KT 050V120 9999 FEW035 SCT220 33/26 Q1001 NOSIG RMK QFF 1001.3HPA A2957(Z)",
-        "visib": "6.2",
+        "obsTime": 1783677600,
+        "rawOb": "METAR RCBS 101000Z 07015KT CAVOK 31/26 Q1000 NOSIG RMK QFF 1000.0HPA A2953(H)",
+        "visib": "",
         "status": "updated"
     },
     {
         "icaoId": "RCNN",
-        "obsTime": 1783663200,
-        "rawOb": "METAR RCNN 100600Z 35015KT 9999 FEW010 BKN025 BKN080 31/25 Q0998 NOSIG RMK A2947 QFF998.0HPA",
+        "obsTime": 1783677600,
+        "rawOb": "METAR RCNN 101000Z 02015G25KT 9999 FEW010 SCT025 BKN080 30/24 Q0995 RMK A2940 QFF995.6HPA",
         "visib": "6.2",
         "status": "updated"
     },
     {
         "icaoId": "RCYU",
-        "obsTime": 1783663200,
-        "rawOb": "METAR RCYU 100600Z 05024G36KT 9999 FEW012 SCT060 BKN100 31/24 Q0995 BECMG TL2400 060-34028G38KT RMK A2940 QFF995.8HPA",
+        "obsTime": 1783677600,
+        "rawOb": "METAR RCYU 101000Z 04025G38KT 9999 VCSH FEW012 SCT050 BKN080 31/23 Q0994 RMK A2936 QFF994.4HPA VCSH E",
         "visib": "6.2",
         "status": "updated"
     },
     {
         "icaoId": "RCQC",
-        "obsTime": 1783663200,
-        "rawOb": "METAR RCQC 100600Z 36020G31KT 9000 SCT006 BKN010 BKN020 30/27 Q0999 NOSIG RMK A2951 QFF999.5HPA",
+        "obsTime": 1783677600,
+        "rawOb": "METAR RCQC 101000Z 36022G32KT 9000 SCT006 BKN012 BKN020 30/27 Q0997 RMK A2946 QFF997.4HPA",
         "visib": "5.59",
         "status": "updated"
     }
