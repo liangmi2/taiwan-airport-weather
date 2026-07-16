@@ -1,57 +1,57 @@
 [
     {
         "icaoId": "RCTP",
-        "obsTime": 1784235600,
-        "rawOb": "METAR RCTP 162100Z 20007KT 9999 FEW015 26/24 Q1006 NOSIG RMK A2972(Q)",
+        "obsTime": 1784239200,
+        "rawOb": "METAR RCTP 162200Z 23012KT 210V280 9999 FEW015 28/24 Q1007 NOSIG RMK A2975(S)",
         "visib": "6.2",
         "status": "updated"
     },
     {
         "icaoId": "RCSS",
-        "obsTime": 1784235600,
-        "rawOb": "METAR RCSS 162100Z VRB01KT 9999 FEW025 27/26 Q1006 NOSIG RMK A2973(A)",
+        "obsTime": 1784239200,
+        "rawOb": "METAR RCSS 162200Z 16003KT 9999 FEW020 28/26 Q1007 NOSIG RMK A2974(B)",
         "visib": "6.2",
         "status": "updated"
     },
     {
         "icaoId": "RCKH",
-        "obsTime": 1784235600,
-        "rawOb": "METAR RCKH 162100Z 09004KT 9999 FEW012 SCT040 26/25 Q1008 NOSIG RMK A2978(C)",
+        "obsTime": 1784239200,
+        "rawOb": "METAR RCKH 162200Z 07004KT 9999 FEW010 SCT025 27/25 Q1008 NOSIG RMK A2979(D)",
         "visib": "6.2",
         "status": "updated"
     },
     {
         "icaoId": "RCMQ",
-        "obsTime": 1784235600,
-        "rawOb": "METAR RCMQ 162100Z 18008KT 9999 FEW012 26/24 Q1009 NOSIG RMK A2980",
+        "obsTime": 1784239200,
+        "rawOb": "METAR RCMQ 162200Z 18008KT 9999 FEW012 SCT100 26/24 Q1009 NOSIG RMK A2982",
         "visib": "6.2",
         "status": "updated"
     },
     {
         "icaoId": "RCBS",
-        "obsTime": 1784206800,
-        "rawOb": "METAR RCBS 161300Z 21014KT 9999 FEW012 28/28 Q1007 NOSIG RMK 21011KT/R06 A2976(J)",
+        "obsTime": 1784239200,
+        "rawOb": "METAR RCBS 162200Z 23007KT 9999 FEW012 SCT070 27/27 Q1007 NOSIG RMK A2974(M)",
         "visib": "6.2",
         "status": "updated"
     },
     {
         "icaoId": "RCNN",
-        "obsTime": 1784235600,
-        "rawOb": "METAR RCNN 162100Z 11004KT 9999 FEW012 SCT050 26/23 Q1008 NOSIG RMK A2977",
+        "obsTime": 1784239200,
+        "rawOb": "METAR RCNN 162200Z 11005KT 9999 FEW012 SCT060 26/23 Q1008 NOSIG RMK A2978",
         "visib": "6.2",
         "status": "updated"
     },
     {
         "icaoId": "RCYU",
-        "obsTime": 1784235600,
-        "rawOb": "METAR RCYU 162100Z 23004KT 9999 FEW012 BKN050 27/25 Q1007 NOSIG RMK A2973",
+        "obsTime": 1784239200,
+        "rawOb": "METAR RCYU 162200Z 24001KT 9999 FEW012 BKN050 28/25 Q1007 NOSIG RMK A2974",
         "visib": "6.2",
         "status": "updated"
     },
     {
         "icaoId": "RCQC",
-        "obsTime": 1784235600,
-        "rawOb": "METAR RCQC 162100Z 20002KT 9999 FEW012 SCT200 27/27 Q1007 NOSIG RMK A2975 AWOS R20 N/A",
+        "obsTime": 1784239200,
+        "rawOb": "METAR RCQC 162200Z 20003KT 9999 FEW012 SCT060 BKN200 27/27 Q1007 NOSIG RMK A2976 AWOS R20 N/A",
         "visib": "6.2",
         "status": "updated"
     }
