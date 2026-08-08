@@ -1,8 +1,8 @@
 [
     {
         "icaoId": "RCTP",
-        "obsTime": 1786208400,
-        "rawOb": "METAR RCTP 081700Z 24020KT 4000 SHRA FEW008 BKN020 BKN040 27/26 Q0990 WS ALL RWY NOSIG RMK QFF 990.2HPA A2924 RA AMT 4.8MM(M)",
+        "obsTime": 1786211100,
+        "rawOb": "SPECI RCTP 081745Z 23019KT 4000 SHRA FEW008 SCT020 BKN040 26/25 Q0989 WS R23R NOSIG RMK A2923(O)",
         "visib": "2.49",
         "status": "updated"
     },
