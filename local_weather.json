@@ -1,8 +1,8 @@
 [
     {
         "icaoId": "RCTP",
-        "obsTime": 1786809600,
-        "rawOb": "METAR RCTP 151600Z 21003KT 120V270 9999 FEW015 BKN060 28/26 Q1004 NOSIG RMK A2966(K)",
+        "obsTime": 1786811400,
+        "rawOb": "METAR RCTP 151630Z 15004KT 100V190 9999 FEW015 SCT060 BKN090 29/26 Q1004 NOSIG RMK A2965(L)",
         "visib": "6.2",
         "status": "updated"
     },
