@@ -36,9 +36,9 @@
     },
     {
         "icaoId": "RCNN",
-        "obsTime": 1786829400,
-        "rawOb": "METAR RCNN 152130Z 13004KT 9999 VCSH FEW010 SCT025 BKN050 25/23 Q1004 NOSIG RMK A2966 VCSH SW",
-        "visib": "6.2",
+        "obsTime": 1786830180,
+        "rawOb": "SPECI RCNN 152143Z 14005KT 8000 -RA FEW010 BKN020 BKN050 25/23 Q1004 NOSIG RMK A2966",
+        "visib": "4.97",
         "status": "updated"
     },
     {
