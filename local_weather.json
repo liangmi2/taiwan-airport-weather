@@ -8,8 +8,8 @@
     },
     {
         "icaoId": "RCSS",
-        "obsTime": 1786872600,
-        "rawOb": "METAR RCSS 160930Z 09005KT 9999 -DZ FEW020 BKN100 29/25 Q1002 NOSIG RMK A2961(B)",
+        "obsTime": 1786873080,
+        "rawOb": "SPECI RCSS 160938Z 09005KT 9999 FEW020 BKN100 29/25 Q1002 NOSIG RMK A2961(C)",
         "visib": "6.2",
         "status": "updated"
     },
