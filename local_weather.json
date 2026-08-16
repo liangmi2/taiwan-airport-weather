@@ -6,8 +6,8 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1786923570,
-        "checkedAt": 1786923569
+        "fetchedAt": 1786924533,
+        "checkedAt": 1786924530
     },
     {
         "icaoId": "RCSS",
@@ -16,8 +16,8 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1786923570,
-        "checkedAt": 1786923569
+        "fetchedAt": 1786924533,
+        "checkedAt": 1786924530
     },
     {
         "icaoId": "RCKH",
@@ -26,8 +26,8 @@
         "visib": "5.59",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1786923570,
-        "checkedAt": 1786923569
+        "fetchedAt": 1786924533,
+        "checkedAt": 1786924530
     },
     {
         "icaoId": "RCMQ",
@@ -36,8 +36,8 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1786923570,
-        "checkedAt": 1786923569
+        "fetchedAt": 1786924533,
+        "checkedAt": 1786924530
     },
     {
         "icaoId": "RCBS",
@@ -46,8 +46,8 @@
         "visib": "4.35",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1786923570,
-        "checkedAt": 1786923569
+        "fetchedAt": 1786924533,
+        "checkedAt": 1786924530
     },
     {
         "icaoId": "RCNN",
@@ -56,8 +56,8 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1786923570,
-        "checkedAt": 1786923569
+        "fetchedAt": 1786924533,
+        "checkedAt": 1786924530
     },
     {
         "icaoId": "RCYU",
@@ -66,17 +66,17 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1786923570,
-        "checkedAt": 1786923569
+        "fetchedAt": 1786924533,
+        "checkedAt": 1786924530
     },
     {
         "icaoId": "RCQC",
-        "obsTime": 1786923000,
-        "rawOb": "METAR RCQC 162330Z 20001KT 8000 -RA FEW008 FEW012TCU BKN020 BKN060 29/27 Q1004 NOSIG RMK A2965 TCU SE MOV N AWOS R20 N/A",
+        "obsTime": 1786924200,
+        "rawOb": "SPECI RCQC 162350Z COR 15002KT 8000 FEW008 BKN020 BKN060 29/27 Q1004 NOSIG RMK A2965 VCSH SE MOV S AWOS R20 N/A",
         "visib": "4.97",
         "status": "updated",
         "source": "AviationWeather",
-        "fetchedAt": 1786923570,
-        "checkedAt": 1786923569
+        "fetchedAt": 1786924533,
+        "checkedAt": 1786924530
     }
 ]
