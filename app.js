@@ -282,12 +282,26 @@ function formatObsTime(obsTime) {
   }
 
   return date.toLocaleString("zh-TW", {
+    timeZone: "Asia/Taipei",
     hour12: false,
     month: "2-digit",
     day: "2-digit",
     hour: "2-digit",
     minute: "2-digit"
   });
+}
+
+function formatDataSource(source) {
+  switch (String(source || "")) {
+    case "AOAWS":
+      return "台灣官方 AOAWS";
+    case "AOAWS-RCBS":
+      return "台灣官方 AOAWS（RCBS 單站）";
+    case "AviationWeather":
+      return "AviationWeather 備援";
+    default:
+      return source ? String(source) : "";
+  }
 }
 
 function isStaleWeather(weather) {
@@ -312,6 +326,14 @@ function getStationStatus(icao, weather) {
   const isLimited = airport?.type === "limited";
 
   if (weather && weather.rawOb) {
+    if (weather.status === "old_data_kept") {
+      return {
+        text: "沿用上一筆",
+        className: "status-warn",
+        note: "本次檢查未取得新報文，暫時顯示上一筆資料。"
+      };
+    }
+
     if (isLimited && isStaleWeather(weather)) {
       return {
         text: "非作業時段",
@@ -372,13 +394,16 @@ function buildWeatherMap(data) {
   return weatherMap;
 }
 
-function getLatestObsTime(data) {
+function getLatestCheckedTime(data) {
   if (!Array.isArray(data) || data.length === 0) {
     return "";
   }
 
   const latest = data.reduce((max, item) => {
-    const t = Number(item?.obsTime || 0);
+    const checked = Number(item?.checkedAt || 0);
+    const fetched = Number(item?.fetchedAt || 0);
+    const observed = Number(item?.obsTime || 0);
+    const t = checked || fetched || observed;
     return t > max ? t : max;
   }, 0);
 
@@ -396,16 +421,16 @@ function updateLastUpdateText(data) {
     return;
   }
 
-  const latest = getLatestObsTime(data);
+  const latest = getLatestCheckedTime(data);
 
   if (latest) {
     el.innerHTML = `
-      ⏱️ 最後更新：
+      📡 本站最近檢查：
       <strong>${escapeHtml(latest)}</strong>
-      <span>（畫面每 5 分鐘刷新，資料約每 20 分鐘更新）</span>
+      <span>（後端約每 10 分鐘更新，畫面每 5 分鐘刷新）</span>
     `;
   } else {
-    el.innerHTML = "⏱️ 尚未取得更新時間";
+    el.innerHTML = "📡 尚未取得本站檢查時間";
   }
 }
 
@@ -473,6 +498,9 @@ function createCard(icao, weather) {
   const windText = hasWeather ? parseWind(rawMetar) : "--";
   const visibilityText = hasWeather ? formatVisibility(weather) : "--";
   const obsTimeText = hasWeather ? formatObsTime(weather.obsTime) : "";
+  const fetchedTimeText = hasWeather ? formatObsTime(weather?.fetchedAt) : "";
+  const checkedTimeText = formatObsTime(weather?.checkedAt);
+  const sourceText = formatDataSource(weather?.source);
 
   const status = getStationStatus(icao, weather);
 
@@ -514,7 +542,27 @@ function createCard(icao, weather) {
             <div class="metar-box">${escapeHtml(rawMetar)}</div>
             ${
               obsTimeText
-                ? `<div class="update-time">🕒 更新時間：${escapeHtml(obsTimeText)}${status.text === "非作業時段" ? "（可能為非作業時段）" : ""}</div>`
+                ? `<div class="update-time">🕒 官方觀測時間：${escapeHtml(obsTimeText)}${status.text === "非作業時段" ? "（可能為非作業時段）" : ""}</div>`
+                : ""
+            }
+            ${
+              fetchedTimeText
+                ? `<div class="update-time">📥 本站取得時間：${escapeHtml(fetchedTimeText)}</div>`
+                : ""
+            }
+            ${
+              checkedTimeText
+                ? `<div class="update-time">📡 本站最近檢查：${escapeHtml(checkedTimeText)}</div>`
+                : ""
+            }
+            ${
+              sourceText
+                ? `<div class="update-time">🛰️ 資料來源：${escapeHtml(sourceText)}</div>`
+                : ""
+            }
+            ${
+              weather?.status === "old_data_kept"
+                ? `<div class="update-time">⚠️ 本輪未取得新報文，暫時沿用上一筆資料</div>`
                 : ""
             }
           `
