@@ -6,8 +6,8 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1786967063,
-        "checkedAt": 1786967061
+        "fetchedAt": 1786968123,
+        "checkedAt": 1786968122
     },
     {
         "icaoId": "RCSS",
@@ -16,8 +16,8 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1786967063,
-        "checkedAt": 1786967061
+        "fetchedAt": 1786968123,
+        "checkedAt": 1786968122
     },
     {
         "icaoId": "RCKH",
@@ -26,8 +26,8 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1786967063,
-        "checkedAt": 1786967061
+        "fetchedAt": 1786968123,
+        "checkedAt": 1786968122
     },
     {
         "icaoId": "RCMQ",
@@ -36,8 +36,8 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1786967063,
-        "checkedAt": 1786967061
+        "fetchedAt": 1786968123,
+        "checkedAt": 1786968122
     },
     {
         "icaoId": "RCBS",
@@ -46,8 +46,8 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1786967063,
-        "checkedAt": 1786967061
+        "fetchedAt": 1786968123,
+        "checkedAt": 1786968122
     },
     {
         "icaoId": "RCNN",
@@ -56,8 +56,8 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1786967063,
-        "checkedAt": 1786967061
+        "fetchedAt": 1786968123,
+        "checkedAt": 1786968122
     },
     {
         "icaoId": "RCYU",
@@ -66,17 +66,17 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1786967063,
-        "checkedAt": 1786967061
+        "fetchedAt": 1786968123,
+        "checkedAt": 1786968122
     },
     {
         "icaoId": "RCQC",
         "obsTime": 1786966200,
         "rawOb": "METAR RCQC 171130Z 01003KT 9999 FEW012 SCT150 29/28 Q1003 NOSIG RMK A2964",
-        "visib": "6.2",
+        "visib": "6",
         "status": "updated",
-        "source": "AOAWS",
-        "fetchedAt": 1786967063,
-        "checkedAt": 1786967061
+        "source": "AviationWeather",
+        "fetchedAt": 1786968124,
+        "checkedAt": 1786968122
     }
 ]
