@@ -1,82 +1,82 @@
 [
     {
         "icaoId": "RCTP",
-        "obsTime": 1787013000,
-        "rawOb": "METAR RCTP 180030Z 06015KT 9999 FEW015 SCT080 BKN200 29/27 Q1004 NOSIG RMK A2966(J)",
+        "obsTime": 1787018400,
+        "rawOb": "METAR RCTP 180200Z 06019KT 9999 FEW020 BKN100 BKN200 31/27 Q1003 NOSIG RMK A2964(M)",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787014454,
-        "checkedAt": 1787014454
+        "fetchedAt": 1787019185,
+        "checkedAt": 1787019184
     },
     {
         "icaoId": "RCSS",
-        "obsTime": 1787013000,
-        "rawOb": "METAR RCSS 180030Z 10009KT 9999 -SHRA FEW006 FEW020TCU SCT030 BKN045 29/26 Q1005 NOSIG RMK TCU E A2968(T)",
+        "obsTime": 1787018400,
+        "rawOb": "METAR RCSS 180200Z 08012KT 050V110 9999 FEW015 SCT060 BKN220 30/26 Q1005 NOSIG RMK A2968 RA AMT 0.2MM(X)",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787014454,
-        "checkedAt": 1787014454
+        "fetchedAt": 1787019185,
+        "checkedAt": 1787019184
     },
     {
         "icaoId": "RCKH",
-        "obsTime": 1787013000,
-        "rawOb": "METAR RCKH 180030Z VRB02KT 9999 FEW012 SCT200 32/25 Q1003 NOSIG RMK A2963(G)",
+        "obsTime": 1787018400,
+        "rawOb": "METAR RCKH 180200Z 24006KT 200V290 9999 FEW012 SCT130 BKN200 32/25 Q1003 NOSIG RMK A2963(J)",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787014454,
-        "checkedAt": 1787014454
+        "fetchedAt": 1787019185,
+        "checkedAt": 1787019184
     },
     {
         "icaoId": "RCMQ",
-        "obsTime": 1787013000,
-        "rawOb": "METAR RCMQ 180030Z 00000KT 9000 SCT014 BKN200 32/28 Q1005 NOSIG RMK A2969",
-        "visib": "5.59",
-        "status": "updated",
-        "source": "AOAWS",
-        "fetchedAt": 1787014454,
-        "checkedAt": 1787014454
-    },
-    {
-        "icaoId": "RCBS",
-        "obsTime": 1787013000,
-        "rawOb": "METAR RCBS 180030Z 03011KT 9999 SCT013 BKN030 BKN050 30/26 Q1004 NOSIG RMK A2967(W)",
+        "obsTime": 1787018400,
+        "rawOb": "METAR RCMQ 180200Z 36003KT 9999 FEW014 BKN025 BKN200 34/28 Q1004 NOSIG RMK A2967",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787014454,
-        "checkedAt": 1787014454
+        "fetchedAt": 1787019185,
+        "checkedAt": 1787019184
+    },
+    {
+        "icaoId": "RCBS",
+        "obsTime": 1787018400,
+        "rawOb": "METAR RCBS 180200Z 05016KT 9999 FEW015 BKN040 BKN120 32/24 Q1004 NOSIG RMK A2966(Z)",
+        "visib": "6.2",
+        "status": "updated",
+        "source": "AOAWS",
+        "fetchedAt": 1787019185,
+        "checkedAt": 1787019184
     },
     {
         "icaoId": "RCNN",
-        "obsTime": 1787013000,
-        "rawOb": "METAR RCNN 180030Z 00000KT 8000 FEW010 SCT030 30/27 Q1003 NOSIG RMK A2963",
-        "visib": "4.97",
+        "obsTime": 1787018400,
+        "rawOb": "METAR RCNN 180200Z 23004KT 9999 FEW012 BKN050 32/28 Q1003 NOSIG RMK A2963",
+        "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787014454,
-        "checkedAt": 1787014454
+        "fetchedAt": 1787019185,
+        "checkedAt": 1787019184
     },
     {
         "icaoId": "RCYU",
         "obsTime": 1787014140,
         "rawOb": "SPECI RCYU 180049Z 03003KT 9999 -RA FEW012 SCT040 BKN060 29/27 Q1007 NOSIG RMK A2973",
         "visib": "6.2",
-        "status": "updated",
+        "status": "old_data_kept",
         "source": "AOAWS",
         "fetchedAt": 1787014454,
-        "checkedAt": 1787014454
+        "checkedAt": 1787019184
     },
     {
         "icaoId": "RCQC",
-        "obsTime": 1787013000,
-        "rawOb": "METAR RCQC 180030Z 16002KT 9000 FEW012 SCT200 29/29 Q1003 NOSIG RMK A2962 AWOS R20 N/A",
-        "visib": "5.59",
+        "obsTime": 1787018400,
+        "rawOb": "METAR RCQC 180200Z 03005KT 030V110 9999 FEW010 SCT200 31/29 Q1003 NOSIG RMK A2963 AWOS R20 N/A",
+        "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787014454,
-        "checkedAt": 1787014454
+        "fetchedAt": 1787019185,
+        "checkedAt": 1787019184
     }
 ]
