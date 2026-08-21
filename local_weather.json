@@ -1,43 +1,43 @@
 [
     {
         "icaoId": "RCTP",
-        "obsTime": 1787337000,
-        "rawOb": "METAR RCTP 211830Z 15005KT 9999 FEW015 BKN030 27/26 Q1002 NOSIG RMK A2959(F)",
+        "obsTime": 1787338800,
+        "rawOb": "METAR RCTP 211900Z 20006KT 9999 FEW015 BKN030 27/26 Q1001 NOSIG RMK A2958(G)",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787338780,
-        "checkedAt": 1787338779
+        "fetchedAt": 1787340581,
+        "checkedAt": 1787340580
     },
     {
         "icaoId": "RCSS",
-        "obsTime": 1787335200,
-        "rawOb": "METAR RCSS 211800Z VRB01KT 9999 FEW018 SCT025 BKN045 26/25 Q1002 NOSIG RMK A2960(W)",
+        "obsTime": 1787338800,
+        "rawOb": "METAR RCSS 211900Z VRB02KT 9999 FEW018 SCT030 BKN050 26/25 Q1002 NOSIG RMK A2959(X)",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787338780,
-        "checkedAt": 1787338779
+        "fetchedAt": 1787340581,
+        "checkedAt": 1787340580
     },
     {
         "icaoId": "RCKH",
-        "obsTime": 1787337960,
-        "rawOb": "SPECI RCKH 211846Z 31007KT 260V360 3200 SHRA FEW006CB SCT008 SCT010 OVC016 25/25 Q1003 TEMPO 1500 SHRA RMK CB N A2962(Q)",
-        "visib": "1.99",
+        "obsTime": 1787338800,
+        "rawOb": "METAR RCKH 211900Z 02005KT 4000 SHRA FEW006CB SCT008 SCT016 OVC024 25/25 Q1003 TEMPO 1500 SHRA RMK CB N A2962 RA AMT 9.2MM(R)",
+        "visib": "2.49",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787338780,
-        "checkedAt": 1787338779
+        "fetchedAt": 1787340581,
+        "checkedAt": 1787340580
     },
     {
         "icaoId": "RCMQ",
-        "obsTime": 1787335200,
-        "rawOb": "METAR RCMQ 211800Z 17005KT 9999 FEW008 SCT040 BKN060 26/26 Q1004 RMK A2965 RA AMT T",
+        "obsTime": 1787338800,
+        "rawOb": "METAR RCMQ 211900Z 18005KT 9999 FEW008 SCT020 BKN040 27/26 Q1003 RMK A2964",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787338780,
-        "checkedAt": 1787338779
+        "fetchedAt": 1787340581,
+        "checkedAt": 1787340580
     },
     {
         "icaoId": "RCBS",
@@ -46,37 +46,37 @@
         "visib": "3.11",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787338780,
-        "checkedAt": 1787338779
+        "fetchedAt": 1787340581,
+        "checkedAt": 1787340580
     },
     {
         "icaoId": "RCNN",
-        "obsTime": 1787338380,
-        "rawOb": "SPECI RCNN 211853Z 12005KT 4000 -TSRA SCT006 FEW010CB BKN020 BKN040 24/23 Q1003 RMK A2962 TS S STNR",
+        "obsTime": 1787340000,
+        "rawOb": "SPECI RCNN 211920Z 12006KT 4000 -RA VCTS BR SCT006 FEW010CB BKN020 BKN040 24/23 Q1003 RMK A2962 TS S STNR",
         "visib": "2.49",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787338780,
-        "checkedAt": 1787338779
+        "fetchedAt": 1787340581,
+        "checkedAt": 1787340580
     },
     {
         "icaoId": "RCYU",
-        "obsTime": 1787335200,
-        "rawOb": "METAR RCYU 211800Z 20004KT 9999 FEW012 BKN040 27/27 Q1003 RMK A2962",
+        "obsTime": 1787338800,
+        "rawOb": "METAR RCYU 211900Z 21005KT 9999 FEW012 BKN040 27/26 Q1002 RMK A2961",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787338780,
-        "checkedAt": 1787338779
+        "fetchedAt": 1787340581,
+        "checkedAt": 1787340580
     },
     {
         "icaoId": "RCQC",
-        "obsTime": 1787335200,
-        "rawOb": "METAR RCQC 211800Z 16005KT 9999 SCT012 SCT030 BKN080 28/26 Q1002 RMK A2961 AWOS R20 N/A",
-        "visib": "6.2",
+        "obsTime": 1787338800,
+        "rawOb": "METAR RCQC 211900Z COR 16005KT 9999 VCSH SCT010 BKN020 BKN060 28/26 Q1002 RMK A2959 VCSH S AWOS R20 N/A",
+        "visib": "6",
         "status": "updated",
-        "source": "AOAWS",
-        "fetchedAt": 1787338780,
-        "checkedAt": 1787338779
+        "source": "AviationWeather",
+        "fetchedAt": 1787340581,
+        "checkedAt": 1787340580
     }
 ]
