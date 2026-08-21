@@ -6,8 +6,8 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787351822,
-        "checkedAt": 1787351820
+        "fetchedAt": 1787353030,
+        "checkedAt": 1787353028
     },
     {
         "icaoId": "RCSS",
@@ -16,8 +16,8 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787351822,
-        "checkedAt": 1787351820
+        "fetchedAt": 1787353030,
+        "checkedAt": 1787353028
     },
     {
         "icaoId": "RCKH",
@@ -26,8 +26,8 @@
         "visib": "3.11",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787351822,
-        "checkedAt": 1787351820
+        "fetchedAt": 1787353030,
+        "checkedAt": 1787353028
     },
     {
         "icaoId": "RCMQ",
@@ -36,8 +36,8 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787351822,
-        "checkedAt": 1787351820
+        "fetchedAt": 1787353030,
+        "checkedAt": 1787353028
     },
     {
         "icaoId": "RCBS",
@@ -46,18 +46,18 @@
         "visib": "3.11",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787351822,
-        "checkedAt": 1787351820
+        "fetchedAt": 1787353030,
+        "checkedAt": 1787353028
     },
     {
         "icaoId": "RCNN",
-        "obsTime": 1787351400,
-        "rawOb": "METAR RCNN 212230Z 09009KT 0800 +TSRA BKN004 FEW010CB OVC016 24/23 Q1003 BECMG TL2220 0800 TSRA BKN012 RMK A2963 TS OVHD STNR",
-        "visib": "0.5",
+        "obsTime": 1787352840,
+        "rawOb": "SPECI RCNN 212254Z 10004KT 1600 -TSRA SCT006 FEW010CB BKN016 OVC030 24/23 Q1003 RERA BECMG TL2320 1600 TSRA BKN004 RMK A2964 TS NE STNR",
+        "visib": "0.99",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787351822,
-        "checkedAt": 1787351820
+        "fetchedAt": 1787353030,
+        "checkedAt": 1787353028
     },
     {
         "icaoId": "RCYU",
@@ -66,8 +66,8 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787351822,
-        "checkedAt": 1787351820
+        "fetchedAt": 1787353030,
+        "checkedAt": 1787353028
     },
     {
         "icaoId": "RCQC",
@@ -75,8 +75,8 @@
         "rawOb": "SPECI RCQC 212233Z 22008KT 3200 -RA BR SCT005 BKN010 BKN025 27/26 Q1002 NOSIG RMK A2960 AWOS R20 N/A",
         "visib": "1.99",
         "status": "updated",
-        "source": "AOAWS",
-        "fetchedAt": 1787351822,
-        "checkedAt": 1787351820
+        "source": "AviationWeather",
+        "fetchedAt": 1787353030,
+        "checkedAt": 1787353028
     }
 ]
