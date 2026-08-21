@@ -6,8 +6,8 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787344614,
-        "checkedAt": 1787344613
+        "fetchedAt": 1787345829,
+        "checkedAt": 1787345828
     },
     {
         "icaoId": "RCSS",
@@ -16,18 +16,18 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787344614,
-        "checkedAt": 1787344613
+        "fetchedAt": 1787345829,
+        "checkedAt": 1787345828
     },
     {
         "icaoId": "RCKH",
-        "obsTime": 1787342700,
-        "rawOb": "SPECI RCKH 212005Z 09005KT 1200 R09/P2000 +TSRA FEW003CB SCT006 SCT016 OVC022 25/25 Q1003 TEMPO 2000 +TSRA RMK TS SW-WSW MOV E A2962(V)",
-        "visib": "0.75",
+        "obsTime": 1787345040,
+        "rawOb": "SPECI RCKH 212044Z VRB02KT 2000 VCTS SHRA FEW003CB SCT006 SCT016 OVC022 25/25 Q1003 TEMPO 3000 SHRA RMK TS SW AND NW MOV E A2963(X)",
+        "visib": "1.24",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787344614,
-        "checkedAt": 1787344613
+        "fetchedAt": 1787345829,
+        "checkedAt": 1787345828
     },
     {
         "icaoId": "RCMQ",
@@ -36,8 +36,8 @@
         "visib": "4.97",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787344614,
-        "checkedAt": 1787344613
+        "fetchedAt": 1787345829,
+        "checkedAt": 1787345828
     },
     {
         "icaoId": "RCBS",
@@ -46,18 +46,18 @@
         "visib": "3.11",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787344614,
-        "checkedAt": 1787344613
+        "fetchedAt": 1787345829,
+        "checkedAt": 1787345828
     },
     {
         "icaoId": "RCNN",
-        "obsTime": 1787344380,
-        "rawOb": "SPECI RCNN 212033Z 10006KT 4000 -TSRA SCT006 FEW010CB BKN020 BKN040 24/23 Q1002 RMK A2961 TS W STNR",
-        "visib": "2.49",
+        "obsTime": 1787345700,
+        "rawOb": "SPECI RCNN 212055Z 11005KT 2400 TSRA SCT006 FEW010CB BKN016 BKN030 24/23 Q1003 RMK A2962 TS W MOV SW",
+        "visib": "1.49",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787344614,
-        "checkedAt": 1787344613
+        "fetchedAt": 1787345829,
+        "checkedAt": 1787345828
     },
     {
         "icaoId": "RCYU",
@@ -66,8 +66,8 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787344614,
-        "checkedAt": 1787344613
+        "fetchedAt": 1787345829,
+        "checkedAt": 1787345828
     },
     {
         "icaoId": "RCQC",
@@ -76,7 +76,7 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787344614,
-        "checkedAt": 1787344613
+        "fetchedAt": 1787345829,
+        "checkedAt": 1787345828
     }
 ]
