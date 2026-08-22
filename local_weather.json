@@ -1,43 +1,43 @@
 [
     {
         "icaoId": "RCTP",
-        "obsTime": 1787419800,
-        "rawOb": "METAR RCTP 221730Z VRB02KT 9999 FEW010 SCT027 BKN060 27/26 Q1002 NOSIG RMK A2960(M)",
+        "obsTime": 1787421600,
+        "rawOb": "METAR RCTP 221800Z 20005KT 9999 FEW010 SCT030 BKN070 27/26 Q1002 NOSIG RMK A2959(N)",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787421275,
-        "checkedAt": 1787421274
+        "fetchedAt": 1787422861,
+        "checkedAt": 1787422859
     },
     {
         "icaoId": "RCSS",
-        "obsTime": 1787418000,
-        "rawOb": "METAR RCSS 221700Z VRB02KT 9999 FEW012 SCT025 BKN120 27/25 Q1002 NOSIG RMK A2961(E)",
+        "obsTime": 1787421600,
+        "rawOb": "METAR RCSS 221800Z VRB02KT 9999 FEW012 BKN100 27/24 Q1002 NOSIG RMK A2960(F)",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787421275,
-        "checkedAt": 1787421274
+        "fetchedAt": 1787422861,
+        "checkedAt": 1787422859
     },
     {
         "icaoId": "RCKH",
-        "obsTime": 1787420580,
-        "rawOb": "SPECI RCKH 221743Z 16007KT 120V190 2000 SHRA FEW003 SCT006 BKN010 26/25 Q1003 TEMPO 1500 +SHRA RMK A2962(R)",
-        "visib": "1.24",
+        "obsTime": 1787421600,
+        "rawOb": "METAR RCKH 221800Z 15004KT 100V210 3200 -SHRA FEW002 SCT005 BKN010 26/25 Q1002 RESHRA TEMPO 1500 +SHRA RMK A2960 RA AMT 12.8MM(T)",
+        "visib": "1.99",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787421275,
-        "checkedAt": 1787421274
+        "fetchedAt": 1787422861,
+        "checkedAt": 1787422859
     },
     {
         "icaoId": "RCMQ",
-        "obsTime": 1787418180,
-        "rawOb": "SPECI RCMQ 221703Z 16007KT 9999 FEW006 SCT018 BKN040 26/25 Q1004 RMK A2966",
+        "obsTime": 1787421600,
+        "rawOb": "METAR RCMQ 221800Z 17002KT 9999 FEW010 SCT025 BKN040 26/25 Q1003 RMK A2962 RA AMT T",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787421275,
-        "checkedAt": 1787421274
+        "fetchedAt": 1787422861,
+        "checkedAt": 1787422859
     },
     {
         "icaoId": "RCBS",
@@ -46,37 +46,37 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787421275,
-        "checkedAt": 1787421274
+        "fetchedAt": 1787422861,
+        "checkedAt": 1787422859
     },
     {
         "icaoId": "RCNN",
-        "obsTime": 1787418000,
-        "rawOb": "METAR RCNN 221700Z 15005KT 2400 RA BR SCT006 BKN012 OVC025 24/23 Q1003 RMK A2964 RA AMT 8.0MM",
+        "obsTime": 1787421600,
+        "rawOb": "METAR RCNN 221800Z 11004KT 2400 1200S RA BR SCT006 BKN012 OVC025 24/23 Q1003 RMK A2963 RA AMT 10.2MM",
         "visib": "1.49",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787421275,
-        "checkedAt": 1787421274
+        "fetchedAt": 1787422861,
+        "checkedAt": 1787422859
     },
     {
         "icaoId": "RCYU",
-        "obsTime": 1787418000,
-        "rawOb": "METAR RCYU 221700Z 21004KT 9999 FEW012 BKN060 28/26 Q1003 RMK A2964",
+        "obsTime": 1787421600,
+        "rawOb": "METAR RCYU 221800Z 21007KT 9999 FEW012 SCT030 BKN060 28/25 Q1003 RMK A2962",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787421275,
-        "checkedAt": 1787421274
+        "fetchedAt": 1787422861,
+        "checkedAt": 1787422859
     },
     {
         "icaoId": "RCQC",
-        "obsTime": 1787418000,
-        "rawOb": "METAR RCQC 221700Z 14009KT 9999 SCT006 BKN012 BKN030 27/26 Q1002 RMK A2959 AWOS R20 N/A",
+        "obsTime": 1787421600,
+        "rawOb": "METAR RCQC 221800Z 14008KT 9999 SCT008 BKN014 BKN050 27/26 Q1001 RMK A2957 AWOS R20 N/A",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787421275,
-        "checkedAt": 1787421274
+        "fetchedAt": 1787422861,
+        "checkedAt": 1787422859
     }
 ]
