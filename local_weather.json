@@ -6,8 +6,8 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787419964,
-        "checkedAt": 1787419963
+        "fetchedAt": 1787421275,
+        "checkedAt": 1787421274
     },
     {
         "icaoId": "RCSS",
@@ -16,18 +16,18 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787419964,
-        "checkedAt": 1787419963
+        "fetchedAt": 1787421275,
+        "checkedAt": 1787421274
     },
     {
         "icaoId": "RCKH",
-        "obsTime": 1787419740,
-        "rawOb": "SPECI RCKH 221729Z 14005KT 1500 +SHRA FEW003 SCT006 BKN010 26/25 Q1003 TEMPO 1000 +SHRA RMK A2962(Q)",
-        "visib": "0.93",
+        "obsTime": 1787420580,
+        "rawOb": "SPECI RCKH 221743Z 16007KT 120V190 2000 SHRA FEW003 SCT006 BKN010 26/25 Q1003 TEMPO 1500 +SHRA RMK A2962(R)",
+        "visib": "1.24",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787419964,
-        "checkedAt": 1787419963
+        "fetchedAt": 1787421275,
+        "checkedAt": 1787421274
     },
     {
         "icaoId": "RCMQ",
@@ -36,8 +36,8 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787419964,
-        "checkedAt": 1787419963
+        "fetchedAt": 1787421275,
+        "checkedAt": 1787421274
     },
     {
         "icaoId": "RCBS",
@@ -46,8 +46,8 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787419964,
-        "checkedAt": 1787419963
+        "fetchedAt": 1787421275,
+        "checkedAt": 1787421274
     },
     {
         "icaoId": "RCNN",
@@ -56,8 +56,8 @@
         "visib": "1.49",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787419964,
-        "checkedAt": 1787419963
+        "fetchedAt": 1787421275,
+        "checkedAt": 1787421274
     },
     {
         "icaoId": "RCYU",
@@ -66,8 +66,8 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787419964,
-        "checkedAt": 1787419963
+        "fetchedAt": 1787421275,
+        "checkedAt": 1787421274
     },
     {
         "icaoId": "RCQC",
@@ -76,7 +76,7 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787419964,
-        "checkedAt": 1787419963
+        "fetchedAt": 1787421275,
+        "checkedAt": 1787421274
     }
 ]
