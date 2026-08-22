@@ -6,8 +6,8 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787413112,
-        "checkedAt": 1787413112
+        "fetchedAt": 1787414149,
+        "checkedAt": 1787414148
     },
     {
         "icaoId": "RCSS",
@@ -16,8 +16,8 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787413112,
-        "checkedAt": 1787413112
+        "fetchedAt": 1787414149,
+        "checkedAt": 1787414148
     },
     {
         "icaoId": "RCKH",
@@ -26,8 +26,8 @@
         "visib": "4.35",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787413112,
-        "checkedAt": 1787413112
+        "fetchedAt": 1787414149,
+        "checkedAt": 1787414148
     },
     {
         "icaoId": "RCMQ",
@@ -36,8 +36,8 @@
         "visib": "2.49",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787413112,
-        "checkedAt": 1787413112
+        "fetchedAt": 1787414149,
+        "checkedAt": 1787414148
     },
     {
         "icaoId": "RCBS",
@@ -46,18 +46,18 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787413112,
-        "checkedAt": 1787413112
+        "fetchedAt": 1787414149,
+        "checkedAt": 1787414148
     },
     {
         "icaoId": "RCNN",
-        "obsTime": 1787410800,
-        "rawOb": "METAR RCNN 221500Z 10006KT 2400 SHRA SCT006 BKN012 OVC025 24/23 Q1004 RMK A2965 RA AMT 6.6MM",
+        "obsTime": 1787413680,
+        "rawOb": "SPECI RCNN 221548Z 11006KT 2400 RA BR SCT006 BKN012 OVC025 24/23 Q1004 RMK A2965",
         "visib": "1.49",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787413112,
-        "checkedAt": 1787413112
+        "fetchedAt": 1787414149,
+        "checkedAt": 1787414148
     },
     {
         "icaoId": "RCYU",
@@ -66,8 +66,8 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787413112,
-        "checkedAt": 1787413112
+        "fetchedAt": 1787414149,
+        "checkedAt": 1787414148
     },
     {
         "icaoId": "RCQC",
@@ -76,7 +76,7 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787413112,
-        "checkedAt": 1787413112
+        "fetchedAt": 1787414149,
+        "checkedAt": 1787414148
     }
 ]
