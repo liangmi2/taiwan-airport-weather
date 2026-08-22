@@ -1,33 +1,33 @@
 [
     {
         "icaoId": "RCTP",
-        "obsTime": 1787410800,
-        "rawOb": "METAR RCTP 221500Z 16004KT 9999 FEW010 BKN050 BKN060 27/26 Q1003 NOSIG RMK A2963(H)",
+        "obsTime": 1787412600,
+        "rawOb": "METAR RCTP 221530Z VRB02KT 9999 FEW010 BKN030 BKN050 27/26 Q1003 NOSIG RMK A2963(I)",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787411711,
-        "checkedAt": 1787411710
+        "fetchedAt": 1787413112,
+        "checkedAt": 1787413112
     },
     {
         "icaoId": "RCSS",
-        "obsTime": 1787410800,
-        "rawOb": "METAR RCSS 221500Z 08002KT 9999 FEW008 BKN032 BKN050 27/25 Q1003 NOSIG RMK A2963(B)",
+        "obsTime": 1787412600,
+        "rawOb": "METAR RCSS 221530Z VRB02KT 9999 FEW008 SCT032 BKN050 27/25 Q1003 NOSIG RMK A2963(C)",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787411711,
-        "checkedAt": 1787411710
+        "fetchedAt": 1787413112,
+        "checkedAt": 1787413112
     },
     {
         "icaoId": "RCKH",
-        "obsTime": 1787410800,
-        "rawOb": "METAR RCKH 221500Z 09007KT 5000 -SHRA SCT010 BKN015 BKN040 25/24 Q1004 RESHRA NOSIG RMK A2966 RA AMT 1.0MM(D)",
-        "visib": "3.11",
+        "obsTime": 1787412600,
+        "rawOb": "METAR RCKH 221530Z 10008KT 7000 -SHRA FEW006 SCT010 BKN014 26/24 Q1003 TEMPO 4000 SHRA RMK A2964(E)",
+        "visib": "4.35",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787411711,
-        "checkedAt": 1787411710
+        "fetchedAt": 1787413112,
+        "checkedAt": 1787413112
     },
     {
         "icaoId": "RCMQ",
@@ -36,8 +36,8 @@
         "visib": "2.49",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787411711,
-        "checkedAt": 1787411710
+        "fetchedAt": 1787413112,
+        "checkedAt": 1787413112
     },
     {
         "icaoId": "RCBS",
@@ -46,8 +46,8 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787411711,
-        "checkedAt": 1787411710
+        "fetchedAt": 1787413112,
+        "checkedAt": 1787413112
     },
     {
         "icaoId": "RCNN",
@@ -56,8 +56,8 @@
         "visib": "1.49",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787411711,
-        "checkedAt": 1787411710
+        "fetchedAt": 1787413112,
+        "checkedAt": 1787413112
     },
     {
         "icaoId": "RCYU",
@@ -66,8 +66,8 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787411711,
-        "checkedAt": 1787411710
+        "fetchedAt": 1787413112,
+        "checkedAt": 1787413112
     },
     {
         "icaoId": "RCQC",
@@ -76,7 +76,7 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787411711,
-        "checkedAt": 1787411710
+        "fetchedAt": 1787413112,
+        "checkedAt": 1787413112
     }
 ]
