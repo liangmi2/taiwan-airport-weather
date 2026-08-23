@@ -6,8 +6,8 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787507044,
-        "checkedAt": 1787507042
+        "fetchedAt": 1787507967,
+        "checkedAt": 1787507966
     },
     {
         "icaoId": "RCSS",
@@ -16,8 +16,8 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787507044,
-        "checkedAt": 1787507042
+        "fetchedAt": 1787507967,
+        "checkedAt": 1787507966
     },
     {
         "icaoId": "RCKH",
@@ -26,8 +26,8 @@
         "visib": "2.49",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787507044,
-        "checkedAt": 1787507042
+        "fetchedAt": 1787507967,
+        "checkedAt": 1787507966
     },
     {
         "icaoId": "RCMQ",
@@ -36,8 +36,8 @@
         "visib": "2.49",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787507044,
-        "checkedAt": 1787507042
+        "fetchedAt": 1787507967,
+        "checkedAt": 1787507966
     },
     {
         "icaoId": "RCBS",
@@ -46,8 +46,8 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787507044,
-        "checkedAt": 1787507042
+        "fetchedAt": 1787507967,
+        "checkedAt": 1787507966
     },
     {
         "icaoId": "RCNN",
@@ -56,8 +56,8 @@
         "visib": "1.49",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787507044,
-        "checkedAt": 1787507042
+        "fetchedAt": 1787507967,
+        "checkedAt": 1787507966
     },
     {
         "icaoId": "RCYU",
@@ -66,8 +66,8 @@
         "visib": "1.99",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787507044,
-        "checkedAt": 1787507042
+        "fetchedAt": 1787507967,
+        "checkedAt": 1787507966
     },
     {
         "icaoId": "RCQC",
@@ -76,7 +76,7 @@
         "visib": "1.49",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787507044,
-        "checkedAt": 1787507042
+        "fetchedAt": 1787507967,
+        "checkedAt": 1787507966
     }
 ]
