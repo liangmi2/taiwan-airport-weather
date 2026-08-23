@@ -6,8 +6,8 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787495740,
-        "checkedAt": 1787495739
+        "fetchedAt": 1787496967,
+        "checkedAt": 1787496966
     },
     {
         "icaoId": "RCSS",
@@ -16,8 +16,8 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787495740,
-        "checkedAt": 1787495739
+        "fetchedAt": 1787496967,
+        "checkedAt": 1787496966
     },
     {
         "icaoId": "RCKH",
@@ -26,8 +26,8 @@
         "visib": "3.11",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787495740,
-        "checkedAt": 1787495739
+        "fetchedAt": 1787496967,
+        "checkedAt": 1787496966
     },
     {
         "icaoId": "RCMQ",
@@ -36,8 +36,8 @@
         "visib": "4.35",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787495740,
-        "checkedAt": 1787495739
+        "fetchedAt": 1787496967,
+        "checkedAt": 1787496966
     },
     {
         "icaoId": "RCBS",
@@ -46,8 +46,8 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787495740,
-        "checkedAt": 1787495739
+        "fetchedAt": 1787496967,
+        "checkedAt": 1787496966
     },
     {
         "icaoId": "RCNN",
@@ -56,8 +56,8 @@
         "visib": "0.99",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787495740,
-        "checkedAt": 1787495739
+        "fetchedAt": 1787496967,
+        "checkedAt": 1787496966
     },
     {
         "icaoId": "RCYU",
@@ -66,17 +66,17 @@
         "visib": "1.49",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787495740,
-        "checkedAt": 1787495739
+        "fetchedAt": 1787496967,
+        "checkedAt": 1787496966
     },
     {
         "icaoId": "RCQC",
-        "obsTime": 1787495400,
-        "rawOb": "METAR RCQC 231430Z 10006KT 4800 -RA BR SCT004 BKN008 BKN018 28/28 Q1001 NOSIG RMK A2956 AWOS R20 N/A",
-        "visib": "2.98",
+        "obsTime": 1787495880,
+        "rawOb": "SPECI RCQC 231438Z 10007KT 2400 RA BR SCT004 BKN008 BKN018 27/27 Q1001 RMK A2956 AWOS R20 N/A",
+        "visib": "1.49",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787495740,
-        "checkedAt": 1787495739
+        "fetchedAt": 1787496967,
+        "checkedAt": 1787496966
     }
 ]
