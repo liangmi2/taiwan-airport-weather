@@ -6,8 +6,8 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787503116,
-        "checkedAt": 1787503114
+        "fetchedAt": 1787504359,
+        "checkedAt": 1787504358
     },
     {
         "icaoId": "RCSS",
@@ -16,8 +16,8 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787503116,
-        "checkedAt": 1787503114
+        "fetchedAt": 1787504359,
+        "checkedAt": 1787504358
     },
     {
         "icaoId": "RCKH",
@@ -26,8 +26,8 @@
         "visib": "2.49",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787503116,
-        "checkedAt": 1787503114
+        "fetchedAt": 1787504359,
+        "checkedAt": 1787504358
     },
     {
         "icaoId": "RCMQ",
@@ -36,8 +36,8 @@
         "visib": "3.73",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787503116,
-        "checkedAt": 1787503114
+        "fetchedAt": 1787504359,
+        "checkedAt": 1787504358
     },
     {
         "icaoId": "RCBS",
@@ -46,18 +46,18 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787503116,
-        "checkedAt": 1787503114
+        "fetchedAt": 1787504359,
+        "checkedAt": 1787504358
     },
     {
         "icaoId": "RCNN",
-        "obsTime": 1787500800,
-        "rawOb": "METAR RCNN 231600Z 18010KT 1600 +RA BR BKN004 BKN012 OVC025 25/24 Q1002 RMK A2960 RA AMT 40.8MM",
-        "visib": "0.99",
+        "obsTime": 1787503620,
+        "rawOb": "SPECI RCNN 231647Z 17007KT 2400 RA BR SCT004 BKN016 OVC030 25/25 Q1002 RERA RMK A2959",
+        "visib": "1.49",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787503116,
-        "checkedAt": 1787503114
+        "fetchedAt": 1787504359,
+        "checkedAt": 1787504358
     },
     {
         "icaoId": "RCYU",
@@ -66,8 +66,8 @@
         "visib": "1.99",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787503116,
-        "checkedAt": 1787503114
+        "fetchedAt": 1787504359,
+        "checkedAt": 1787504358
     },
     {
         "icaoId": "RCQC",
@@ -76,7 +76,7 @@
         "visib": "1.49",
         "status": "updated",
         "source": "AviationWeather",
-        "fetchedAt": 1787503116,
-        "checkedAt": 1787503114
+        "fetchedAt": 1787504359,
+        "checkedAt": 1787504358
     }
 ]
