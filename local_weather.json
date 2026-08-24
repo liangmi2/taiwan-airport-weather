@@ -1,43 +1,43 @@
 [
     {
         "icaoId": "RCTP",
-        "obsTime": 1787580360,
-        "rawOb": "SPECI RCTP 241406Z 14005KT 090V200 3000 RA SCT004 BKN011 BKN035 26/25 Q1005 NOSIG RMK A2969(R)",
-        "visib": "1.86",
+        "obsTime": 1787583600,
+        "rawOb": "METAR RCTP 241500Z 16004KT 110V200 9999 -RA SCT006 BKN014 BKN050 26/25 Q1005 RERA NOSIG RMK A2968 RA AMT 3.2MM(T)",
+        "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787581380,
-        "checkedAt": 1787581379
+        "fetchedAt": 1787584163,
+        "checkedAt": 1787584162
     },
     {
         "icaoId": "RCSS",
-        "obsTime": 1787580000,
-        "rawOb": "METAR RCSS 241400Z VRB02KT 9999 -DZ FEW015 SCT030 BKN120 26/24 Q1005 NOSIG RMK A2968 RA AMT 0.6MM(V)",
+        "obsTime": 1787583600,
+        "rawOb": "METAR RCSS 241500Z 10007KT 9999 -RA FEW015 BKN025 BKN040 26/24 Q1005 NOSIG RMK A2968(X)",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787581380,
-        "checkedAt": 1787581379
+        "fetchedAt": 1787584163,
+        "checkedAt": 1787584162
     },
     {
         "icaoId": "RCKH",
-        "obsTime": 1787580420,
-        "rawOb": "SPECI RCKH 241407Z 12008KT 090V160 5000 -SHRA SCT006 BKN010 BKN013 26/24 Q1005 TEMPO 3000 SHRA RMK A2970(A)",
-        "visib": "3.11",
+        "obsTime": 1787583600,
+        "rawOb": "METAR RCKH 241500Z 12007KT 090V160 9000 -SHRA SCT006 BKN012 BKN018 26/25 Q1005 RESHRA TEMPO 5000 -SHRA RMK A2969 RA AMT 1.8MM(G)",
+        "visib": "5.59",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787581380,
-        "checkedAt": 1787581379
+        "fetchedAt": 1787584163,
+        "checkedAt": 1787584162
     },
     {
         "icaoId": "RCMQ",
-        "obsTime": 1787580000,
-        "rawOb": "METAR RCMQ 241400Z 00000KT 9999 -RA FEW008 SCT030 BKN060 26/26 Q1006 RMK A2971 RA AMT T",
+        "obsTime": 1787583600,
+        "rawOb": "METAR RCMQ 241500Z 00000KT 9999 -RA FEW008 SCT030 BKN060 26/26 Q1006 RMK A2971 RA AMT T",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787581380,
-        "checkedAt": 1787581379
+        "fetchedAt": 1787584163,
+        "checkedAt": 1787584162
     },
     {
         "icaoId": "RCBS",
@@ -46,37 +46,37 @@
         "visib": "0.62",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787581380,
-        "checkedAt": 1787581379
+        "fetchedAt": 1787584163,
+        "checkedAt": 1787584162
     },
     {
         "icaoId": "RCNN",
-        "obsTime": 1787580660,
-        "rawOb": "SPECI RCNN 241411Z 12007KT 6000 -RA SCT008 BKN020 BKN040 24/24 Q1005 RMK A2969",
-        "visib": "3.73",
+        "obsTime": 1787583600,
+        "rawOb": "METAR RCNN 241500Z 11007KT 7000 -RA SCT008 BKN020 BKN040 24/24 Q1005 RMK A2969 RA AMT 1.6MM",
+        "visib": "4.35",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787581380,
-        "checkedAt": 1787581379
+        "fetchedAt": 1787584163,
+        "checkedAt": 1787584162
     },
     {
         "icaoId": "RCYU",
-        "obsTime": 1787580000,
-        "rawOb": "METAR RCYU 241400Z 29004KT 2400 RA BR SCT006 BKN012 OVC025 26/26 Q1007 RERA RMK A2973 RA AMT 12.2MM",
-        "visib": "1.49",
+        "obsTime": 1787583600,
+        "rawOb": "METAR RCYU 241500Z 31004KT 1600 +RA BR SCT004 BKN010 OVC025 26/25 Q1006 RMK A2972 RA AMT 22.2MM",
+        "visib": "0.99",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787581380,
-        "checkedAt": 1787581379
+        "fetchedAt": 1787584163,
+        "checkedAt": 1787584162
     },
     {
         "icaoId": "RCQC",
-        "obsTime": 1787580000,
-        "rawOb": "METAR RCQC 241400Z 16008KT 9999 -RA SCT004 BKN008 BKN030 28/27 Q1003 RMK A2964 RA AMT T AWOS R20 N/A",
+        "obsTime": 1787583600,
+        "rawOb": "METAR RCQC 241500Z 16006KT 9999 -RA SCT004 BKN008 BKN030 28/27 Q1003 RMK A2964 RA AMT 0.1MM AWOS R20 N/A",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787581380,
-        "checkedAt": 1787581379
+        "fetchedAt": 1787584163,
+        "checkedAt": 1787584162
     }
 ]
