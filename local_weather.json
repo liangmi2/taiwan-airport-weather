@@ -1,82 +1,82 @@
 [
     {
         "icaoId": "RCTP",
-        "obsTime": 1787673600,
-        "rawOb": "METAR RCTP 251600Z 12003KT 080V190 9999 FEW015 BKN170 26/26 Q1006 NOSIG RMK A2973",
-        "visib": "6",
+        "obsTime": 1787677200,
+        "rawOb": "METAR RCTP 251700Z 15003KT 110V230 9999 FEW015 BKN180 26/26 Q1006 NOSIG RMK A2972(G)",
+        "visib": "6.2",
         "status": "updated",
-        "source": "AviationWeather",
-        "fetchedAt": 1787675596,
-        "checkedAt": 1787675394
+        "source": "AOAWS",
+        "fetchedAt": 1787677624,
+        "checkedAt": 1787677622
     },
     {
         "icaoId": "RCSS",
-        "obsTime": 1787673600,
-        "rawOb": "METAR RCSS 251600Z VRB02KT 9999 FEW010 SCT120 26/25 Q1006 NOSIG RMK A2973",
-        "visib": "6",
+        "obsTime": 1787677200,
+        "rawOb": "METAR RCSS 251700Z VRB01KT 9999 FEW012 BKN150 26/25 Q1006 NOSIG RMK A2972(U)",
+        "visib": "6.2",
         "status": "updated",
-        "source": "AviationWeather",
-        "fetchedAt": 1787675596,
-        "checkedAt": 1787675394
+        "source": "AOAWS",
+        "fetchedAt": 1787677624,
+        "checkedAt": 1787677622
     },
     {
         "icaoId": "RCKH",
-        "obsTime": 1787673600,
-        "rawOb": "METAR RCKH 251600Z VRB01KT 9999 -RA FEW012 SCT018 BKN056 25/24 Q1007 TEMPO 5000 -SHRA RMK A2974",
-        "visib": "6",
+        "obsTime": 1787677200,
+        "rawOb": "METAR RCKH 251700Z 03003KT 8000 -SHRA SCT008 BKN014 BKN028 25/25 Q1007 TEMPO 5000 -SHRA RMK A2974(N)",
+        "visib": "4.97",
         "status": "updated",
-        "source": "AviationWeather",
-        "fetchedAt": 1787675596,
-        "checkedAt": 1787675394
+        "source": "AOAWS",
+        "fetchedAt": 1787677624,
+        "checkedAt": 1787677622
     },
     {
         "icaoId": "RCMQ",
-        "obsTime": 1787674500,
-        "rawOb": "SPECI RCMQ 251615Z 00000KT 9999 -RA FEW012 BKN060 BKN080 26/25 Q1008 RMK A2978",
-        "visib": "6",
+        "obsTime": 1787677200,
+        "rawOb": "METAR RCMQ 251700Z 00000KT 9999 -RA FEW012 BKN060 BKN080 26/25 Q1008 RMK A2977 RA AMT T",
+        "visib": "6.2",
         "status": "updated",
-        "source": "AviationWeather",
-        "fetchedAt": 1787675596,
-        "checkedAt": 1787675394
+        "source": "AOAWS",
+        "fetchedAt": 1787677624,
+        "checkedAt": 1787677622
     },
     {
         "icaoId": "RCBS",
         "obsTime": 1787662800,
         "rawOb": "METAR RCBS 251300Z 12011KT 5000 -SHRA SCT006 BKN012 BKN040 27/27 Q1006 NOSIG RMK A2972 RA AMT 0.4MM(I)",
         "visib": "3.11",
-        "status": "old_data_kept",
+        "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787673118,
-        "checkedAt": 1787675394
+        "fetchedAt": 1787677624,
+        "checkedAt": 1787677622
     },
     {
         "icaoId": "RCNN",
-        "obsTime": 1787673600,
-        "rawOb": "METAR RCNN 251600Z 00000KT 9999 FEW010 SCT030 BKN060 24/23 Q1007 RMK A2974",
-        "visib": "6",
+        "obsTime": 1787677200,
+        "rawOb": "METAR RCNN 251700Z 16001KT 8000 FEW010 SCT030 BKN060 24/24 Q1007 RMK A2974",
+        "visib": "4.97",
         "status": "updated",
-        "source": "AviationWeather",
-        "fetchedAt": 1787675596,
-        "checkedAt": 1787675394
+        "source": "AOAWS",
+        "fetchedAt": 1787677624,
+        "checkedAt": 1787677622
     },
     {
         "icaoId": "RCYU",
-        "obsTime": 1787670000,
-        "rawOb": "METAR RCYU 251500Z 23003KT 9999 -RA FEW010 SCT030 BKN060 27/27 Q1007 RMK A2975 RA AMT T",
+        "obsTime": 1787677200,
+        "rawOb": "METAR RCYU 251700Z 21002KT 9999 -RA FEW010 SCT030 BKN060 27/27 Q1006 RMK A2972 RA AMT 0.2MM",
         "visib": "6.2",
-        "status": "old_data_kept",
+        "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787673118,
-        "checkedAt": 1787675394
+        "fetchedAt": 1787677624,
+        "checkedAt": 1787677622
     },
     {
         "icaoId": "RCQC",
-        "obsTime": 1787673600,
-        "rawOb": "METAR RCQC 251600Z 11002KT 8000 -RA SCT006 BKN014 BKN030 27/26 Q1006 RMK A2973 RA AMT 0.4MM",
-        "visib": "4.97",
+        "obsTime": 1787677200,
+        "rawOb": "METAR RCQC 251700Z 15003KT 6000 -RA SCT006 BKN014 BKN030 27/26 Q1006 RMK A2972 RA AMT 1.2MM",
+        "visib": "3.73",
         "status": "updated",
-        "source": "AviationWeather",
-        "fetchedAt": 1787675596,
-        "checkedAt": 1787675394
+        "source": "AOAWS",
+        "fetchedAt": 1787677624,
+        "checkedAt": 1787677622
     }
 ]
