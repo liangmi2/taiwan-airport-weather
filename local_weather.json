@@ -1,43 +1,43 @@
 [
     {
         "icaoId": "RCTP",
-        "obsTime": 1787752800,
-        "rawOb": "METAR RCTP 261400Z 24006KT 9999 FEW015 SCT150 27/26 Q1005 NOSIG RMK A2970(Y)",
+        "obsTime": 1787754600,
+        "rawOb": "METAR RCTP 261430Z 24006KT 9999 FEW015 SCT150 27/26 Q1005 NOSIG RMK A2969(Z)",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787753207,
-        "checkedAt": 1787753206
+        "fetchedAt": 1787756307,
+        "checkedAt": 1787756305
     },
     {
         "icaoId": "RCSS",
-        "obsTime": 1787752800,
-        "rawOb": "METAR RCSS 261400Z 30005KT 9999 FEW025 SCT150 29/24 Q1005 NOSIG RMK A2969(I)",
+        "obsTime": 1787754600,
+        "rawOb": "METAR RCSS 261430Z 30005KT 9999 FEW025 28/24 Q1005 NOSIG RMK A2968(J)",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787753207,
-        "checkedAt": 1787753206
+        "fetchedAt": 1787756307,
+        "checkedAt": 1787756305
     },
     {
         "icaoId": "RCKH",
-        "obsTime": 1787752800,
-        "rawOb": "METAR RCKH 261400Z 05004KT 010V070 9999 FEW014 SCT024 BKN050 27/25 Q1006 NOSIG RMK A2973(M)",
-        "visib": "6.2",
-        "status": "updated",
-        "source": "AOAWS",
-        "fetchedAt": 1787753207,
-        "checkedAt": 1787753206
-    },
-    {
-        "icaoId": "RCMQ",
-        "obsTime": 1787752800,
-        "rawOb": "METAR RCMQ 261400Z 16007KT 8000 -RA FEW006 BKN020 BKN050 26/26 Q1008 RMK A2977 RA AMT T",
+        "obsTime": 1787754600,
+        "rawOb": "METAR RCKH 261430Z 05004KT 020V080 8000 FEW012 SCT022 BKN045 27/25 Q1006 NOSIG RMK A2973(N)",
         "visib": "4.97",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787753207,
-        "checkedAt": 1787753206
+        "fetchedAt": 1787756307,
+        "checkedAt": 1787756305
+    },
+    {
+        "icaoId": "RCMQ",
+        "obsTime": 1787755800,
+        "rawOb": "SPECI RCMQ 261450Z 19006KT 9999 FEW012 SCT060 BKN080 26/25 Q1007 RMK A2975",
+        "visib": "6.2",
+        "status": "updated",
+        "source": "AOAWS",
+        "fetchedAt": 1787756307,
+        "checkedAt": 1787756305
     },
     {
         "icaoId": "RCBS",
@@ -46,8 +46,8 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787753207,
-        "checkedAt": 1787753206
+        "fetchedAt": 1787756307,
+        "checkedAt": 1787756305
     },
     {
         "icaoId": "RCNN",
@@ -56,8 +56,8 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787753207,
-        "checkedAt": 1787753206
+        "fetchedAt": 1787756307,
+        "checkedAt": 1787756305
     },
     {
         "icaoId": "RCYU",
@@ -66,8 +66,8 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787753207,
-        "checkedAt": 1787753206
+        "fetchedAt": 1787756307,
+        "checkedAt": 1787756305
     },
     {
         "icaoId": "RCQC",
@@ -76,7 +76,7 @@
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1787753207,
-        "checkedAt": 1787753206
+        "fetchedAt": 1787756307,
+        "checkedAt": 1787756305
     }
 ]
