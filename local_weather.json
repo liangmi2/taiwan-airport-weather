@@ -1,82 +1,82 @@
 [
     {
         "icaoId": "RCTP",
-        "obsTime": 1788953400,
-        "rawOb": "METAR RCTP 091130Z 07008KT 9999 FEW020 SCT050 BKN080 25/23 Q1011 NOSIG RMK A2986(K)",
+        "obsTime": 1788966000,
+        "rawOb": "METAR RCTP 091500Z 07009KT 9999 FEW020 26/23 Q1012 NOSIG RMK A2989(R)",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1788954524,
-        "checkedAt": 1788954523
+        "fetchedAt": 1788967274,
+        "checkedAt": 1788967272
     },
     {
         "icaoId": "RCSS",
-        "obsTime": 1788953400,
-        "rawOb": "METAR RCSS 091130Z 10006KT 9999 -RA FEW015 SCT030 BKN060 24/23 Q1011 NOSIG RMK A2987(B)",
+        "obsTime": 1788966000,
+        "rawOb": "METAR RCSS 091500Z 11004KT 9999 FEW015 SCT060 24/23 Q1012 NOSIG RMK A2990(I)",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1788954524,
-        "checkedAt": 1788954523
+        "fetchedAt": 1788967274,
+        "checkedAt": 1788967272
     },
     {
         "icaoId": "RCKH",
-        "obsTime": 1788953400,
-        "rawOb": "METAR RCKH 091130Z 31003KT 280V030 9999 FEW014 SCT042 29/20 Q1009 NOSIG RMK A2980(Y)",
+        "obsTime": 1788966000,
+        "rawOb": "METAR RCKH 091500Z 03003KT 9999 FEW015 SCT056 27/22 Q1010 NOSIG RMK A2984(F)",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1788954524,
-        "checkedAt": 1788954523
+        "fetchedAt": 1788967274,
+        "checkedAt": 1788967272
     },
     {
         "icaoId": "RCMQ",
-        "obsTime": 1788953400,
-        "rawOb": "METAR RCMQ 091130Z 01007KT 9999 FEW012 25/21 Q1010 NOSIG RMK A2983",
+        "obsTime": 1788966000,
+        "rawOb": "METAR RCMQ 091500Z 04004KT 9999 FEW012 SCT100 23/20 Q1011 RMK A2986",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1788954524,
-        "checkedAt": 1788954523
+        "fetchedAt": 1788967274,
+        "checkedAt": 1788967272
     },
     {
         "icaoId": "RCBS",
-        "obsTime": 1788953400,
-        "rawOb": "METAR RCBS 091130Z 03004KT 9999 FEW020 SCT230 25/22 Q1010 NOSIG RMK A2985(Q)",
+        "obsTime": 1788958800,
+        "rawOb": "METAR RCBS 091300Z 04006KT 9999 FEW020 25/22 Q1011 NOSIG RMK A2988(T)",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1788954524,
-        "checkedAt": 1788954523
+        "fetchedAt": 1788967274,
+        "checkedAt": 1788967272
     },
     {
         "icaoId": "RCNN",
-        "obsTime": 1788953400,
-        "rawOb": "METAR RCNN 091130Z 36003KT 9999 FEW016 BKN060 26/21 Q1009 NOSIG RMK A2980",
+        "obsTime": 1788966000,
+        "rawOb": "METAR RCNN 091500Z 00000KT 9999 FEW012 SCT060 24/21 Q1010 RMK A2984",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1788954524,
-        "checkedAt": 1788954523
+        "fetchedAt": 1788967274,
+        "checkedAt": 1788967272
     },
     {
         "icaoId": "RCYU",
-        "obsTime": 1788953400,
-        "rawOb": "METAR RCYU 091130Z 22002KT 9999 FEW012 BKN060 27/23 Q1011 NOSIG RMK A2986",
+        "obsTime": 1788966000,
+        "rawOb": "METAR RCYU 091500Z 18004KT 9999 FEW012 SCT060 27/23 Q1012 RMK A2989",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1788954524,
-        "checkedAt": 1788954523
+        "fetchedAt": 1788967274,
+        "checkedAt": 1788967272
     },
     {
         "icaoId": "RCQC",
-        "obsTime": 1788953400,
-        "rawOb": "METAR RCQC 091130Z 02014KT 9999 FEW012 28/24 Q1009 NOSIG RMK A2981",
+        "obsTime": 1788966000,
+        "rawOb": "METAR RCQC 091500Z 03011KT 9999 FEW012 BKN100 28/25 Q1010 RMK A2983",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1788954524,
-        "checkedAt": 1788954523
+        "fetchedAt": 1788967274,
+        "checkedAt": 1788967272
     }
 ]
