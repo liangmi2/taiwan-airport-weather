@@ -1,43 +1,43 @@
 [
     {
         "icaoId": "RCTP",
-        "obsTime": 1790695800,
-        "rawOb": "METAR RCTP 291530Z VRB03KT 9999 FEW015 27/25 Q1012 NOSIG RMK A2991(K)",
+        "obsTime": 1790712000,
+        "rawOb": "METAR RCTP 292000Z 24005KT 9999 FEW012 BKN030 27/26 Q1012 NOSIG RMK A2990(U)",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1790696248,
-        "checkedAt": 1790696246
+        "fetchedAt": 1790712742,
+        "checkedAt": 1790712741
     },
     {
         "icaoId": "RCSS",
-        "obsTime": 1790695800,
-        "rawOb": "METAR RCSS 291530Z VRB02KT 9999 FEW025 28/25 Q1012 NOSIG RMK A2989(A)",
+        "obsTime": 1790712000,
+        "rawOb": "METAR RCSS 292000Z VRB01KT 9999 SCT015 BKN030 27/25 Q1012 NOSIG RMK A2989(F)",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1790696248,
-        "checkedAt": 1790696246
+        "fetchedAt": 1790712742,
+        "checkedAt": 1790712741
     },
     {
         "icaoId": "RCKH",
-        "obsTime": 1790695800,
-        "rawOb": "METAR RCKH 291530Z 26003KT 9999 FEW015 SCT030 28/24 Q1012 NOSIG RMK A2991(Z)",
+        "obsTime": 1790712000,
+        "rawOb": "METAR RCKH 292000Z 07003KT 9999 FEW015 SCT030 26/24 Q1012 NOSIG RMK A2989(E)",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1790696248,
-        "checkedAt": 1790696246
+        "fetchedAt": 1790712742,
+        "checkedAt": 1790712741
     },
     {
         "icaoId": "RCMQ",
-        "obsTime": 1790694000,
-        "rawOb": "METAR RCMQ 291500Z 24004KT 6000 FEW012 26/25 Q1014 RMK A2995",
-        "visib": "3.73",
+        "obsTime": 1790712000,
+        "rawOb": "METAR RCMQ 292000Z 18005KT 5000 BR FEW012 SCT025 26/25 Q1013 RMK A2994",
+        "visib": "3.11",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1790696248,
-        "checkedAt": 1790696246
+        "fetchedAt": 1790712742,
+        "checkedAt": 1790712741
     },
     {
         "icaoId": "RCBS",
@@ -46,37 +46,37 @@
         "visib": "4.35",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1790696248,
-        "checkedAt": 1790696246
+        "fetchedAt": 1790712742,
+        "checkedAt": 1790712741
     },
     {
         "icaoId": "RCNN",
-        "obsTime": 1790694000,
-        "rawOb": "METAR RCNN 291500Z 00000KT 9999 FEW010 24/23 Q1013 RMK A2992",
+        "obsTime": 1790712000,
+        "rawOb": "METAR RCNN 292000Z 11003KT 9999 FEW010 SCT030 24/23 Q1012 RMK A2990",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1790696248,
-        "checkedAt": 1790696246
+        "fetchedAt": 1790712742,
+        "checkedAt": 1790712741
     },
     {
         "icaoId": "RCYU",
-        "obsTime": 1790694000,
-        "rawOb": "METAR RCYU 291500Z 22002KT 9999 FEW012 26/24 Q1013 RMK A2993",
+        "obsTime": 1790712000,
+        "rawOb": "METAR RCYU 292000Z 22002KT 9999 FEW012 25/22 Q1012 RMK A2990",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1790696248,
-        "checkedAt": 1790696246
+        "fetchedAt": 1790712742,
+        "checkedAt": 1790712741
     },
     {
         "icaoId": "RCQC",
-        "obsTime": 1790694000,
-        "rawOb": "METAR RCQC 291500Z 20005KT 9999 FEW008 SCT016 27/27 Q1012 RMK A2990",
+        "obsTime": 1790712000,
+        "rawOb": "METAR RCQC 292000Z 16002KT 9999 FEW010 BKN016 27/27 Q1011 RMK A2988",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1790696248,
-        "checkedAt": 1790696246
+        "fetchedAt": 1790712742,
+        "checkedAt": 1790712741
     }
 ]
