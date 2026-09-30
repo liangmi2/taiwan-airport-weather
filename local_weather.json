@@ -1,82 +1,82 @@
 [
     {
         "icaoId": "RCTP",
-        "obsTime": 1790724600,
-        "rawOb": "METAR RCTP 292330Z 15004KT 120V180 9999 FEW015 31/26 Q1013 NOSIG RMK A2994(B)",
+        "obsTime": 1790734200,
+        "rawOb": "SPECI RCTP 300210Z 31005KT 260V360 9999 FEW020 33/26 Q1013 NOSIG RMK R05 A2994(H)",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1790725519,
-        "checkedAt": 1790725518
+        "fetchedAt": 1790735202,
+        "checkedAt": 1790735201
     },
     {
         "icaoId": "RCSS",
-        "obsTime": 1790724600,
-        "rawOb": "METAR RCSS 292330Z VRB02KT 9999 FEW018 30/26 Q1013 NOSIG RMK A2994(K)",
+        "obsTime": 1790733600,
+        "rawOb": "METAR RCSS 300200Z 10003KT 050V180 9999 FEW020 34/26 Q1013 NOSIG RMK A2993(P)",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1790725519,
-        "checkedAt": 1790725518
+        "fetchedAt": 1790735202,
+        "checkedAt": 1790735201
     },
     {
         "icaoId": "RCKH",
-        "obsTime": 1790724600,
-        "rawOb": "METAR RCKH 292330Z 06004KT 020V090 9999 FEW014 29/23 Q1013 NOSIG RMK A2993(J)",
+        "obsTime": 1790733600,
+        "rawOb": "METAR RCKH 300200Z 25004KT 200V300 9999 FEW016 SCT034 31/24 Q1013 NOSIG RMK A2993(O)",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1790725519,
-        "checkedAt": 1790725518
+        "fetchedAt": 1790735202,
+        "checkedAt": 1790735201
     },
     {
         "icaoId": "RCMQ",
-        "obsTime": 1790724600,
-        "rawOb": "METAR RCMQ 292330Z 14004KT 9999 FEW012 28/25 Q1015 NOSIG RMK A2997",
+        "obsTime": 1790733600,
+        "rawOb": "METAR RCMQ 300200Z 24005KT 9999 FEW012 SCT030 33/24 Q1015 NOSIG RMK A2998",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1790725519,
-        "checkedAt": 1790725518
+        "fetchedAt": 1790735202,
+        "checkedAt": 1790735201
     },
     {
         "icaoId": "RCBS",
-        "obsTime": 1790724600,
-        "rawOb": "METAR RCBS 292330Z 18005KT 9999 FEW007 SCT018 BKN120 29/29 Q1012 NOSIG RMK A2990(O)",
+        "obsTime": 1790733600,
+        "rawOb": "METAR RCBS 300200Z 17007KT 9999 FEW008 SCT015 31/29 Q1013 NOSIG RMK A2992(T)",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1790725519,
-        "checkedAt": 1790725518
+        "fetchedAt": 1790735202,
+        "checkedAt": 1790735201
     },
     {
         "icaoId": "RCNN",
-        "obsTime": 1790724600,
-        "rawOb": "METAR RCNN 292330Z 12001KT 9999 FEW012 28/24 Q1013 NOSIG RMK A2993",
+        "obsTime": 1790733600,
+        "rawOb": "METAR RCNN 300200Z 26003KT 160V260 9999 FEW012 SCT025 32/23 Q1014 NOSIG RMK A2994",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1790725519,
-        "checkedAt": 1790725518
+        "fetchedAt": 1790735202,
+        "checkedAt": 1790735201
     },
     {
         "icaoId": "RCYU",
-        "obsTime": 1790724600,
-        "rawOb": "METAR RCYU 292330Z 20001KT 9999 FEW012 29/23 Q1014 NOSIG RMK A2995",
+        "obsTime": 1790733600,
+        "rawOb": "METAR RCYU 300200Z 05004KT 9999 FEW030 32/23 Q1014 NOSIG RMK A2996",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1790725519,
-        "checkedAt": 1790725518
+        "fetchedAt": 1790735202,
+        "checkedAt": 1790735201
     },
     {
         "icaoId": "RCQC",
-        "obsTime": 1790724600,
-        "rawOb": "METAR RCQC 292330Z 14003KT 9999 FEW012 29/28 Q1013 NOSIG RMK A2992",
+        "obsTime": 1790733600,
+        "rawOb": "METAR RCQC 300200Z 15004KT 9999 FEW012 SCT025 31/27 Q1013 NOSIG RMK A2993",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1790725519,
-        "checkedAt": 1790725518
+        "fetchedAt": 1790735202,
+        "checkedAt": 1790735201
     }
 ]
