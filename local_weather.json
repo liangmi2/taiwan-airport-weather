@@ -1,82 +1,82 @@
 [
     {
         "icaoId": "RCTP",
-        "obsTime": 1790874000,
-        "rawOb": "METAR RCTP 011700Z 05008KT 9999 FEW012 SCT060 27/24 Q1014 NOSIG RMK A2996(K)",
+        "obsTime": 1790890200,
+        "rawOb": "METAR RCTP 012130Z 05008KT 9999 FEW012 27/25 Q1014 NOSIG RMK A2995(T)",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1790874524,
-        "checkedAt": 1790874523
+        "fetchedAt": 1790891268,
+        "checkedAt": 1790891267
     },
     {
         "icaoId": "RCSS",
-        "obsTime": 1790874000,
-        "rawOb": "METAR RCSS 011700Z 09007KT 9999 FEW015 27/26 Q1014 NOSIG RMK A2996(U)",
+        "obsTime": 1790888400,
+        "rawOb": "METAR RCSS 012100Z 10007KT 9999 FEW015 26/26 Q1013 NOSIG RMK A2994(Y)",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1790874524,
-        "checkedAt": 1790874523
+        "fetchedAt": 1790891268,
+        "checkedAt": 1790891267
     },
     {
         "icaoId": "RCKH",
-        "obsTime": 1790874000,
-        "rawOb": "METAR RCKH 011700Z 07006KT 9999 VCSH FEW012 SCT024 BKN038 28/25 Q1014 NOSIG RMK A2995(O)",
+        "obsTime": 1790888400,
+        "rawOb": "METAR RCKH 012100Z 34004KT 310V010 9999 FEW014 SCT048 28/22 Q1013 NOSIG RMK A2992(S)",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1790874524,
-        "checkedAt": 1790874523
+        "fetchedAt": 1790891268,
+        "checkedAt": 1790891267
     },
     {
         "icaoId": "RCMQ",
-        "obsTime": 1790874000,
-        "rawOb": "METAR RCMQ 011700Z 02002KT 4800 BR FEW010 26/24 Q1015 RMK A2999",
-        "visib": "2.98",
+        "obsTime": 1790890200,
+        "rawOb": "METAR RCMQ 012130Z 00000KT 7000 FEW010 24/23 Q1014 NOSIG RMK A2996",
+        "visib": "4.35",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1790874524,
-        "checkedAt": 1790874523
+        "fetchedAt": 1790891268,
+        "checkedAt": 1790891267
     },
     {
         "icaoId": "RCBS",
-        "obsTime": 1790859600,
-        "rawOb": "METAR RCBS 011300Z VRB02KT 9999 FEW010 SCT090 27/27 Q1014 NOSIG RMK A2995(Z)",
+        "obsTime": 1790890200,
+        "rawOb": "METAR RCBS 012130Z 04008KT 9999 FEW010 SCT018 27/26 Q1013 NOSIG RMK A2992(B)",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1790874524,
-        "checkedAt": 1790874523
+        "fetchedAt": 1790891268,
+        "checkedAt": 1790891267
     },
     {
         "icaoId": "RCNN",
-        "obsTime": 1790874000,
-        "rawOb": "METAR RCNN 011700Z 01005KT 9999 FEW012 BKN060 25/24 Q1014 RMK A2996",
+        "obsTime": 1790890200,
+        "rawOb": "METAR RCNN 012130Z 03005KT 9999 FEW012 24/23 Q1013 NOSIG RMK A2992",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1790874524,
-        "checkedAt": 1790874523
+        "fetchedAt": 1790891268,
+        "checkedAt": 1790891267
     },
     {
         "icaoId": "RCYU",
-        "obsTime": 1790874000,
-        "rawOb": "METAR RCYU 011700Z 20001KT 9999 FEW010 SCT100 28/25 Q1015 RMK A2998",
+        "obsTime": 1790890200,
+        "rawOb": "METAR RCYU 012130Z 23001KT 9999 FEW012 SCT025 27/24 Q1014 NOSIG RMK A2996",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1790874524,
-        "checkedAt": 1790874523
+        "fetchedAt": 1790891268,
+        "checkedAt": 1790891267
     },
     {
         "icaoId": "RCQC",
-        "obsTime": 1790874000,
-        "rawOb": "METAR RCQC 011700Z 01003KT 9999 FEW008 28/26 Q1014 RMK A2996",
+        "obsTime": 1790890200,
+        "rawOb": "METAR RCQC 012130Z 04004KT 9999 FEW012 28/26 Q1012 NOSIG RMK A2991",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1790874524,
-        "checkedAt": 1790874523
+        "fetchedAt": 1790891268,
+        "checkedAt": 1790891267
     }
 ]
