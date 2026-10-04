@@ -1,82 +1,82 @@
 [
     {
         "icaoId": "RCTP",
-        "obsTime": 1791064800,
-        "rawOb": "METAR RCTP 032200Z 15003KT 120V180 9999 FEW015 25/24 Q1011 NOSIG RMK A2988(C)",
+        "obsTime": 1791073800,
+        "rawOb": "METAR RCTP 040030Z 11004KT 040V190 9999 FEW015 31/25 Q1012 NOSIG RMK A2991(H)",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1791065397,
-        "checkedAt": 1791065396
+        "fetchedAt": 1791074163,
+        "checkedAt": 1791074161
     },
     {
         "icaoId": "RCSS",
-        "obsTime": 1791064800,
-        "rawOb": "METAR RCSS 032200Z 11003KT 9999 FEW020 25/25 Q1011 NOSIG RMK A2987(W)",
+        "obsTime": 1791073800,
+        "rawOb": "METAR RCSS 040030Z 10004KT 070V140 9999 FEW020 30/27 Q1012 NOSIG RMK A2990(B)",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1791065397,
-        "checkedAt": 1791065396
+        "fetchedAt": 1791074163,
+        "checkedAt": 1791074161
     },
     {
         "icaoId": "RCKH",
-        "obsTime": 1791064800,
-        "rawOb": "METAR RCKH 032200Z 05003KT 9999 FEW012 26/23 Q1011 NOSIG RMK A2987(E)",
+        "obsTime": 1791073800,
+        "rawOb": "METAR RCKH 040030Z VRB03KT 9999 FEW012 30/22 Q1012 NOSIG RMK A2989(J)",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1791065397,
-        "checkedAt": 1791065396
+        "fetchedAt": 1791074163,
+        "checkedAt": 1791074161
     },
     {
         "icaoId": "RCMQ",
-        "obsTime": 1791064800,
-        "rawOb": "METAR RCMQ 032200Z 10001KT 9999 FEW012 23/21 Q1013 NOSIG RMK A2992",
+        "obsTime": 1791073800,
+        "rawOb": "METAR RCMQ 040030Z 11004KT 9999 FEW012 29/23 Q1014 NOSIG RMK A2994",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1791065397,
-        "checkedAt": 1791065396
+        "fetchedAt": 1791074163,
+        "checkedAt": 1791074161
     },
     {
         "icaoId": "RCBS",
-        "obsTime": 1791064800,
-        "rawOb": "METAR RCBS 032200Z 04004KT 9999 FEW015 24/23 Q1012 NOSIG RMK A2990(S)",
-        "visib": "6.2",
+        "obsTime": 1791073800,
+        "rawOb": "METAR RCBS 040030Z 03007KT 360V070 CAVOK 28/23 Q1013 NOSIG RMK A2992(X)",
+        "visib": "",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1791065397,
-        "checkedAt": 1791065396
+        "fetchedAt": 1791074163,
+        "checkedAt": 1791074161
     },
     {
         "icaoId": "RCNN",
-        "obsTime": 1791064800,
-        "rawOb": "METAR RCNN 032200Z 08001KT 9999 FEW012 SCT100 23/21 Q1012 NOSIG RMK A2988",
+        "obsTime": 1791073800,
+        "rawOb": "METAR RCNN 040030Z 00000KT 9999 FEW016 30/23 Q1012 NOSIG RMK A2990",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1791065397,
-        "checkedAt": 1791065396
+        "fetchedAt": 1791074163,
+        "checkedAt": 1791074161
     },
     {
         "icaoId": "RCYU",
-        "obsTime": 1791064800,
-        "rawOb": "METAR RCYU 032200Z 21003KT 9999 FEW012 26/24 Q1012 NOSIG RMK A2989",
+        "obsTime": 1791073800,
+        "rawOb": "METAR RCYU 040030Z 25002KT 9999 FEW030 31/24 Q1013 NOSIG RMK A2993",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1791065397,
-        "checkedAt": 1791065396
+        "fetchedAt": 1791074163,
+        "checkedAt": 1791074161
     },
     {
         "icaoId": "RCQC",
-        "obsTime": 1791064800,
-        "rawOb": "METAR RCQC 032200Z 01004KT 9999 FEW012 27/25 Q1011 NOSIG RMK A2988",
+        "obsTime": 1791073800,
+        "rawOb": "METAR RCQC 040030Z 04007KT 9999 FEW012 SCT030 29/28 Q1012 NOSIG RMK A2989",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1791065397,
-        "checkedAt": 1791065396
+        "fetchedAt": 1791074163,
+        "checkedAt": 1791074161
     }
 ]
