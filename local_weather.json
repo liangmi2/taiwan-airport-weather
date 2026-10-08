@@ -1,82 +1,82 @@
 [
     {
         "icaoId": "RCTP",
-        "obsTime": 1791478800,
-        "rawOb": "METAR RCTP 081700Z 05014KT 9999 FEW015 24/20 Q1016 NOSIG RMK A3002(F)",
+        "obsTime": 1791496800,
+        "rawOb": "METAR RCTP 082200Z 05011KT 9999 FEW015 BKN050 24/20 Q1016 NOSIG RMK A3002(P)",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1791480393,
-        "checkedAt": 1791480391
+        "fetchedAt": 1791497827,
+        "checkedAt": 1791497826
     },
     {
         "icaoId": "RCSS",
-        "obsTime": 1791478800,
-        "rawOb": "METAR RCSS 081700Z 10010KT 9999 FEW020 24/21 Q1016 NOSIG RMK A3003(M)",
+        "obsTime": 1791496800,
+        "rawOb": "METAR RCSS 082200Z 11009KT 9999 FEW020 24/21 Q1016 NOSIG RMK A3003(R)",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1791480393,
-        "checkedAt": 1791480391
+        "fetchedAt": 1791497827,
+        "checkedAt": 1791497826
     },
     {
         "icaoId": "RCKH",
-        "obsTime": 1791478800,
-        "rawOb": "METAR RCKH 081700Z 07005KT 9999 SCT014 SCT038 BKN056 26/22 Q1015 NOSIG RMK A2998(V)",
+        "obsTime": 1791496800,
+        "rawOb": "METAR RCKH 082200Z 05006KT 9999 FEW016 24/22 Q1014 NOSIG RMK A2995(A)",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1791480393,
-        "checkedAt": 1791480391
+        "fetchedAt": 1791497827,
+        "checkedAt": 1791497826
     },
     {
         "icaoId": "RCMQ",
-        "obsTime": 1791478800,
-        "rawOb": "METAR RCMQ 081700Z 35004KT 9999 FEW012 BKN060 23/20 Q1016 RMK A3001",
+        "obsTime": 1791496800,
+        "rawOb": "METAR RCMQ 082200Z 35004KT 9999 FEW012 SCT030 22/19 Q1016 NOSIG RMK A3001",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1791480393,
-        "checkedAt": 1791480391
+        "fetchedAt": 1791497827,
+        "checkedAt": 1791497826
     },
     {
         "icaoId": "RCBS",
-        "obsTime": 1791464400,
-        "rawOb": "METAR RCBS 081300Z 05011KT 9999 FEW020 24/18 Q1018 NOSIG RMK A3007(G)",
+        "obsTime": 1791496800,
+        "rawOb": "METAR RCBS 082200Z 01008KT 330V030 9999 FEW025 22/16 Q1016 NOSIG RMK A3003(J)",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1791480393,
-        "checkedAt": 1791480391
+        "fetchedAt": 1791497827,
+        "checkedAt": 1791497826
     },
     {
         "icaoId": "RCNN",
-        "obsTime": 1791478800,
-        "rawOb": "METAR RCNN 081700Z 11003KT 9999 FEW012 SCT040 BKN060 25/21 Q1015 RMK A2998",
+        "obsTime": 1791496800,
+        "rawOb": "METAR RCNN 082200Z 09004KT 9999 FEW012 SCT040 BKN100 24/21 Q1014 NOSIG RMK A2996",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1791480393,
-        "checkedAt": 1791480391
+        "fetchedAt": 1791497827,
+        "checkedAt": 1791497826
     },
     {
         "icaoId": "RCYU",
-        "obsTime": 1791478800,
-        "rawOb": "METAR RCYU 081700Z 22001KT 9999 FEW012 BKN080 24/21 Q1017 RMK A3005",
+        "obsTime": 1791496800,
+        "rawOb": "METAR RCYU 082200Z 20002KT 9999 FEW012 23/20 Q1017 NOSIG RMK A3003",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1791480393,
-        "checkedAt": 1791480391
+        "fetchedAt": 1791497827,
+        "checkedAt": 1791497826
     },
     {
         "icaoId": "RCQC",
-        "obsTime": 1791478800,
-        "rawOb": "METAR RCQC 081700Z 02014KT 9999 FEW012 SCT030 BKN060 26/24 Q1015 RMK A2999",
+        "obsTime": 1791496800,
+        "rawOb": "METAR RCQC 082200Z 02013KT 9999 FEW012 SCT025 26/23 Q1015 NOSIG RMK A2997",
         "visib": "6.2",
         "status": "updated",
         "source": "AOAWS",
-        "fetchedAt": 1791480393,
-        "checkedAt": 1791480391
+        "fetchedAt": 1791497827,
+        "checkedAt": 1791497826
     }
 ]
