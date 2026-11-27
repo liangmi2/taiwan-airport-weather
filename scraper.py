@@ -703,10 +703,12 @@ def fetch_aoaws_metar():
     # =================================
     aviation_weather = {}
 
-    if missing:
+    # 金門僅使用航空氣象服務網官方報文。
+    fallback_stations = [icao for icao in missing if icao != "RCBS"]
+    if fallback_stations:
         aviation_weather = (
             fetch_from_aviationweather(
-                missing
+                fallback_stations
             )
         )
 
@@ -743,7 +745,10 @@ def fetch_aoaws_metar():
                 item
             )
 
-        elif icao in old_weather:
+        elif icao in old_weather and (
+            icao != "RCBS"
+            or old_weather[icao].get("source") in ("AOAWS", "AOAWS-RCBS")
+        ):
 
             # 本輪完全抓不到時，
             # 保留上一筆資料，
