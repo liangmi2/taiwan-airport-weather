@@ -1,4 +1,9 @@
 const airports = {
+  RCBS: {
+    name: "金門尚義機場",
+    iata: "KNH",
+    type: "limited"
+  },
   RCTP: {
     name: "桃園國際機場",
     iata: "TPE",
@@ -18,11 +23,6 @@ const airports = {
     name: "台中清泉崗機場",
     iata: "RMQ",
     type: "mixed"
-  },
-  RCBS: {
-    name: "金門尚義機場",
-    iata: "KNH",
-    type: "limited"
   },
   RCNN: {
     name: "台南機場",
