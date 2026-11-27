@@ -427,7 +427,7 @@ function updateLastUpdateText(data) {
     el.innerHTML = `
       📡 本站最近檢查：
       <strong>${escapeHtml(latest)}</strong>
-      <span>（後端約每 10 分鐘更新，畫面每 5 分鐘刷新）</span>
+      <span>（開啟時及每 5 分鐘查詢官方資料）</span>
     `;
   } else {
     el.innerHTML = "📡 尚未取得本站檢查時間";
@@ -450,20 +450,22 @@ async function fetchWeather() {
   }
 
   const localUrl = `./local_weather.json?t=${Date.now()}`;
+  const liveUrl = `https://sprightly-bunny-d6dd88.netlify.app/.netlify/functions/weather?t=${Date.now()}`;
 
   try {
-    const res = await fetch(localUrl, {
-      cache: "no-store"
-    });
-
-    if (!res.ok) {
-      throw new Error(`讀取 local_weather.json 失敗，HTTP ${res.status}`);
-    }
-
-    const data = await res.json();
-
-    if (!Array.isArray(data)) {
-      throw new Error("local_weather.json 格式不是陣列");
+    let data;
+    try {
+      const res = await fetch(liveUrl, { cache: "no-store" });
+      if (!res.ok) throw new Error(`官方資料讀取失敗，HTTP ${res.status}`);
+      data = await res.json();
+      if (!Array.isArray(data)) throw new Error("官方資料格式錯誤");
+    } catch (liveError) {
+      console.warn("無法取得最新資料，使用備援資料：", liveError);
+      const fallback = await fetch(localUrl, { cache: "no-store" });
+      if (!fallback.ok) throw new Error(`備援資料讀取失敗，HTTP ${fallback.status}`);
+      const rows = await fallback.json();
+      if (!Array.isArray(rows)) throw new Error("備援資料格式錯誤");
+      data = rows.map(item => ({...item, status: "old_data_kept"}));
     }
 
     updateLastUpdateText(data);
@@ -478,7 +480,7 @@ async function fetchWeather() {
     if (loadingDiv) {
       loadingDiv.style.display = "block";
       loadingDiv.style.color = "#d93025";
-      loadingDiv.innerText = "⚠️ 無法讀取 local_weather.json，請確認資料檔是否存在。";
+      loadingDiv.innerText = "⚠️ 無法取得氣象資料，請稍後再試。";
     }
 
     updateLastUpdateText([]);
